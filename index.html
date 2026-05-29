@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BTC 年度互動分析儀表板</title>
+  <link rel="stylesheet" href="./assets/styles.css?v=20260529-2130">
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">BTCUSDT 年度分析</p>
+        <h1>年度互動分析儀表板</h1>
+      </div>
+      <div class="status-panel" aria-live="polite">
+        <span class="status-label">資料更新時間</span>
+        <strong id="updatedAt">尚未載入</strong>
+        <span class="status-label status-label-secondary">資料範圍</span>
+        <strong id="dataRange">尚未載入</strong>
+      </div>
+    </header>
+
+    <section id="emptyState" class="empty-state" hidden>
+      <h2>尚未產生年度資料</h2>
+      <p>請先產生 <code>site/data/dashboard_history.json</code>，再重新部署網站。</p>
+    </section>
+
+    <section id="dashboard" class="dashboard" hidden>
+      <section class="control-panel">
+        <button id="playPauseButton" class="play-button" type="button">播放</button>
+        <div class="year-control">
+          <label for="yearSlider">年度</label>
+          <input id="yearSlider" type="range" min="0" max="0" value="0" step="1">
+        </div>
+        <strong id="currentYear" class="year-readout">----</strong>
+      </section>
+
+      <section class="metric-grid" id="metricGrid"></section>
+
+      <section class="chart-panel trend-panel">
+        <div class="panel-heading">
+          <h2>技術線形趨勢圖</h2>
+          <span>收盤價與趨勢均線代理</span>
+        </div>
+        <div id="trendChart" class="chart chart-large"></div>
+      </section>
+
+      <section class="chart-grid">
+        <div class="chart-panel">
+          <div class="panel-heading">
+            <h2>MVRV Z-Score 代理圖</h2>
+            <span>以價格偏離長期均線 z-score 代理</span>
+          </div>
+          <div id="mvrvChart" class="chart"></div>
+        </div>
+
+        <div class="chart-panel">
+          <div class="panel-heading">
+            <h2>梅耶指數圖</h2>
+            <span>Mayer Multiple</span>
+          </div>
+          <div id="mayerChart" class="chart"></div>
+        </div>
+
+        <div class="chart-panel">
+          <div class="panel-heading">
+            <h2>日波動率圖</h2>
+            <span>每日內波動率估計</span>
+          </div>
+          <div id="volatilityChart" class="chart"></div>
+        </div>
+
+        <div class="chart-panel">
+          <div class="panel-heading">
+            <h2>CAGR 圖</h2>
+            <span>各年度起訖收盤價年化成長率</span>
+          </div>
+          <div id="cagrChart" class="chart"></div>
+        </div>
+      </section>
+
+      <section class="table-panel">
+        <div class="panel-heading">
+          <h2>完整資料表</h2>
+          <button id="exportCsvButton" class="secondary-button" type="button">匯出 CSV</button>
+        </div>
+        <div class="table-note">資料表固定顯示完整日資料，不會跟著年度播放篩選。</div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>日期</th>
+                <th>年度</th>
+                <th>開盤價</th>
+                <th>最高價</th>
+                <th>最低價</th>
+                <th>收盤價</th>
+                <th>成交量</th>
+                <th>MVRV 代理</th>
+                <th>梅耶指數</th>
+                <th>日波動率</th>
+                <th>年度 CAGR</th>
+              </tr>
+            </thead>
+            <tbody id="historyRows"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="./assets/app.js?v=20260529-2140"></script>
+</body>
+</html>
