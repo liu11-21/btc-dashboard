@@ -244,12 +244,12 @@ function renderCharts() {
   var rows  = yearRows();
   var dates = rows.map(function(r) { return r.date; });
   var last  = dates.length ? dates[dates.length - 1] : dates[0];
-
-  if (dates.length >= 2) {
-    $("priceDateRange").textContent = dates[0] + " → " + last;
-  }
-
-  Plotly.react("chartPrice", [
+  var forecastPath = (S.fc && Array.isArray(S.fc.predicted_price_path))
+    ? S.fc.predicted_price_path.filter(function(p) {
+        return p && Number.isFinite(+p.price) && p.timestamp;
+      })
+    : [];
+  var priceTraces = [
     { type:"scatter", mode:"lines", x:dates, y:rows.map(function(r){ return r.close; }),
       name:"收盤價", line:{ color:"#f7931a", width:2 },
       fill:"tozeroy", fillcolor:"rgba(247,147,26,.05)",
@@ -257,7 +257,26 @@ function renderCharts() {
     { type:"scatter", mode:"lines", x:dates, y:rows.map(function(r){ return r.trend_ma_proxy; }),
       name:"48-Bar 均線", line:{ color:"#60a5fa", width:1.6, dash:"dot" },
       hovertemplate:"%{x}<br>48MA %{y:$,.0f}<extra></extra>" },
-  ], Object.assign({}, BASE, { yaxis: Object.assign({}, BASE.yaxis, { tickprefix:"$", tickformat:",.0f" }) }), CFG);
+  ];
+  if (forecastPath.length >= 2) {
+    priceTraces.push({
+      type:"scatter",
+      mode:"lines+markers",
+      x: forecastPath.map(function(p) { return p.timestamp; }),
+      y: forecastPath.map(function(p) { return +p.price; }),
+      name:"32 小時連續預測路徑",
+      line:{ color:"#22c55e", width:2.4, dash:"dash" },
+      marker:{ size:4, color:"#22c55e" },
+      hovertemplate:"%{x}<br>預測價格 %{y:$,.0f}<extra></extra>",
+    });
+  }
+
+  if (dates.length >= 2) {
+    var forecastEnd = forecastPath.length ? fmtTs(forecastPath[forecastPath.length - 1].timestamp) : last;
+    $("priceDateRange").textContent = dates[0] + " → " + forecastEnd;
+  }
+
+  Plotly.react("chartPrice", priceTraces, Object.assign({}, BASE, { yaxis: Object.assign({}, BASE.yaxis, { tickprefix:"$", tickformat:",.0f" }) }), CFG);
 
   Plotly.react("chartMayer", [
     { type:"scatter", mode:"lines", x:dates, y:rows.map(function(r){ return r.mayer_multiple; }),

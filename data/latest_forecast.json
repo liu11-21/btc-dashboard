@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-30T12:48:02.462849+08:00",
+  "generated_at": "2026-05-30T13:57:39.354529+08:00",
   "source": "binance_usdm_futures_github_actions_inference_only",
   "symbol": "BTCUSDT",
   "interval": "1h",
@@ -50,15 +50,281 @@
     {
       "horizon": "32bar",
       "horizon_bars": 32,
-      "target_time": "2026-05-31T12:00:00+00:00",
-      "prob_up": 0.5478037595748901,
+      "target_time": "2026-05-31T13:00:00+00:00",
+      "prob_up": 0.5296233892440796,
       "direction": "up",
       "is_actionable": false,
-      "confidence": 0.09560751914978027,
-      "relative_confidence": 0.09560751914978027,
+      "confidence": 0.05924677848815918,
+      "relative_confidence": 0.05924677848815918,
       "confidence_gate": 0.75,
-      "scenario_price": 73536.01104046294,
-      "scenario_return_pct": 0.32772824699770337
+      "scenario_price": 73719.96357856243,
+      "scenario_return_pct": 0.2073793263897161
+    }
+  ],
+  "predicted_price_path": [
+    {
+      "step": 0,
+      "timestamp": "2026-05-30T05:00:00+00:00",
+      "price": 73567.4,
+      "prob_up": null,
+      "return_pct": 0.0,
+      "is_anchor": true
+    },
+    {
+      "step": 1,
+      "timestamp": "2026-05-30T06:00:00+00:00",
+      "price": 73574.65453522315,
+      "prob_up": 0.5296233892440796,
+      "return_pct": 0.009861073278583099,
+      "is_anchor": false
+    },
+    {
+      "step": 2,
+      "timestamp": "2026-05-30T07:00:00+00:00",
+      "price": 73578.24126559692,
+      "prob_up": 0.5147916674613953,
+      "return_pct": 0.014736507742463267,
+      "is_anchor": false
+    },
+    {
+      "step": 3,
+      "timestamp": "2026-05-30T08:00:00+00:00",
+      "price": 73585.43073143205,
+      "prob_up": 0.5296984910964966,
+      "return_pct": 0.024509132349459506,
+      "is_anchor": false
+    },
+    {
+      "step": 4,
+      "timestamp": "2026-05-30T09:00:00+00:00",
+      "price": 73586.36306511021,
+      "prob_up": 0.503854513168335,
+      "return_pct": 0.02577645140404705,
+      "is_anchor": false
+    },
+    {
+      "step": 5,
+      "timestamp": "2026-05-30T10:00:00+00:00",
+      "price": 73590.7143727285,
+      "prob_up": 0.5180174112319946,
+      "return_pct": 0.031691173982650866,
+      "is_anchor": false
+    },
+    {
+      "step": 6,
+      "timestamp": "2026-05-30T11:00:00+00:00",
+      "price": 73593.20404796259,
+      "prob_up": 0.5104312300682068,
+      "return_pct": 0.03507538388278775,
+      "is_anchor": false
+    },
+    {
+      "step": 7,
+      "timestamp": "2026-05-30T12:00:00+00:00",
+      "price": 73589.68736139535,
+      "prob_up": 0.4852621257305145,
+      "return_pct": 0.030295159806326133,
+      "is_anchor": false
+    },
+    {
+      "step": 8,
+      "timestamp": "2026-05-30T13:00:00+00:00",
+      "price": 73591.12537661931,
+      "prob_up": 0.5060471296310425,
+      "return_pct": 0.032249850639431976,
+      "is_anchor": false
+    },
+    {
+      "step": 9,
+      "timestamp": "2026-05-30T14:00:00+00:00",
+      "price": 73589.59607200505,
+      "prob_up": 0.4935457706451416,
+      "return_pct": 0.03017107034508637,
+      "is_anchor": false
+    },
+    {
+      "step": 10,
+      "timestamp": "2026-05-30T15:00:00+00:00",
+      "price": 73596.60935377513,
+      "prob_up": 0.5296235680580139,
+      "return_pct": 0.03970420835197608,
+      "is_anchor": false
+    },
+    {
+      "step": 11,
+      "timestamp": "2026-05-30T16:00:00+00:00",
+      "price": 73599.17289388583,
+      "prob_up": 0.5109003186225891,
+      "return_pct": 0.043188822611428535,
+      "is_anchor": false
+    },
+    {
+      "step": 12,
+      "timestamp": "2026-05-30T17:00:00+00:00",
+      "price": 73601.69659120012,
+      "prob_up": 0.5107501745223999,
+      "return_pct": 0.046619278648041274,
+      "is_anchor": false
+    },
+    {
+      "step": 13,
+      "timestamp": "2026-05-30T18:00:00+00:00",
+      "price": 73597.63998300322,
+      "prob_up": 0.4827084541320801,
+      "return_pct": 0.041105140324693146,
+      "is_anchor": false
+    },
+    {
+      "step": 14,
+      "timestamp": "2026-05-30T19:00:00+00:00",
+      "price": 73600.81225026191,
+      "prob_up": 0.5135374665260315,
+      "return_pct": 0.04541719601605099,
+      "is_anchor": false
+    },
+    {
+      "step": 15,
+      "timestamp": "2026-05-30T20:00:00+00:00",
+      "price": 73605.68898408223,
+      "prob_up": 0.5208621025085449,
+      "return_pct": 0.0520461292396357,
+      "is_anchor": false
+    },
+    {
+      "step": 16,
+      "timestamp": "2026-05-30T21:00:00+00:00",
+      "price": 73600.72408478765,
+      "prob_up": 0.47867822647094727,
+      "return_pct": 0.045297352886830566,
+      "is_anchor": false
+    },
+    {
+      "step": 17,
+      "timestamp": "2026-05-30T22:00:00+00:00",
+      "price": 73603.89127518836,
+      "prob_up": 0.5136380195617676,
+      "return_pct": 0.04960250761665286,
+      "is_anchor": false
+    },
+    {
+      "step": 18,
+      "timestamp": "2026-05-30T23:00:00+00:00",
+      "price": 73606.25242015344,
+      "prob_up": 0.510171115398407,
+      "return_pct": 0.05281200661357843,
+      "is_anchor": false
+    },
+    {
+      "step": 19,
+      "timestamp": "2026-05-31T00:00:00+00:00",
+      "price": 73601.74734888328,
+      "prob_up": 0.47935977578163147,
+      "return_pct": 0.04668827345166715,
+      "is_anchor": false
+    },
+    {
+      "step": 20,
+      "timestamp": "2026-05-31T01:00:00+00:00",
+      "price": 73595.41459909473,
+      "prob_up": 0.4706997871398926,
+      "return_pct": 0.03808018102411381,
+      "is_anchor": false
+    },
+    {
+      "step": 21,
+      "timestamp": "2026-05-31T02:00:00+00:00",
+      "price": 73595.31359798557,
+      "prob_up": 0.49953243136405945,
+      "return_pct": 0.03794289044547483,
+      "is_anchor": false
+    },
+    {
+      "step": 22,
+      "timestamp": "2026-05-31T03:00:00+00:00",
+      "price": 73597.72213126304,
+      "prob_up": 0.511974573135376,
+      "return_pct": 0.04121680426798502,
+      "is_anchor": false
+    },
+    {
+      "step": 23,
+      "timestamp": "2026-05-31T04:00:00+00:00",
+      "price": 73600.46356490346,
+      "prob_up": 0.5136992335319519,
+      "return_pct": 0.04494322879897705,
+      "is_anchor": false
+    },
+    {
+      "step": 24,
+      "timestamp": "2026-05-31T05:00:00+00:00",
+      "price": 73601.125117531,
+      "prob_up": 0.5033273696899414,
+      "return_pct": 0.045842475785473624,
+      "is_anchor": false
+    },
+    {
+      "step": 25,
+      "timestamp": "2026-05-31T06:00:00+00:00",
+      "price": 73595.014609973,
+      "prob_up": 0.4686129093170166,
+      "return_pct": 0.03753647671795868,
+      "is_anchor": false
+    },
+    {
+      "step": 26,
+      "timestamp": "2026-05-31T07:00:00+00:00",
+      "price": 73596.67258812732,
+      "prob_up": 0.5085256099700928,
+      "return_pct": 0.0397901626635111,
+      "is_anchor": false
+    },
+    {
+      "step": 27,
+      "timestamp": "2026-05-31T08:00:00+00:00",
+      "price": 73597.1261192607,
+      "prob_up": 0.5023325085639954,
+      "return_pct": 0.040406646504709265,
+      "is_anchor": false
+    },
+    {
+      "step": 28,
+      "timestamp": "2026-05-31T09:00:00+00:00",
+      "price": 73591.49184449972,
+      "prob_up": 0.4710141122341156,
+      "return_pct": 0.03274798959826963,
+      "is_anchor": false
+    },
+    {
+      "step": 29,
+      "timestamp": "2026-05-31T10:00:00+00:00",
+      "price": 73585.33709232617,
+      "prob_up": 0.4680454432964325,
+      "return_pct": 0.024381848925170146,
+      "is_anchor": false
+    },
+    {
+      "step": 30,
+      "timestamp": "2026-05-31T11:00:00+00:00",
+      "price": 73579.12358095862,
+      "prob_up": 0.4675348699092865,
+      "return_pct": 0.015935837012892584,
+      "is_anchor": false
+    },
+    {
+      "step": 31,
+      "timestamp": "2026-05-31T12:00:00+00:00",
+      "price": 73573.25227866764,
+      "prob_up": 0.4683475196361542,
+      "return_pct": 0.007954989122427314,
+      "is_anchor": false
+    },
+    {
+      "step": 32,
+      "timestamp": "2026-05-31T13:00:00+00:00",
+      "price": 73568.60719085242,
+      "prob_up": 0.47466933727264404,
+      "return_pct": 0.0016409317882937202,
+      "is_anchor": false
     }
   ]
 }
