@@ -67,8 +67,8 @@ window.addEventListener("DOMContentLoaded", async () => {
     el("dashboard").hidden  = true;
   }
 
-  el("updatedAt").textContent  = fmt.ts(fc?.generated_at || hist?.generated_at);
-  el("dataRange").textContent  = buildRangeLabel(state.rows, fc);
+  el("updatedAt").textContent = fmt.ts(fc?.generated_at || hist?.generated_at);
+  el("dataRange").textContent = buildRangeLabel(state.rows, fc);
 });
 
 /* ── Signal hero ───────────────────────────────────────── */
@@ -80,29 +80,29 @@ function renderSignal(fc) {
   }
   const f   = fc.forecasts[0];
   const dir = f.direction === "up" ? "up" : "down";
-  const conf    = f.confidence * 100;
-  const prob    = f.prob_up   * 100;
-  const gate    = f.confidence_gate * 100;
-  const arcClr  = dir === "up" ? "#22c55e" : "#ef4444";
+  const conf = f.confidence * 100;
+  const prob = f.prob_up   * 100;
+  const gate = f.confidence_gate * 100;
+  const arcClr = dir === "up" ? "#22c55e" : "#ef4444";
 
-  // ── Card 1: Direction
+  // Card 1: Direction
   const c1 = document.createElement("div");
   c1.className = `signal-card ${dir}`;
   c1.innerHTML = `
     <span class="sc-label">方向預測（32-Bar）</span>
-    <span class="sc-value ${dir}">${dir==="up"?"看漲 ▲":"看跌 ▼"}</span>
+    <span class="sc-value ${dir}">${dir === "up" ? "看漲 ▲" : "看跌 ▼"}</span>
     <span class="sc-sub">目標：${fmt.dtShort(f.target_time)}</span>
-    <span class="badge ${f.is_actionable?"badge-act":"badge-idle"}">${f.is_actionable?"✓ 可操作信號":`信心未達 ${gate.toFixed(0)}%`}</span>`;
+    <span class="badge ${f.is_actionable ? "badge-act" : "badge-idle"}">${f.is_actionable ? "✓ 可操作信號" : `信心未達 ${gate.toFixed(0)}%`}</span>`;
   wrap.appendChild(c1);
 
-  // ── Card 2: Probability gauge
-  const c2  = document.createElement("div");
+  // Card 2: Probability gauge (SVG semicircle)
+  const c2 = document.createElement("div");
   c2.className = `signal-card ${dir}`;
-  const cx=72, cy=64, r=52;
-  const endA = Math.PI * f.prob_up;   // 0→left(π), 1→right(0) on top semicircle
+  const cx = 72, cy = 64, r = 52;
+  const endA = Math.PI * f.prob_up;
   const x2 = cx + r * Math.cos(Math.PI - endA);
   const y2 = cy - r * Math.sin(Math.PI - endA);
-  const lArc = endA > Math.PI/2 ? 1 : 0;
+  const lArc = endA > Math.PI / 2 ? 1 : 0;
   c2.innerHTML = `
     <span class="sc-label">看漲機率</span>
     <div class="gauge-wrap">
@@ -116,18 +116,18 @@ function renderSignal(fc) {
         <text x="${cx+r}" y="${cy+15}" text-anchor="middle" fill="#64748b" font-size="9">100%</text>
       </svg>
     </div>
-    <span class="sc-sub" style="text-align:center">信心 ${conf.toFixed(1)}%／閾值 ${gate.toFixed(0)}%</span>
+    <span class="sc-sub" style="text-align:center">信心 ${conf.toFixed(1)}% ／閾值 ${gate.toFixed(0)}%</span>
     <div class="conf-track"><div class="conf-fill ${dir}" style="width:${Math.min(conf,100)}%"></div></div>`;
   wrap.appendChild(c2);
 
-  // ── Card 3: Scenario price
+  // Card 3: Scenario price
   const ret = f.scenario_return_pct;
   const c3 = document.createElement("div");
   c3.className = `signal-card ${dir}`;
   c3.innerHTML = `
     <span class="sc-label">情境目標價</span>
     <span class="sc-value">${fmt.money(f.scenario_price)}</span>
-    <span class="sc-sub">情境報酬 <strong style="color:var(--${dir})">${Number.isFinite(ret)?((ret>=0?"+":"")+ret.toFixed(2)+"%"):"—"}</strong></span>
+    <span class="sc-sub">情境報酬 <strong style="color:var(--${dir})">${Number.isFinite(ret) ? (ret >= 0 ? "+" : "") + ret.toFixed(2) + "%" : "—"}</strong></span>
     <span class="sc-sub" style="margin-top:4px">${fc.symbol} · ${fc.market} · ${fc.interval}</span>`;
   wrap.appendChild(c3);
 }
@@ -135,8 +135,8 @@ function renderSignal(fc) {
 /* ── Year slider ───────────────────────────────────────── */
 function initSlider() {
   const slider = el("yearSlider");
-  slider.min = "0"; slider.max = String(state.years.length-1);
-  slider.value = String(state.years.length-1);
+  slider.min = "0"; slider.max = String(state.years.length - 1);
+  slider.value = String(state.years.length - 1);
   el("currentYear").textContent = state.year;
   slider.addEventListener("input", e => {
     stopPlay();
@@ -153,7 +153,7 @@ function startPlay() {
   el("playPauseButton").textContent = "暫停";
   state.timer = setInterval(() => {
     const i = state.years.indexOf(state.year);
-    state.year = state.years[(i+1) % state.years.length];
+    state.year = state.years[(i + 1) % state.years.length];
     el("yearSlider").value = String(state.years.indexOf(state.year));
     el("currentYear").textContent = state.year;
     refreshYear();
@@ -172,20 +172,20 @@ function refreshYear() {
 }
 
 function yearRows() { return state.rows.filter(r => r.year === state.year); }
-function yearMeta(y) { return state.hist?.annual_metrics?.[String(y??state.year)] ?? {}; }
+function yearMeta(y) { return state.hist?.annual_metrics?.[String(y ?? state.year)] ?? {}; }
 
 /* ── Metric cards ──────────────────────────────────────── */
 function renderMetrics() {
   const m = yearMeta();
   const defs = [
-    ["年度最高價",   fmt.money(m.highest_price),              "日高價最高值"],
-    ["年度最低價",   fmt.money(m.lowest_price),               "日低價最低值"],
-    ["年化成長率",   fmt.pct(m.cagr),                         "CAGR"],
-    ["年度總量",     fmt.compact(m.total_volume),             "累計成交量"],
-    ["最高波動率",   fmt.pct2(m.highest_volatility),          "單日內波動高點"],
-    ["最低波動率",   fmt.pct2(m.lowest_volatility),           "單日內波動低點"],
+    ["年度最高價",  fmt.money(m.highest_price),       "日高價最高值"],
+    ["年度最低價",  fmt.money(m.lowest_price),        "日低價最低值"],
+    ["年化成長率",  fmt.pct(m.cagr),                  "CAGR"],
+    ["年度總量",    fmt.compact(m.total_volume),      "累計成交量"],
+    ["最高波動率",  fmt.pct2(m.highest_volatility),   "單日內波動高點"],
+    ["最低波動率",  fmt.pct2(m.lowest_volatility),    "單日內波動低點"],
   ];
-  el("metricGrid").innerHTML = defs.map(([l,v,s]) =>
+  el("metricGrid").innerHTML = defs.map(([l, v, s]) =>
     `<div class="metric-card"><span>${l}</span><strong>${v}</strong><small>${s}</small></div>`
   ).join("");
 }
@@ -204,14 +204,14 @@ function renderCharts() {
     { type:"scatter", mode:"lines", x:dates, y:rows.map(r=>r.trend_ma_proxy),
       name:"趨勢均線", line:{color:"#3b82f6",width:1.8,dash:"dot"},
       hovertemplate:"%{x}<br>均線 %{y:$,.0f}<extra></extra>" },
-  ], { ...LAYOUT,
-    yaxis:{...LAYOUT.yaxis, tickprefix:"$", tickformat:",.0f"},
+  ], {
+    ...LAYOUT,
+    yaxis: {...LAYOUT.yaxis, tickprefix:"$", tickformat:",.0f"},
   }, CFG);
 
   // 2. MVRV Z proxy
-  const mv = rows.map(r=>r.mvrv_z_proxy);
   Plotly.react("mvrvChart", [
-    { type:"scatter", mode:"lines", x:dates, y:mv,
+    { type:"scatter", mode:"lines", x:dates, y:rows.map(r=>r.mvrv_z_proxy),
       name:"MVRV Z 代理", line:{color:"#a78bfa",width:2},
       hovertemplate:"%{x}<br>%{y:.3f}<extra></extra>" },
     { type:"scatter", mode:"lines", x:[dates[0],dates.at(-1)], y:[0,0],
@@ -232,22 +232,24 @@ function renderCharts() {
     { type:"bar", x:dates, y:rows.map(r=>r.daily_volatility),
       name:"日波動率", marker:{color:"#f43f5e"},
       hovertemplate:"%{x}<br>%{y:.3%}<extra></extra>" },
-  ], { ...LAYOUT,
-    yaxis:{...LAYOUT.yaxis, tickformat:".1%"},
+  ], {
+    ...LAYOUT,
+    yaxis: {...LAYOUT.yaxis, tickformat:".1%"},
   }, CFG);
 
-  // 5. CAGR all years
+  // 5. CAGR all years (highlight current)
   const cagrs  = state.years.map(y => yearMeta(y).cagr ?? null);
   const colors = state.years.map(y => y === state.year ? "#f7931a" : "#334155");
   Plotly.react("cagrChart", [
     { type:"bar", x:state.years.map(String), y:cagrs,
       marker:{color:colors},
-      text:cagrs.map(v=>v==null?"":((v>=0?"+":"")+( v*100).toFixed(1)+"%")),
+      text: cagrs.map(v => v == null ? "" : (v >= 0 ? "+" : "") + (v * 100).toFixed(1) + "%"),
       textposition:"outside", cliponaxis:false,
       hovertemplate:"%{x}<br>CAGR %{y:.2%}<extra></extra>" },
-  ], { ...LAYOUT,
-    showlegend:false,
-    yaxis:{...LAYOUT.yaxis, tickformat:".0%"},
+  ], {
+    ...LAYOUT,
+    showlegend: false,
+    yaxis: {...LAYOUT.yaxis, tickformat:".0%"},
   }, CFG);
 }
 
@@ -273,17 +275,17 @@ function bindSort() {
 function drawTable() {
   let rows = [...state.rows];
   if (state.sortCol) {
-    rows.sort((a,b) => {
+    rows.sort((a, b) => {
       const av = a[state.sortCol], bv = b[state.sortCol];
-      if (av==null&&bv==null) return 0;
-      if (av==null) return 1; if (bv==null) return -1;
-      return (av<bv?-1:av>bv?1:0)*state.sortDir;
+      if (av == null && bv == null) return 0;
+      if (av == null) return 1; if (bv == null) return -1;
+      return (av < bv ? -1 : av > bv ? 1 : 0) * state.sortDir;
     });
   }
   el("historyRows").innerHTML = rows.slice(-1500).map(r => {
-    const cagr = yearMeta(r.year).cagr;
-    const retCls = r.daily_return>0?"cell-up":r.daily_return<0?"cell-down":"";
-    const mvCls  = r.mvrv_z_proxy>0?"cell-up":r.mvrv_z_proxy<0?"cell-down":"cell-na";
+    const cagr   = yearMeta(r.year).cagr;
+    const retCls = r.daily_return > 0 ? "cell-up" : r.daily_return < 0 ? "cell-down" : "";
+    const mvCls  = r.mvrv_z_proxy > 0 ? "cell-up" : r.mvrv_z_proxy < 0 ? "cell-down" : "cell-na";
     return `<tr>
       <td>${r.date}</td>
       <td>${r.year}</td>
@@ -294,9 +296,9 @@ function drawTable() {
       <td>${fmt.compact(r.volume)}</td>
       <td class="${mvCls}">${fmt.num3(r.mvrv_z_proxy)}</td>
       <td>${fmt.num3(r.mayer_multiple)}</td>
-      <td class="${retCls}">${r.daily_return!=null?fmt.pct(r.daily_return):"—"}</td>
+      <td class="${retCls}">${r.daily_return != null ? fmt.pct(r.daily_return) : "—"}</td>
       <td>${fmt.pct2(r.daily_volatility)}</td>
-      <td class="${cagr>=0?"cell-up":"cell-down"}">${fmt.pct(cagr)}</td>
+      <td class="${(cagr ?? 0) >= 0 ? "cell-up" : "cell-down"}">${fmt.pct(cagr)}</td>
     </tr>`;
   }).join("");
 }
@@ -305,10 +307,10 @@ function exportCsv() {
   const cols = ["date","year","open","high","low","close","volume","mvrv_z_proxy","mayer_multiple","daily_return","daily_volatility","cagr"];
   const lines = [cols.join(","), ...state.rows.map(r => {
     const e = {...r, cagr: yearMeta(r.year).cagr};
-    return cols.map(k => `"${String(e[k]??"").replaceAll('"','""')}"`).join(",");
+    return cols.map(k => `"${String(e[k] ?? "").replaceAll('"','""')}"`).join(",");
   })];
   const a = Object.assign(document.createElement("a"), {
-    href: URL.createObjectURL(new Blob([lines.join("\n")],{type:"text/csv;charset=utf-8"})),
+    href: URL.createObjectURL(new Blob([lines.join("\n")], {type:"text/csv;charset=utf-8"})),
     download: `btc_history_${new Date().toISOString().slice(0,10)}.csv`,
   });
   a.click(); URL.revokeObjectURL(a.href);
@@ -316,8 +318,8 @@ function exportCsv() {
 
 /* ── Helpers ───────────────────────────────────────────── */
 function buildRangeLabel(rows, fc) {
-  const start = rows.length ? rows[0].date : null;
-  const targets = (fc?.forecasts||[]).map(f=>f.target_time).filter(Boolean).sort();
-  const end = targets.length ? fmt.dtShort(targets.at(-1)) : (rows.at(-1)?.date ?? null);
+  const start   = rows.length ? rows[0].date : null;
+  const targets = (fc?.forecasts || []).map(f => f.target_time).filter(Boolean).sort();
+  const end     = targets.length ? fmt.dtShort(targets.at(-1)) : (rows.at(-1)?.date ?? null);
   return start && end ? `${start} → ${end}` : "—";
 }
