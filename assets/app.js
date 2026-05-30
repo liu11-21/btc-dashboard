@@ -77,9 +77,22 @@ window.addEventListener("DOMContentLoaded", async () => {
   $("updatedAt").textContent = fmtTs((fc && fc.generated_at) || (hist && hist.generated_at));
 
   if (S.rows.length >= 2) {
-    $("dataRange").textContent = S.rows[0].date + " → " + S.rows[S.rows.length - 1].date;
+    var startStr = S.rows[0].date + " 00:00";
+    var endStr   = S.rows[S.rows.length - 1].date + " 23:00";
+    // 若有 generated_at 就用推論時間當結尾（精確到分鐘）
+    if (fc && fc.generated_at) {
+      try {
+        var d = new Date(fc.generated_at);
+        endStr = d.getFullYear() + "-" +
+          String(d.getMonth() + 1).padStart(2, "0") + "-" +
+          String(d.getDate()).padStart(2, "0") + " " +
+          String(d.getHours()).padStart(2, "0") + ":" +
+          String(d.getMinutes()).padStart(2, "0");
+      } catch(e) {}
+    }
+    $("dataRange").textContent = startStr + " → " + endStr;
   } else if (S.rows.length === 1) {
-    $("dataRange").textContent = S.rows[0].date;
+    $("dataRange").textContent = S.rows[0].date + " 00:00";
   }
 
   renderSignal(fc);
@@ -131,10 +144,11 @@ function renderSignal(fc) {
 
   var c2 = mkEl("div", "signal-card " + cls);
   var cx = 70, cy = 60, rad = 48;
-  var endAngle = Math.PI * f.prob_up;
-  var arcX = cx - rad * Math.cos(endAngle);
+  // endAngle: prob=0.5→90°(頂), prob=1.0→0°(右端)
+  var endAngle = Math.PI * (1 - f.prob_up);
+  var arcX = cx + rad * Math.cos(endAngle);
   var arcY = cy - rad * Math.sin(endAngle);
-  var la = endAngle > Math.PI / 2 ? 1 : 0;
+  var la = 0; // 半圓弧永遠 <= 180°，large-arc 恆為 0
   c2.innerHTML =
     "<span class=\"sc-label\">看漲機率</span>" +
     "<div class=\"gauge-wrap\">" +
