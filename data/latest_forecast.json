@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-29T23:02:22.671034+08:00",
+  "generated_at": "2026-05-30T12:48:02.462849+08:00",
   "source": "binance_usdm_futures_github_actions_inference_only",
   "symbol": "BTCUSDT",
   "interval": "1h",
@@ -50,15 +50,15 @@
     {
       "horizon": "32bar",
       "horizon_bars": 32,
-      "target_time": "2026-05-30T23:00:00+00:00",
-      "prob_up": 0.5159814357757568,
+      "target_time": "2026-05-31T12:00:00+00:00",
+      "prob_up": 0.5478037595748901,
       "direction": "up",
       "is_actionable": false,
-      "confidence": 0.03196287155151367,
-      "relative_confidence": 0.03196287155151367,
+      "confidence": 0.09560751914978027,
+      "relative_confidence": 0.09560751914978027,
       "confidence_gate": 0.75,
-      "scenario_price": 73188.91573919196,
-      "scenario_return_pct": 0.08494250971182446
+      "scenario_price": 73536.01104046294,
+      "scenario_return_pct": 0.32772824699770337
     }
   ]
 }
