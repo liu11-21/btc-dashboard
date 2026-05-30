@@ -10,95 +10,112 @@
 <body>
 <main class="app-shell">
 
+  <!-- Header -->
   <header class="topbar">
-    <div>
-      <p class="eyebrow">BTCUSDT · USD-M Futures · Transformer AI</p>
+    <div class="topbar-left">
+      <p class="eyebrow">BTCUSDT · 1h · Transformer (256 lookback · 32-bar horizon)</p>
       <h1>BTC 預測儀表板</h1>
     </div>
-    <div class="status-panel" aria-live="polite">
-      <span class="status-label">最新更新</span>
-      <strong id="updatedAt">載入中…</strong>
-      <span class="status-label status-label-secondary">資料範圍</span>
-      <strong id="dataRange">—</strong>
+    <div class="meta-panel">
+      <div class="meta-row">
+        <span class="meta-label">推論時間</span>
+        <strong id="updatedAt">—</strong>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">資料範圍</span>
+        <strong id="dataRange">—</strong>
+      </div>
     </div>
   </header>
 
-  <!-- AI 信號區 -->
-  <p class="section-label">AI 推論信號</p>
-  <div class="signal-row" id="signalRow"></div>
+  <!-- AI Signal -->
+  <p class="section-label">最新 AI 信號</p>
+  <div class="signal-grid" id="signalGrid">
+    <div class="signal-card skeleton"><span class="sc-label">載入中…</span></div>
+    <div class="signal-card skeleton"><span class="sc-label">載入中…</span></div>
+    <div class="signal-card skeleton"><span class="sc-label">載入中…</span></div>
+  </div>
 
-  <!-- 空狀態 -->
+  <!-- Empty state -->
   <section id="emptyState" class="empty-state" hidden>
     <h2>尚無歷史資料</h2>
-    <p>執行推論後會自動產生 <code>data/dashboard_history.json</code>。</p>
+    <p>請先執行推論腳本產生 <code>data/dashboard_history.json</code>。</p>
   </section>
 
-  <!-- 年度歷史儀表板 -->
+  <!-- History dashboard -->
   <section id="dashboard" hidden>
 
-    <p class="section-label">年度歷史分析</p>
+    <p class="section-label">年度分析</p>
 
-    <div class="control-panel">
-      <button id="playPauseButton" class="play-button" type="button">播放</button>
-      <div class="year-control">
+    <!-- Year player -->
+    <div class="player-bar">
+      <button id="btnPlay" class="btn-play" type="button">播放</button>
+      <div class="slider-wrap">
         <label for="yearSlider">年度</label>
         <input id="yearSlider" type="range" min="0" max="0" value="0" step="1">
       </div>
-      <strong id="currentYear" class="year-readout">—</strong>
+      <strong id="lblYear" class="lbl-year">—</strong>
     </div>
 
-    <div class="metric-grid" id="metricGrid"></div>
+    <!-- Metric cards -->
+    <div class="kpi-grid" id="kpiGrid"></div>
 
-    <div class="chart-panel trend-panel">
-      <div class="panel-heading">
-        <h2>收盤價 ＆ 趨勢均線</h2>
-        <span>年度篩選 · 點擊圖例可切換</span>
+    <!-- Price chart -->
+    <div class="chart-card">
+      <div class="chart-head">
+        <h2>收盤價 ＆ 48-Bar 均線</h2>
+        <span id="priceDateRange" class="chart-range"></span>
       </div>
-      <div id="trendChart" class="chart"></div>
+      <div id="chartPrice" class="chart chart-tall"></div>
     </div>
 
-    <div class="chart-grid">
-      <div class="chart-panel">
-        <div class="panel-heading"><h2>MVRV Z-Score 代理</h2><span>價格偏離長期均線</span></div>
-        <div id="mvrvChart" class="chart"></div>
+    <!-- 2-column row -->
+    <div class="chart-row">
+      <div class="chart-card">
+        <div class="chart-head">
+          <h2>梅耶指數 (Mayer Multiple)</h2>
+          <span>收盤價 ÷ 48-Bar 均線</span>
+        </div>
+        <div id="chartMayer" class="chart"></div>
       </div>
-      <div class="chart-panel">
-        <div class="panel-heading"><h2>梅耶指數 (Mayer Multiple)</h2><span>收盤 ÷ 趨勢均線</span></div>
-        <div id="mayerChart" class="chart"></div>
-      </div>
-      <div class="chart-panel">
-        <div class="panel-heading"><h2>日波動率</h2><span>每日估計波動率</span></div>
-        <div id="volatilityChart" class="chart"></div>
-      </div>
-      <div class="chart-panel">
-        <div class="panel-heading"><h2>年度 CAGR</h2><span>亮色＝當前年度</span></div>
-        <div id="cagrChart" class="chart"></div>
+      <div class="chart-card">
+        <div class="chart-head">
+          <h2>日波動率</h2>
+          <span>每日 OHLCV 估計波動</span>
+        </div>
+        <div id="chartVol" class="chart"></div>
       </div>
     </div>
 
-    <div class="table-panel">
-      <div class="panel-heading">
-        <h2>完整歷史資料表</h2>
-        <button id="exportCsvButton" class="secondary-button" type="button">匯出 CSV</button>
+    <!-- CAGR bar -->
+    <div class="chart-card">
+      <div class="chart-head">
+        <h2>各年度 CAGR</h2>
+        <span>年初→年末收盤報酬（年化），亮色為當前年度</span>
       </div>
-      <p class="table-note">點擊欄位標題排序 · 顯示最新 1500 筆 · 不隨年度播放篩選</p>
-      <div class="table-wrap">
+      <div id="chartCagr" class="chart chart-short"></div>
+    </div>
+
+    <!-- Table -->
+    <div class="chart-card">
+      <div class="chart-head">
+        <h2>日資料總表</h2>
+        <button id="btnCsv" class="btn-secondary" type="button">匯出 CSV</button>
+      </div>
+      <p class="table-note">點擊欄位標題排序 · 顯示全部資料 · 不隨年度篩選</p>
+      <div class="tbl-wrap">
         <table>
           <thead><tr>
-            <th data-col="date">日期</th>
+            <th data-col="date" class="left">日期</th>
             <th data-col="year">年</th>
-            <th data-col="open">開盤</th>
-            <th data-col="high">最高</th>
-            <th data-col="low">最低</th>
             <th data-col="close">收盤</th>
-            <th data-col="volume">量</th>
-            <th data-col="mvrv_z_proxy">MVRV Z</th>
+            <th data-col="volume">成交量</th>
             <th data-col="mayer_multiple">Mayer</th>
             <th data-col="daily_return">日報酬</th>
             <th data-col="daily_volatility">日波動</th>
-            <th data-col="cagr">CAGR</th>
+            <th data-col="volatility_32bar">32B波動</th>
           </tr></thead>
-          <tbody id="historyRows"></tbody>
+          <tbody id="tblBody"></tbody>
         </table>
       </div>
     </div>
