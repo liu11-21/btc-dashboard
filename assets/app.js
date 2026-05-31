@@ -430,16 +430,28 @@ function renderCharts() {
     const c = meta(y).cagr;
     return c != null ? c : null;
   });
+  const cagrValues = allCagr.filter(v => Number.isFinite(Number(v))).map(Number);
+  const cagrMax = cagrValues.length ? Math.max(0, ...cagrValues) : 1;
+  const cagrMin = cagrValues.length ? Math.min(0, ...cagrValues) : 0;
+  const cagrPad = Math.max(0.12, (cagrMax - cagrMin) * 0.16);
   const barColors = S.years.map(y => isOverview() || y === S.year ? "#f7931a" : "#334155");
   Plotly.react("chartCagr", [
     { type: "bar", x: S.years.map(String), y: allCagr, marker: { color: barColors },
       text: allCagr.map(v => v == null ? "" : (v >= 0 ? "+" : "") + (v * 100).toFixed(1) + "%"),
-      textposition: "outside", cliponaxis: false,
+      textposition: allCagr.map(v => Number(v) < 0 ? "outside" : "outside"),
+      textfont: { size: 11, color: "#94a3b8" },
+      cliponaxis: false,
       hovertemplate: "%{x}<br>CAGR %{y:.1%}<extra></extra>" },
   ], Object.assign({}, BASE, {
     showlegend: false,
-    margin: Object.assign({}, BASE.margin, { t: 24 }),
-    yaxis: Object.assign({}, BASE.yaxis, { tickformat: ".0%" })
+    margin: Object.assign({}, BASE.margin, { t: 42, b: 54 }),
+    yaxis: Object.assign({}, BASE.yaxis, {
+      tickformat: ".0%",
+      range: [cagrMin - cagrPad, cagrMax + cagrPad],
+      zeroline: true,
+      zerolinecolor: "#334155"
+    }),
+    uniformtext: { minsize: 10, mode: "show" }
   }), CFG);
 }
 
