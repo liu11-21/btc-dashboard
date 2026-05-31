@@ -182,12 +182,14 @@ function renderSignal(fc) {
   const runtime = fc.runtime || {};
   const dir = f.direction === "up" ? "up" : "down";
   const cls = "is-" + dir;
-  const prob = Number(f.prob_up) * 100;
-  const downProb = 100 - prob;
+  const probRaw = Number(f.prob_up);
+  const prob = Number.isFinite(probRaw) ? probRaw * 100 : NaN;
+  const downProb = Number.isFinite(prob) ? 100 - prob : NaN;
   const conf = Number(f.confidence) * 100;
   const gate = Number(f.confidence_gate) * 100;
   const clr = dir === "up" ? "#22c55e" : "#ef4444";
   const dirText = dir === "up" ? "偏多" : "偏空";
+  const probLabel = f.prob_up_source === "sample_path_ratio" ? "樣本上漲比例" : "上漲機率";
   const horizonBars = f.horizon_bars || fc.max_horizon_bars || "--";
   const horizon = horizonBars + " 根 1h K 線";
 
@@ -207,7 +209,7 @@ function renderSignal(fc) {
   const arcX = cx + rad * Math.cos(endAngle);
   const arcY = cy - rad * Math.sin(endAngle);
   c2.innerHTML =
-    "<span class=\"sc-label\">上漲機率</span>" +
+    "<span class=\"sc-label\">" + probLabel + "</span>" +
     "<div class=\"gauge-wrap\">" +
     "<svg width=\"140\" height=\"72\" viewBox=\"0 0 140 72\">" +
     "<path d=\"M " + (cx - rad) + " " + cy + " A " + rad + " " + rad + " 0 0 1 " + (cx + rad) + " " + cy + "\" fill=\"none\" stroke=\"#242838\" stroke-width=\"9\" stroke-linecap=\"round\"/>" +
@@ -216,7 +218,7 @@ function renderSignal(fc) {
     "<text x=\"" + (cx - rad - 2) + "\" y=\"" + (cy + 14) + "\" text-anchor=\"end\" fill=\"#64748b\" font-size=\"9\">0%</text>" +
     "<text x=\"" + (cx + rad + 2) + "\" y=\"" + (cy + 14) + "\" fill=\"#64748b\" font-size=\"9\">100%</text>" +
     "</svg></div>" +
-    "<span class=\"sc-sub\" style=\"text-align:center\">下跌機率 " + downProb.toFixed(1) + "% · 信心 " + conf.toFixed(1) + "%</span>" +
+    "<span class=\"sc-sub\" style=\"text-align:center\">樣本下跌比例 " + downProb.toFixed(1) + "% · 分歧度 " + conf.toFixed(1) + "%</span>" +
     "<div class=\"conf-track\"><div class=\"conf-fill " + cls + "\" style=\"width:" + Math.min(conf, 100).toFixed(1) + "%\"></div></div>";
   wrap.appendChild(c2);
 
