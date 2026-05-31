@@ -438,7 +438,7 @@ function renderCharts() {
   const cagrLabelY = allCagr.map(v => {
     const n = Number(v);
     if (!Number.isFinite(n)) return null;
-    return n >= 0 ? n + cagrPad * 0.18 : n - cagrPad * 0.18;
+    return n >= 0 ? n + cagrPad * 0.18 : cagrPad * 0.18;
   });
   Plotly.react("chartCagr", [
     { type: "bar", x: S.years.map(String), y: allCagr, marker: { color: barColors },
