@@ -3,125 +3,127 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BTC Transformer 預測儀表板</title>
-  <link rel="stylesheet" href="./assets/styles.css">
+  <title>BTC v7.1 生成式預測儀表板</title>
+  <link rel="stylesheet" href="./assets/styles.css?v=20260531-v71">
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 </head>
 <body>
 <main class="app-shell">
-
-  <!-- Header -->
   <header class="topbar">
     <div class="topbar-left">
-      <p class="eyebrow">BTCUSDT · 1h · Transformer (256 lookback · 32-bar horizon)</p>
-      <h1>BTC 預測儀表板</h1>
+      <p class="eyebrow" id="modelLine">BTCUSDT · 1h · v7.1 Generative Transformer</p>
+      <h1>BTC 生成式 K 線預測儀表板</h1>
     </div>
     <div class="meta-panel">
       <div class="meta-row">
-        <span class="meta-label">推論時間</span>
-        <strong id="updatedAt">—</strong>
+        <span class="meta-label">更新時間</span>
+        <strong id="updatedAt">--</strong>
       </div>
       <div class="meta-row">
         <span class="meta-label">資料範圍</span>
-        <strong id="dataRange">—</strong>
+        <strong id="dataRange">--</strong>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">預測範圍</span>
+        <strong id="forecastRange">--</strong>
       </div>
     </div>
   </header>
 
-  <!-- AI Signal -->
-  <p class="section-label">最新 AI 信號</p>
+  <p class="section-label">最新模型輸出</p>
   <div class="signal-grid" id="signalGrid">
-    <div class="signal-card skeleton"><span class="sc-label">載入中…</span></div>
-    <div class="signal-card skeleton"><span class="sc-label">載入中…</span></div>
-    <div class="signal-card skeleton"><span class="sc-label">載入中…</span></div>
+    <div class="signal-card skeleton"><span class="sc-label">載入中</span></div>
+    <div class="signal-card skeleton"><span class="sc-label">載入中</span></div>
+    <div class="signal-card skeleton"><span class="sc-label">載入中</span></div>
   </div>
 
-  <!-- Empty state -->
   <section id="emptyState" class="empty-state" hidden>
-    <h2>尚無歷史資料</h2>
-    <p>請先執行推論腳本產生 <code>data/dashboard_history.json</code>。</p>
+    <h2>尚未取得歷史儀表板資料</h2>
+    <p>請確認 <code>data/dashboard_history.json</code> 已存在；最新預測仍會在上方顯示。</p>
   </section>
 
-  <!-- History dashboard -->
   <section id="dashboard" hidden>
+    <p class="section-label">歷史資料回顧</p>
 
-    <p class="section-label">年度分析</p>
-
-    <!-- Year player -->
     <div class="player-bar">
       <button id="btnPlay" class="btn-play" type="button">播放</button>
       <div class="slider-wrap">
-        <label for="yearSlider">年度</label>
-        <input id="yearSlider" type="range" min="0" max="0" value="0" step="1">
+        <div class="slider-line">
+          <label for="yearSlider">總覽 / 年份</label>
+          <input id="yearSlider" type="range" min="0" max="0" value="0" step="1">
+        </div>
+        <span id="selectedRange" class="selected-range">--</span>
       </div>
-      <strong id="lblYear" class="lbl-year">—</strong>
+      <strong id="lblYear" class="lbl-year">--</strong>
     </div>
 
-    <!-- Metric cards -->
     <div class="kpi-grid" id="kpiGrid"></div>
 
-    <!-- Price chart -->
     <div class="chart-card">
       <div class="chart-head">
-        <h2>收盤價 ＆ 48-Bar 均線</h2>
+        <h2>BTC 價格與 v7.1 生成路徑</h2>
         <span id="priceDateRange" class="chart-range"></span>
       </div>
       <div id="chartPrice" class="chart chart-tall"></div>
     </div>
 
-    <!-- 2-column row -->
+    <div class="chart-card">
+      <div class="chart-head">
+        <h2>未來 12 根 1h K 線估計</h2>
+        <span>由 v7.1 token 生成模型輸出 open / high / low / close</span>
+      </div>
+      <div id="chartCandles" class="chart"></div>
+    </div>
+
     <div class="chart-row">
       <div class="chart-card">
         <div class="chart-head">
-          <h2>梅耶指數 (Mayer Multiple)</h2>
-          <span>收盤價 ÷ 48-Bar 均線</span>
+          <h2>Mayer Multiple</h2>
+          <span>收盤價相對長期均線的估值參考</span>
         </div>
         <div id="chartMayer" class="chart"></div>
       </div>
       <div class="chart-card">
         <div class="chart-head">
-          <h2>日波動率</h2>
-          <span>每日 OHLCV 估計波動</span>
+          <h2>波動率</h2>
+          <span>日波動與 32-bar 波動參考</span>
         </div>
         <div id="chartVol" class="chart"></div>
       </div>
     </div>
 
-    <!-- CAGR bar -->
     <div class="chart-card">
       <div class="chart-head">
-        <h2>各年度 CAGR</h2>
-        <span>年初→年末收盤報酬（年化），亮色為當前年度</span>
+        <h2>年度 CAGR</h2>
+        <span>不同年度的報酬表現比較</span>
       </div>
       <div id="chartCagr" class="chart chart-short"></div>
     </div>
 
-    <!-- Table -->
     <div class="chart-card">
       <div class="chart-head">
-        <h2>日資料總表</h2>
+        <h2>歷史資料表</h2>
         <button id="btnCsv" class="btn-secondary" type="button">匯出 CSV</button>
       </div>
-      <p class="table-note">點擊欄位標題排序 · 顯示全部資料 · 不隨年度篩選</p>
+      <p class="table-note">點擊欄位標題可排序；資料來自 dashboard_history.json。</p>
       <div class="tbl-wrap">
         <table>
           <thead><tr>
             <th data-col="date" class="left">日期</th>
-            <th data-col="year">年</th>
-            <th data-col="close">收盤</th>
+            <th data-col="year">年份</th>
+            <th data-col="close">收盤價</th>
             <th data-col="volume">成交量</th>
             <th data-col="mayer_multiple">Mayer</th>
             <th data-col="daily_return">日報酬</th>
             <th data-col="daily_volatility">日波動</th>
-            <th data-col="volatility_32bar">32B波動</th>
+            <th data-col="volatility_32bar">32B 波動</th>
           </tr></thead>
           <tbody id="tblBody"></tbody>
         </table>
       </div>
     </div>
-
   </section>
 </main>
-<script src="./assets/app.js"></script>
+<script src="./assets/app.js?v=20260531-v71"></script>
 </body>
 </html>

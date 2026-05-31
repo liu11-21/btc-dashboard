@@ -45,7 +45,7 @@ body {
 .topbar-left { display: flex; flex-direction: column; gap: 3px; }
 .eyebrow {
   font-size: .7rem; font-weight: 700;
-  letter-spacing: .13em; text-transform: uppercase;
+  letter-spacing: .08em;
   color: var(--accent);
 }
 h1 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); font-weight: 800; }
@@ -107,7 +107,7 @@ h1 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); font-weight: 800; }
 .signal-card.skeleton { opacity: .4; animation: pulse 1.4s ease-in-out infinite; }
 @keyframes pulse { 0%,100%{opacity:.4} 50%{opacity:.7} }
 
-.sc-label { font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.sc-label { font-size: .68rem; font-weight: 700; letter-spacing: .06em; color: var(--muted); }
 .sc-value { font-size: 1.9rem; font-weight: 900; line-height: 1.1; }
 .sc-value.is-up   { color: var(--up); }
 .sc-value.is-down { color: var(--down); }
@@ -144,10 +144,16 @@ h1 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); font-weight: 800; }
   transition: opacity .15s;
 }
 .btn-play:hover { opacity: .82; }
-.slider-wrap { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 160px; }
+.slider-wrap { display: flex; flex-direction: column; gap: 5px; flex: 1; min-width: 160px; }
+.slider-line { display: flex; align-items: center; gap: 10px; width: 100%; }
 .slider-wrap label { font-size: .78rem; color: var(--muted); white-space: nowrap; }
 #yearSlider { flex: 1; accent-color: var(--accent); cursor: pointer; }
 .lbl-year { font-size: 1.5rem; font-weight: 900; min-width: 54px; text-align: right; }
+.selected-range {
+  font-size: .78rem;
+  color: var(--dim);
+  padding-left: calc(4.6rem + 10px);
+}
 
 /* ── KPI cards ─────────────────────────────────────────── */
 .kpi-grid {
