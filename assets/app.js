@@ -106,8 +106,9 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   S.hist = hist;
   S.fc = fc;
-  S.rows = Array.isArray(hist && hist.daily_rows)
-    ? hist.daily_rows.map(r => Object.assign({}, r, { year: Number(r.year) }))
+  const histRows = hist && (Array.isArray(hist.daily_rows) ? hist.daily_rows : hist.rows);
+  S.rows = Array.isArray(histRows)
+    ? histRows.map(r => Object.assign({}, r, { year: Number(r.year) }))
     : [];
   S.years = (Array.isArray(hist && hist.years)
     ? hist.years.map(Number)
