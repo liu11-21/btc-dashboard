@@ -180,16 +180,18 @@ function renderSignal(fc) {
 
   const f = fc.forecasts[0];
   const runtime = fc.runtime || {};
+  const h1Eval = fc.evaluation && fc.evaluation.h1 ? fc.evaluation.h1 : null;
   const dir = f.direction === "up" ? "up" : "down";
   const cls = "is-" + dir;
-  const probRaw = Number(f.prob_up);
+  const probRaw = h1Eval ? Number(h1Eval.direction_accuracy) : Number(f.prob_up);
   const prob = Number.isFinite(probRaw) ? probRaw * 100 : NaN;
-  const downProb = Number.isFinite(prob) ? 100 - prob : NaN;
+  const predUpRate = h1Eval ? Number(h1Eval.predicted_up_rate) * 100 : NaN;
+  const actualUpRate = h1Eval ? Number(h1Eval.actual_up_rate) * 100 : NaN;
   const conf = Number(f.confidence) * 100;
   const gate = Number(f.confidence_gate) * 100;
   const clr = dir === "up" ? "#22c55e" : "#ef4444";
   const dirText = dir === "up" ? "偏多" : "偏空";
-  const probLabel = f.prob_up_source === "sample_path_ratio" ? "樣本上漲比例" : "上漲機率";
+  const probLabel = h1Eval ? "評估集 h1 命中率" : (f.prob_up_source === "sample_path_ratio" ? "樣本上漲比例" : "上漲機率");
   const horizonBars = f.horizon_bars || fc.max_horizon_bars || "--";
   const horizon = horizonBars + " 根 1h K 線";
 
@@ -218,8 +220,12 @@ function renderSignal(fc) {
     "<text x=\"" + (cx - rad - 2) + "\" y=\"" + (cy + 14) + "\" text-anchor=\"end\" fill=\"#64748b\" font-size=\"9\">0%</text>" +
     "<text x=\"" + (cx + rad + 2) + "\" y=\"" + (cy + 14) + "\" fill=\"#64748b\" font-size=\"9\">100%</text>" +
     "</svg></div>" +
-    "<span class=\"sc-sub\" style=\"text-align:center\">樣本下跌比例 " + downProb.toFixed(1) + "% · 分歧度 " + conf.toFixed(1) + "%</span>" +
-    "<div class=\"conf-track\"><div class=\"conf-fill " + cls + "\" style=\"width:" + Math.min(conf, 100).toFixed(1) + "%\"></div></div>";
+    "<span class=\"sc-sub\" style=\"text-align:center\">" +
+    (h1Eval
+      ? "預測上漲 " + predUpRate.toFixed(1) + "% · 實際上漲 " + actualUpRate.toFixed(1) + "%"
+      : "分歧度 " + conf.toFixed(1) + "%") +
+    "</span>" +
+    "<div class=\"conf-track\"><div class=\"conf-fill " + cls + "\" style=\"width:" + Math.min(prob, 100).toFixed(1) + "%\"></div></div>";
   wrap.appendChild(c2);
 
   const c3 = mkEl("div", "signal-card " + cls);
