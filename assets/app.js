@@ -153,12 +153,12 @@ function updateHeader() {
       : "--";
   }
 
-  if (runtime.source_data_start_time && runtime.source_data_end_time) {
-    $("dataRange").textContent = fmtTs(runtime.source_data_start_time) + " → " + fmtTs(runtime.source_data_end_time);
+  if (runtime.fetched_start_time && runtime.fetched_end_time) {
+    $("dataRange").textContent = fmtTs(runtime.fetched_start_time) + " → " + fmtTs(runtime.fetched_end_time);
     return;
   }
-  if (runtime.fetched_start_time && runtime.fetched_end_time) {
-    $("dataRange").textContent = "即時推論：" + fmtTs(runtime.fetched_start_time) + " → " + fmtTs(runtime.fetched_end_time);
+  if (runtime.source_data_start_time && runtime.source_data_end_time) {
+    $("dataRange").textContent = fmtTs(runtime.source_data_start_time) + " → " + fmtTs(runtime.source_data_end_time);
     return;
   }
   $("dataRange").textContent = "--";
