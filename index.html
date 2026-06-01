@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BTC v8.4 回歸式預測儀表板</title>
+  <title>BTC v8.6.2 自回歸預測儀表板</title>
   <link rel="stylesheet" href="./assets/styles.css?v=20260531-v84">
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 </head>
@@ -11,8 +11,8 @@
 <main class="app-shell">
   <header class="topbar">
     <div class="topbar-left">
-      <p class="eyebrow" id="modelLine">BTCUSDT · 1h · v8.4 Regression Transformer</p>
-      <h1>BTC 回歸式 K 線預測儀表板</h1>
+      <p class="eyebrow" id="modelLine">BTCUSDT · 1h · v8.6.2 Autoregressive Transformer</p>
+      <h1>BTC 自回歸 K 線預測儀表板</h1>
     </div>
     <div class="meta-panel">
       <div class="meta-row">
@@ -61,7 +61,7 @@
 
     <div class="chart-card">
       <div class="chart-head">
-        <h2>BTC 價格與 v8.4 預測路徑</h2>
+        <h2>BTC 價格與 v8.6.2 預測路徑</h2>
         <span id="priceDateRange" class="chart-range"></span>
       </div>
       <div id="chartPrice" class="chart chart-tall"></div>
@@ -70,7 +70,7 @@
     <div class="chart-card">
       <div class="chart-head">
         <h2>未來 12 根 1h K 線估計</h2>
-        <span>由 v8.4 回歸模型輸出 open / high / low / close</span>
+        <span>由 v8.6.2 one-step 自回歸模型輸出 open / high / low / close</span>
       </div>
       <div id="chartCandles" class="chart"></div>
     </div>

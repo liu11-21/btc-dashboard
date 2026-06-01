@@ -141,7 +141,7 @@ function updateHeader() {
   $("modelLine").textContent = [
     fc.symbol || "BTCUSDT",
     fc.interval || "1h",
-    fc.model_version || "v8.4",
+    fc.model_version || "v8.6.2",
     horizon + "-bar horizon",
     runtime.samples ? runtime.samples + " samples" : null,
   ].filter(Boolean).join(" · ");
@@ -233,7 +233,7 @@ function renderSignal(fc) {
     "<span class=\"sc-label\">情境價格</span>" +
     "<span class=\"sc-value\">" + fmtUSD(f.scenario_price) + "</span>" +
     "<span class=\"sc-sub\">預估報酬 <strong style=\"color:var(--" + dir + ")\">" + fmtPctRaw(f.scenario_return_pct) + "</strong></span>" +
-    "<span class=\"sc-sub\">" + (fc.market || "USD-M Futures") + " · " + (fc.interval || "1h") + " · " + (fc.model_version || "v8.4") + "</span>" +
+    "<span class=\"sc-sub\">" + (fc.market || "USD-M Futures") + " · " + (fc.interval || "1h") + " · " + (fc.model_version || "v8.6.2") + "</span>" +
     "<span class=\"sc-sub\">Sampling: " + (runtime.samples || "--") + " · Temperature: " + fmtNum(runtime.temperature, 2) + "</span>";
   wrap.appendChild(c3);
 }
@@ -391,7 +391,7 @@ function renderCharts() {
         name: "抽樣 IQR", line: { color: "rgba(96,165,250,.25)", width: 0 }, fill: "tonexty",
         fillcolor: "rgba(96,165,250,.14)", hoverinfo: "skip" },
       { type: "scatter", mode: "lines+markers", x: pathX, y: path.map(p => Number(p.price)),
-        name: "v8.4 預測 close", line: { color: fcColor, width: 2.4, dash: "dash" },
+        name: "v8.6.2 預測 close", line: { color: fcColor, width: 2.4, dash: "dash" },
         marker: { size: 4, color: fcColor }, hovertemplate: "%{x}<br>預測 close %{y:$,.0f}<extra></extra>" }
     );
   }

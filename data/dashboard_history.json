@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
   "payload_type": "annual_dashboard_history",
-  "generated_at": "2026-05-31T20:18:20.724821+08:00",
+  "generated_at": "2026-06-01T08:02:08.609714+08:00",
   "symbol": "BTCUSDT",
   "interval": "1h",
-  "source": "btc_BTCUSDT_1h_v7.3.1.csv",
-  "data_quality_note": "Aggregated from the current v8.4 workspace source 1h OHLCV CSV; daily rows cover the actual available source data range.",
-  "source_data_start_time": "2020-06-01T11:00:00+00:00",
-  "source_data_end_time": "2026-05-31T11:00:00+00:00",
+  "source": "btc_BTCUSDT_1h_v8.6.csv",
+  "data_quality_note": "Aggregated from the current v8.6.2 workspace source 1h OHLCV CSV; daily rows cover the actual available source data range.",
+  "source_data_start_time": "2020-06-01T14:00:00+00:00",
+  "source_data_end_time": "2026-05-31T14:00:00+00:00",
   "source_data_rows_1h": 52561,
   "years": [
     2020,
@@ -23,7 +23,7 @@
       "year": 2020,
       "highest_price": 29376.7,
       "lowest_price": 8816.4,
-      "total_volume": 55297377.2,
+      "total_volume": 55269770.09200001,
       "lowest_daily_volume": 63233.596,
       "highest_volatility": 0.16086478029581452,
       "lowest_volatility": 0.00959680760592255,
@@ -101,13 +101,13 @@
       "year": 2026,
       "highest_price": 97932.1,
       "lowest_price": 59800.0,
-      "total_volume": 25046178.141000003,
-      "lowest_daily_volume": 23409.343,
+      "total_volume": 25058242.258,
+      "lowest_daily_volume": 25270.740999999998,
       "highest_volatility": 0.17628972404128646,
       "lowest_volatility": 0.004956361031771934,
-      "cagr": -0.36047644939430257,
+      "cagr": -0.366300312367005,
       "start_close": 88800.0,
-      "end_close": 73897.2,
+      "end_close": 73619.9,
       "rows": 151
     }
   },
@@ -115,14 +115,14 @@
     {
       "date": "2020-06-01",
       "year": 2020,
-      "open": 9536.83,
+      "open": 9548.51,
       "high": 10497.25,
-      "low": 9486.89,
+      "low": 9490.3,
       "close": 10232.48,
-      "volume": 248871.557,
+      "volume": 221264.449,
       "mayer_multiple": null,
       "daily_return": 0.0,
-      "daily_volatility": 0.0987404812909481,
+      "daily_volatility": 0.0984072287461105,
       "volatility_32bar": 0.0
     },
     {
@@ -28587,13 +28587,13 @@
       "year": 2026,
       "open": 73856.9,
       "high": 74250.0,
-      "low": 73701.0,
-      "close": 73897.2,
-      "volume": 23409.343,
-      "mayer_multiple": 0.9292737003811368,
-      "daily_return": 0.0005470044735216284,
-      "daily_volatility": 0.007429239538169241,
-      "volatility_32bar": 0.013296001156377845
+      "low": 73388.0,
+      "close": 73619.9,
+      "volume": 35473.46,
+      "mayer_multiple": 0.9258027331765997,
+      "daily_return": -0.00320755841032927,
+      "daily_volatility": 0.011708790693820557,
+      "volatility_32bar": 0.013301176703664453
     }
   ]
 }
