@@ -229,9 +229,7 @@ function renderSignal(fc) {
   c3.innerHTML =
     "<span class=\"sc-label\">H1 K 線預測收盤價</span>" +
     "<span class=\"sc-value\">" + fmtUSD(h1Candle ? h1Candle.price : f.scenario_price) + "</span>" +
-    "<span class=\"sc-sub\">預測時間：" + fmtTs(h1Candle ? h1Candle.timestamp : f.target_time) + "</span>" +
-    "<span class=\"sc-sub\">" + (fc.market || "USD-M Futures") + " · " + (fc.interval || "1h") + " · " + (fc.model_version || "v9.4a") + "</span>" +
-    "<span class=\"sc-sub\">Sampling: " + (runtime.samples || "--") + " · Temperature: " + fmtNum(runtime.temperature, 2) + "</span>";
+    "<span class=\"sc-sub\">預測時間：" + fmtTs(h1Candle ? h1Candle.timestamp : f.target_time) + "</span>";
   wrap.appendChild(c3);
 }
 
