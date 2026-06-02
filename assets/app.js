@@ -185,8 +185,6 @@ function renderSignal(fc) {
   const cls = "is-" + dir;
   const probRaw = h1Eval ? Number(h1Eval.direction_accuracy) : Number(f.prob_up);
   const prob = Number.isFinite(probRaw) ? probRaw * 100 : NaN;
-  const predUpRate = h1Eval ? Number(h1Eval.predicted_up_rate) * 100 : NaN;
-  const actualUpRate = h1Eval ? Number(h1Eval.actual_up_rate) * 100 : NaN;
   const conf = Number(f.confidence) * 100;
   const gate = Number(f.confidence_gate) * 100;
   const clr = dir === "up" ? "#22c55e" : "#ef4444";
@@ -220,11 +218,7 @@ function renderSignal(fc) {
     "<text x=\"" + (cx - rad - 2) + "\" y=\"" + (cy + 14) + "\" text-anchor=\"end\" fill=\"#64748b\" font-size=\"9\">0%</text>" +
     "<text x=\"" + (cx + rad + 2) + "\" y=\"" + (cy + 14) + "\" fill=\"#64748b\" font-size=\"9\">100%</text>" +
     "</svg></div>" +
-    "<span class=\"sc-sub\" style=\"text-align:center\">" +
-    (h1Eval
-      ? "預測上漲 " + predUpRate.toFixed(1) + "% · 實際上漲 " + actualUpRate.toFixed(1) + "%"
-      : "分歧度 " + conf.toFixed(1) + "%") +
-    "</span>" +
+    (h1Eval ? "" : "<span class=\"sc-sub\" style=\"text-align:center\">分歧度 " + conf.toFixed(1) + "%</span>") +
     "<div class=\"conf-track\"><div class=\"conf-fill " + cls + "\" style=\"width:" + Math.min(prob, 100).toFixed(1) + "%\"></div></div>";
   wrap.appendChild(c2);
 
