@@ -181,6 +181,8 @@ function renderSignal(fc) {
   const f = fc.forecasts[0];
   const runtime = fc.runtime || {};
   const h1Eval = fc.evaluation && fc.evaluation.h1 ? fc.evaluation.h1 : null;
+  const pricePath = Array.isArray(fc.predicted_price_path) ? fc.predicted_price_path : [];
+  const h1Candle = pricePath.find(p => p && Number(p.step) === 1 && Number.isFinite(Number(p.price)));
   const dir = f.direction === "up" ? "up" : "down";
   const cls = "is-" + dir;
   const probRaw = h1Eval ? Number(h1Eval.direction_accuracy) : Number(f.prob_up);
@@ -224,9 +226,9 @@ function renderSignal(fc) {
 
   const c3 = mkEl("div", "signal-card " + cls);
   c3.innerHTML =
-    "<span class=\"sc-label\">情境價格</span>" +
-    "<span class=\"sc-value\">" + fmtUSD(f.scenario_price) + "</span>" +
-    "<span class=\"sc-sub\">預估報酬 <strong style=\"color:var(--" + dir + ")\">" + fmtPctRaw(f.scenario_return_pct) + "</strong></span>" +
+    "<span class=\"sc-label\">H1 K 線預測收盤價</span>" +
+    "<span class=\"sc-value\">" + fmtUSD(h1Candle ? h1Candle.price : f.scenario_price) + "</span>" +
+    "<span class=\"sc-sub\">預測時間：" + fmtTs(h1Candle ? h1Candle.timestamp : f.target_time) + "</span>" +
     "<span class=\"sc-sub\">" + (fc.market || "USD-M Futures") + " · " + (fc.interval || "1h") + " · " + (fc.model_version || "v9.4a") + "</span>" +
     "<span class=\"sc-sub\">Sampling: " + (runtime.samples || "--") + " · Temperature: " + fmtNum(runtime.temperature, 2) + "</span>";
   wrap.appendChild(c3);
