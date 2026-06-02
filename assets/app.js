@@ -85,6 +85,8 @@ const BASE = {
   yaxis: { gridcolor: "#242838", linecolor: "#242838", zerolinecolor: "#242838", fixedrange: true },
 };
 const CFG = { responsive: true, displaylogo: false, displayModeBar: false, scrollZoom: false, doubleClick: false };
+const SYNC_HOVER_CHART_IDS = ["chartPrice", "chartCandles", "chartMayer", "chartVol"];
+let syncingHover = false;
 
 const S = {
   hist: null,
@@ -455,6 +457,8 @@ function renderCharts() {
     }),
     uniformtext: { minsize: 10, mode: "show" }
   }), CFG);
+
+  syncChartHovers();
 }
 
 function renderCandles(path) {
@@ -498,6 +502,48 @@ function renderCandles(path) {
     yaxis: Object.assign({}, BASE.yaxis, { tickprefix: "$", tickformat: ",.0f" }),
     showlegend: false,
   }), CFG);
+}
+
+function findHoverPoint(gd, x) {
+  const data = gd && Array.isArray(gd.data) ? gd.data : [];
+  for (let curveNumber = 0; curveNumber < data.length; curveNumber++) {
+    const trace = data[curveNumber];
+    if (!trace || trace.hoverinfo === "skip" || !Array.isArray(trace.x)) continue;
+    const pointNumber = trace.x.findIndex(v => String(v) === String(x));
+    if (pointNumber >= 0) return { curveNumber, pointNumber };
+  }
+  return null;
+}
+
+function syncChartHovers() {
+  SYNC_HOVER_CHART_IDS.forEach(id => {
+    const gd = $(id);
+    if (!gd || gd._syncHoverAttached || typeof gd.on !== "function") return;
+    gd._syncHoverAttached = true;
+    gd.on("plotly_hover", ev => {
+      if (syncingHover || !ev || !ev.points || !ev.points.length) return;
+      const x = ev.points[0].x;
+      syncingHover = true;
+      SYNC_HOVER_CHART_IDS.forEach(targetId => {
+        if (targetId === id) return;
+        const target = $(targetId);
+        const hoverPoint = findHoverPoint(target, x);
+        if (!target || !hoverPoint) return;
+        Plotly.Fx.hover(target, [hoverPoint], ["xy"]);
+      });
+      syncingHover = false;
+    });
+    gd.on("plotly_unhover", () => {
+      if (syncingHover) return;
+      syncingHover = true;
+      SYNC_HOVER_CHART_IDS.forEach(targetId => {
+        if (targetId === id) return;
+        const target = $(targetId);
+        if (target) Plotly.Fx.unhover(target);
+      });
+      syncingHover = false;
+    });
+  });
 }
 
 function initTable() {
