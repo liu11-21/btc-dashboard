@@ -79,11 +79,12 @@ const BASE = {
   font: { color: "#94a3b8", family: "Microsoft JhengHei,system-ui,sans-serif", size: 12 },
   margin: { t: 10, r: 16, b: 40, l: 62 },
   hovermode: "x unified",
+  dragmode: false,
   legend: { bgcolor: "rgba(0,0,0,0)", font: { color: "#94a3b8" }, orientation: "h", y: -0.22 },
-  xaxis: { gridcolor: "#242838", linecolor: "#242838", zerolinecolor: "#242838" },
-  yaxis: { gridcolor: "#242838", linecolor: "#242838", zerolinecolor: "#242838" },
+  xaxis: { gridcolor: "#242838", linecolor: "#242838", zerolinecolor: "#242838", fixedrange: true },
+  yaxis: { gridcolor: "#242838", linecolor: "#242838", zerolinecolor: "#242838", fixedrange: true },
 };
-const CFG = { responsive: true, displaylogo: false, displayModeBar: false };
+const CFG = { responsive: true, displaylogo: false, displayModeBar: false, scrollZoom: false, doubleClick: false };
 
 const S = {
   hist: null,
