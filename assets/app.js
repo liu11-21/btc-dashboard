@@ -191,7 +191,9 @@ function renderSignal(fc) {
   const probRaw = h1Eval ? Number(h1Eval.direction_accuracy) : Number(f.prob_up);
   const prob = Number.isFinite(probRaw) ? probRaw * 100 : NaN;
   const conf = Number(f.confidence) * 100;
-  const gate = Number(f.confidence_gate) * 100;
+  const signalDistance = Math.abs(Number(f.prob_up) - 0.5) * 100;
+  const signalGate = Number.isFinite(Number(f.confidence_gate)) ? Number(f.confidence_gate) * 100 : 20;
+  const signalActive = Number.isFinite(signalDistance) && signalDistance >= signalGate;
   const clr = dir === "up" ? "#22c55e" : "#ef4444";
   const dirText = dir === "up" ? "偏多" : "偏空";
   const probLabel = h1Eval ? "H1 方向準確率" : (f.prob_up_source === "sample_path_ratio" ? "樣本上漲比例" : "上漲機率");
@@ -203,8 +205,8 @@ function renderSignal(fc) {
     "<span class=\"sc-label\">" + horizon + " 方向</span>" +
     "<span class=\"sc-value " + cls + "\">" + dirText + "</span>" +
     "<span class=\"sc-sub\">目標時間：" + fmtTs(f.target_time) + "</span>" +
-    "<span class=\"badge " + (f.is_actionable ? "badge-on" : "badge-off") + "\">" +
-    (f.is_actionable ? "達到訊號門檻" : "低於門檻 " + gate.toFixed(0) + "%") + "</span>";
+    "<span class=\"badge " + (signalActive ? "badge-on" : "badge-off") + "\">" +
+    (Number.isFinite(signalDistance) ? "偏離50% " + signalDistance.toFixed(1) + "%" : "偏離50% --") + "</span>";
   wrap.appendChild(c1);
 
   const c2 = mkEl("div", "signal-card " + cls);
