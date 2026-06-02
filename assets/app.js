@@ -191,7 +191,7 @@ function renderSignal(fc) {
   const gate = Number(f.confidence_gate) * 100;
   const clr = dir === "up" ? "#22c55e" : "#ef4444";
   const dirText = dir === "up" ? "偏多" : "偏空";
-  const probLabel = h1Eval ? "評估集 h1 命中率" : (f.prob_up_source === "sample_path_ratio" ? "樣本上漲比例" : "上漲機率");
+  const probLabel = h1Eval ? "H1 方向準確率" : (f.prob_up_source === "sample_path_ratio" ? "樣本上漲比例" : "上漲機率");
   const horizonBars = f.horizon_bars || fc.max_horizon_bars || "--";
   const horizon = horizonBars + " 根 1h K 線";
 
@@ -206,7 +206,7 @@ function renderSignal(fc) {
 
   const c2 = mkEl("div", "signal-card " + cls);
   const cx = 70, cy = 60, rad = 48;
-  const arcProb = Math.max(0.001, Math.min(0.999, Number(f.prob_up)));
+  const arcProb = Math.max(0.001, Math.min(0.999, h1Eval ? probRaw : Number(f.prob_up)));
   const endAngle = Math.PI * (1 - arcProb);
   const arcX = cx + rad * Math.cos(endAngle);
   const arcY = cy - rad * Math.sin(endAngle);
