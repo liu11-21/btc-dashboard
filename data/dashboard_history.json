@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
   "payload_type": "annual_dashboard_history",
-  "generated_at": "2026-06-01T08:02:08.609714+08:00",
+  "generated_at": "2026-06-02T19:42:28.390260+08:00",
   "symbol": "BTCUSDT",
   "interval": "1h",
   "source": "btc_BTCUSDT_1h_v8.6.csv",
-  "data_quality_note": "Aggregated from the current v8.6.2 workspace source 1h OHLCV CSV; daily rows cover the actual available source data range.",
-  "source_data_start_time": "2020-06-01T14:00:00+00:00",
-  "source_data_end_time": "2026-05-31T14:00:00+00:00",
+  "data_quality_note": "Aggregated from the current v9.4a workspace source 1h OHLCV CSV; daily rows cover the actual available source data range.",
+  "source_data_start_time": "2020-06-03T11:00:00+00:00",
+  "source_data_end_time": "2026-06-02T11:00:00+00:00",
   "source_data_rows_1h": 52561,
   "years": [
     2020,
@@ -23,14 +23,14 @@
       "year": 2020,
       "highest_price": 29376.7,
       "lowest_price": 8816.4,
-      "total_volume": 55269770.09200001,
+      "total_volume": 54610747.325,
       "lowest_daily_volume": 63233.596,
       "highest_volatility": 0.16086478029581452,
       "lowest_volatility": 0.00959680760592255,
-      "cagr": 4.943300376803509,
-      "start_close": 10232.48,
+      "cagr": 5.673263450864405,
+      "start_close": 9663.59,
       "end_close": 28951.68,
-      "rows": 214
+      "rows": 212
     },
     "2021": {
       "year": 2021,
@@ -101,55 +101,29 @@
       "year": 2026,
       "highest_price": 97932.1,
       "lowest_price": 59800.0,
-      "total_volume": 25058242.258,
+      "total_volume": 25398043.851000004,
       "lowest_daily_volume": 25270.740999999998,
       "highest_volatility": 0.17628972404128646,
       "lowest_volatility": 0.004956361031771934,
-      "cagr": -0.366300312367005,
+      "cagr": -0.4469295312417635,
       "start_close": 88800.0,
-      "end_close": 73619.9,
-      "rows": 151
+      "end_close": 69390.0,
+      "rows": 153
     }
   },
   "rows": [
     {
-      "date": "2020-06-01",
-      "year": 2020,
-      "open": 9548.51,
-      "high": 10497.25,
-      "low": 9490.3,
-      "close": 10232.48,
-      "volume": 221264.449,
-      "mayer_multiple": null,
-      "daily_return": 0.0,
-      "daily_volatility": 0.0984072287461105,
-      "volatility_32bar": 0.0
-    },
-    {
-      "date": "2020-06-02",
-      "year": 2020,
-      "open": 10232.41,
-      "high": 10262.3,
-      "low": 9264.15,
-      "close": 9514.9,
-      "volume": 354168.517,
-      "mayer_multiple": null,
-      "daily_return": -0.07012767188403979,
-      "daily_volatility": 0.10490388758683745,
-      "volatility_32bar": 0.035063835942019894
-    },
-    {
       "date": "2020-06-03",
       "year": 2020,
-      "open": 9514.9,
+      "open": 9589.02,
       "high": 9694.75,
-      "low": 9382.33,
+      "low": 9472.62,
       "close": 9663.59,
-      "volume": 185389.412,
+      "volume": 101799.611,
       "mayer_multiple": null,
-      "daily_return": 0.015627069123164805,
-      "daily_volatility": 0.03232960007616218,
-      "volatility_32bar": 0.03729160057121659
+      "daily_return": 0.0,
+      "daily_volatility": 0.02298628149580013,
+      "volatility_32bar": 0.0
     },
     {
       "date": "2020-06-04",
@@ -162,7 +136,7 @@
       "mayer_multiple": null,
       "daily_return": 0.01290824631425802,
       "daily_volatility": 0.04536013804193361,
-      "volatility_32bar": 0.03498655973180866
+      "volatility_32bar": 0.00645412315712901
     },
     {
       "date": "2020-06-05",
@@ -175,7 +149,7 @@
       "mayer_multiple": null,
       "daily_return": -0.01747386939345108,
       "daily_volatility": 0.02854026446119432,
-      "volatility_32bar": 0.03142066447657234
+      "volatility_32bar": 0.012450041898035552
     },
     {
       "date": "2020-06-06",
@@ -188,7 +162,7 @@
       "mayer_multiple": null,
       "daily_return": 0.004856877561142392,
       "daily_volatility": 0.02180980960264905,
-      "volatility_32bar": 0.029348106906345223
+      "volatility_32bar": 0.011130217729671292
     },
     {
       "date": "2020-06-07",
@@ -201,7 +175,7 @@
       "mayer_multiple": null,
       "daily_return": 0.008269867549668852,
       "daily_volatility": 0.04619598683076207,
-      "volatility_32bar": 0.027837651058787494
+      "volatility_32bar": 0.010481224559505295
     },
     {
       "date": "2020-06-08",
@@ -214,7 +188,7 @@
       "mayer_multiple": null,
       "daily_return": 0.0035868521088022742,
       "daily_volatility": 0.018918341280741026,
-      "volatility_32bar": 0.026255194535665945
+      "volatility_32bar": 0.00959347751964527
     },
     {
       "date": "2020-06-09",
@@ -227,7 +201,7 @@
       "mayer_multiple": null,
       "daily_return": -0.0007373040034278633,
       "daily_volatility": 0.03479142745449589,
-      "volatility_32bar": 0.024795024103504565
+      "volatility_32bar": 0.008934264251065556
     },
     {
       "date": "2020-06-10",
@@ -240,7 +214,7 @@
       "mayer_multiple": null,
       "daily_return": 0.011597824729882023,
       "daily_volatility": 0.033867510235215274,
-      "volatility_32bar": 0.024030767641558745
+      "volatility_32bar": 0.008983900270943122
     },
     {
       "date": "2020-06-11",
@@ -253,7 +227,7 @@
       "mayer_multiple": null,
       "daily_return": -0.06140218654748253,
       "daily_volatility": 0.09862330688734576,
-      "volatility_32bar": 0.02838004320426679
+      "volatility_32bar": 0.021904590859536537
     },
     {
       "date": "2020-06-12",
@@ -266,7 +240,7 @@
       "mayer_multiple": null,
       "daily_return": 0.01949551790627968,
       "daily_volatility": 0.03298477308696245,
-      "volatility_32bar": 0.028247873939506684
+      "volatility_32bar": 0.02196917659170761
     },
     {
       "date": "2020-06-13",
@@ -279,7 +253,7 @@
       "mayer_multiple": null,
       "daily_return": 0.0010180877077803352,
       "daily_volatility": 0.016670996795704548,
-      "volatility_32bar": 0.027206187382493738
+      "volatility_32bar": 0.020963462573746594
     },
     {
       "date": "2020-06-14",
@@ -292,7 +266,7 @@
       "mayer_multiple": null,
       "daily_return": -0.013616671630473198,
       "daily_volatility": 0.025271933196354093,
-      "volatility_32bar": 0.02629836213583075
+      "volatility_32bar": 0.02034277322225321
     },
     {
       "date": "2020-06-15",
@@ -305,7 +279,7 @@
       "mayer_multiple": null,
       "daily_return": 0.008822638204379007,
       "daily_volatility": 0.0639354023186135,
-      "volatility_32bar": 0.025679412802732234
+      "volatility_32bar": 0.019781310392541954
     },
     {
       "date": "2020-06-16",
@@ -318,7 +292,7 @@
       "mayer_multiple": null,
       "daily_return": 0.010306717993294523,
       "daily_volatility": 0.023636638680886467,
-      "volatility_32bar": 0.025143732390715913
+      "volatility_32bar": 0.0193127525240938
     },
     {
       "date": "2020-06-17",
@@ -331,7 +305,7 @@
       "mayer_multiple": null,
       "daily_return": -0.006373488305641661,
       "daily_volatility": 0.035732070265212516,
-      "volatility_32bar": 0.024398466587115576
+      "volatility_32bar": 0.018708083014328282
     },
     {
       "date": "2020-06-18",
@@ -344,7 +318,7 @@
       "mayer_multiple": null,
       "daily_return": -0.008126067167453455,
       "daily_volatility": 0.022537757459023526,
-      "volatility_32bar": 0.023727168392667516
+      "volatility_32bar": 0.018190345417728664
     },
     {
       "date": "2020-06-19",
@@ -357,7 +331,7 @@
       "mayer_multiple": null,
       "daily_return": -0.00795067787016912,
       "daily_volatility": 0.022993445793488772,
-      "volatility_32bar": 0.023107028697816733
+      "volatility_32bar": 0.017708815788692066
     },
     {
       "date": "2020-06-20",
@@ -370,7 +344,7 @@
       "mayer_multiple": null,
       "daily_return": 0.005054260234232499,
       "daily_volatility": 0.024512403196907524,
-      "volatility_32bar": 0.022622076422139505
+      "volatility_32bar": 0.01728660000387791
     },
     {
       "date": "2020-06-21",
@@ -383,7 +357,7 @@
       "mayer_multiple": null,
       "daily_return": -0.006471000765444712,
       "daily_volatility": 0.015222450936190884,
-      "volatility_32bar": 0.02208212135710291
+      "volatility_32bar": 0.01685989378121323
     },
     {
       "date": "2020-06-22",
@@ -396,7 +370,7 @@
       "mayer_multiple": null,
       "daily_return": 0.04233922382393729,
       "daily_volatility": 0.05388670784216769,
-      "volatility_32bar": 0.023662600076357405
+      "volatility_32bar": 0.0190534935642009
     },
     {
       "date": "2020-06-23",
@@ -409,7 +383,7 @@
       "mayer_multiple": null,
       "daily_return": -0.005711784568787626,
       "daily_volatility": 0.014351627860617958,
-      "volatility_32bar": 0.023153559082492146
+      "volatility_32bar": 0.018638404955009808
     },
     {
       "date": "2020-06-24",
@@ -422,7 +396,7 @@
       "mayer_multiple": null,
       "daily_return": -0.03460047385393594,
       "daily_volatility": 0.05033123978318851,
-      "volatility_32bar": 0.02356428183279274
+      "volatility_32bar": 0.01958571438726364
     },
     {
       "date": "2020-06-25",
@@ -435,7 +409,7 @@
       "mayer_multiple": null,
       "daily_return": -0.00555471909145655,
       "daily_volatility": 0.0374077378538405,
-      "volatility_32bar": 0.023091058984485453
+      "volatility_32bar": 0.019172566084946652
     },
     {
       "date": "2020-06-26",
@@ -448,7 +422,7 @@
       "mayer_multiple": null,
       "daily_return": -0.009382756103495815,
       "daily_volatility": 0.02823583868541335,
-      "volatility_32bar": 0.022668353919522106
+      "volatility_32bar": 0.01883110230128507
     },
     {
       "date": "2020-06-27",
@@ -461,7 +435,7 @@
       "mayer_multiple": null,
       "daily_return": -0.01659281287424985,
       "daily_volatility": 0.04211256660746008,
-      "volatility_32bar": 0.022371648323618914
+      "volatility_32bar": 0.018669491402003514
     },
     {
       "date": "2020-06-28",
@@ -474,7 +448,7 @@
       "mayer_multiple": null,
       "daily_return": 0.011767317939609168,
       "daily_volatility": 0.028014044327408352,
-      "volatility_32bar": 0.02217379269179048
+      "volatility_32bar": 0.0185151128043296
     },
     {
       "date": "2020-06-29",
@@ -487,7 +461,7 @@
       "mayer_multiple": null,
       "daily_return": 0.008281764318630591,
       "daily_volatility": 0.02296103805656033,
-      "volatility_32bar": 0.021900735932110244
+      "volatility_32bar": 0.01827399485112456
     },
     {
       "date": "2020-06-30",
@@ -497,10 +471,10 @@
       "low": 9063.97,
       "close": 9138.87,
       "volume": 143469.832,
-      "mayer_multiple": 0.9639650485357699,
+      "mayer_multiple": null,
       "daily_return": -0.005507384531007076,
       "daily_volatility": 0.015431885999034962,
-      "volatility_32bar": 0.021535782209009587
+      "volatility_32bar": 0.01795866879193014
     },
     {
       "date": "2020-07-01",
@@ -510,10 +484,10 @@
       "low": 9090.0,
       "close": 9233.29,
       "volume": 161642.185,
-      "mayer_multiple": 0.9747443429515181,
+      "mayer_multiple": null,
       "daily_return": 0.010331693086782057,
       "daily_volatility": 0.021985662748597735,
-      "volatility_32bar": 0.021326542501084955
+      "volatility_32bar": 0.0177852666814499
     },
     {
       "date": "2020-07-02",
@@ -523,10 +497,10 @@
       "low": 8936.0,
       "close": 9087.72,
       "volume": 230747.519,
-      "mayer_multiple": 0.9605961947239903,
+      "mayer_multiple": 0.963401318519498,
       "daily_return": -0.015765777962134964,
       "daily_volatility": 0.03598152231802915,
-      "volatility_32bar": 0.021106467509052845
+      "volatility_32bar": 0.017675217071671225
     },
     {
       "date": "2020-07-03",
@@ -536,10 +510,10 @@
       "low": 9036.06,
       "close": 9057.52,
       "volume": 96947.338,
-      "mayer_multiple": 0.9586413777502939,
+      "mayer_multiple": 0.9614341405585481,
       "daily_return": -0.003323165766550784,
       "daily_volatility": 0.009766470292088887,
-      "volatility_32bar": 0.021097298242407962
+      "volatility_32bar": 0.01738964572611094
     },
     {
       "date": "2020-07-04",
@@ -549,10 +523,10 @@
       "low": 9042.84,
       "close": 9137.18,
       "volume": 100215.438,
-      "mayer_multiple": 0.9680100086408066,
+      "mayer_multiple": 0.9708033290423697,
       "daily_return": 0.00879490191575627,
       "daily_volatility": 0.016543397415832876,
-      "volatility_32bar": 0.017475379659038972
+      "volatility_32bar": 0.017217274029437478
     },
     {
       "date": "2020-07-05",
@@ -562,10 +536,10 @@
       "low": 8900.0,
       "close": 9071.86,
       "volume": 139545.566,
-      "mayer_multiple": 0.9621595348278371,
+      "mayer_multiple": 0.9649198754689569,
       "daily_return": -0.00714881396667244,
       "daily_volatility": 0.02715540142815259,
-      "volatility_32bar": 0.017241443256468862
+      "volatility_32bar": 0.01724144325646886
     },
     {
       "date": "2020-07-06",
@@ -575,10 +549,10 @@
       "low": 9058.1,
       "close": 9339.6,
       "volume": 199643.828,
-      "mayer_multiple": 0.9908159066004621,
+      "mayer_multiple": 0.9935907274077108,
       "daily_return": 0.029513242047386035,
       "daily_volatility": 0.03435907319371275,
-      "volatility_32bar": 0.017913734068234346
+      "volatility_32bar": 0.01791373406823434
     },
     {
       "date": "2020-07-07",
@@ -588,10 +562,10 @@
       "low": 9201.23,
       "close": 9258.51,
       "volume": 127833.975,
-      "mayer_multiple": 0.9826856610082149,
+      "mayer_multiple": 0.9853873131507157,
       "daily_return": -0.008682384684568945,
       "daily_volatility": 0.019308722461821658,
-      "volatility_32bar": 0.017730099897317095
+      "volatility_32bar": 0.017730099897317088
     },
     {
       "date": "2020-07-08",
@@ -601,10 +575,10 @@
       "low": 9233.47,
       "close": 9436.08,
       "volume": 170243.001,
-      "mayer_multiple": 1.001492304951721,
+      "mayer_multiple": 1.0041666105017315,
       "daily_return": 0.01917911197374078,
       "daily_volatility": 0.02506655306016912,
-      "volatility_32bar": 0.018050887001408528
+      "volatility_32bar": 0.01805088700140852
     },
     {
       "date": "2020-07-09",
@@ -614,10 +588,10 @@
       "low": 9164.33,
       "close": 9236.28,
       "volume": 188355.856,
-      "mayer_multiple": 0.980782416307084,
+      "mayer_multiple": 0.9833586954907846,
       "daily_return": -0.021174046849963046,
       "daily_volatility": 0.02993412932479305,
-      "volatility_32bar": 0.018324637568619604
+      "volatility_32bar": 0.018324637568619597
     },
     {
       "date": "2020-07-10",
@@ -627,10 +601,10 @@
       "low": 9121.42,
       "close": 9288.39,
       "volume": 140849.874,
-      "mayer_multiple": 0.9866534119892953,
+      "mayer_multiple": 0.9891954640909157,
       "daily_return": 0.005641881796567327,
       "daily_volatility": 0.02108223276585067,
-      "volatility_32bar": 0.01834594432291241
+      "volatility_32bar": 0.018345944322912408
     },
     {
       "date": "2020-07-11",
@@ -640,10 +614,10 @@
       "low": 9178.91,
       "close": 9233.5,
       "volume": 74976.521,
-      "mayer_multiple": 0.9812817385278617,
+      "mayer_multiple": 0.983769785306296,
       "daily_return": -0.00590952791603272,
       "daily_volatility": 0.013302647966643193,
-      "volatility_32bar": 0.018361847017845545
+      "volatility_32bar": 0.01836184701784554
     },
     {
       "date": "2020-07-12",
@@ -653,10 +627,10 @@
       "low": 9155.0,
       "close": 9300.69,
       "volume": 127841.882,
-      "mayer_multiple": 0.9886948374013782,
+      "mayer_multiple": 0.9911532283275515,
       "daily_return": 0.007276763957329235,
       "daily_volatility": 0.020858667475208828,
-      "volatility_32bar": 0.018280011390809984
+      "volatility_32bar": 0.018280011390809977
     },
     {
       "date": "2020-07-13",
@@ -666,10 +640,10 @@
       "low": 9200.0,
       "close": 9241.2,
       "volume": 136117.659,
-      "mayer_multiple": 0.9827737668201363,
+      "mayer_multiple": 0.9851784274252787,
       "daily_return": -0.006396299629382263,
       "daily_volatility": 0.015690602951997576,
-      "volatility_32bar": 0.014853361816834484
+      "volatility_32bar": 0.014853361816834477
     },
     {
       "date": "2020-07-14",
@@ -679,10 +653,10 @@
       "low": 9116.0,
       "close": 9254.17,
       "volume": 129704.278,
-      "mayer_multiple": 0.984507664662021,
+      "mayer_multiple": 0.9868768969935501,
       "daily_return": 0.0014034973812924179,
       "daily_volatility": 0.017613681183725822,
-      "volatility_32bar": 0.014438507255313933
+      "volatility_32bar": 0.014438507255313926
     },
     {
       "date": "2020-07-15",
@@ -692,10 +666,10 @@
       "low": 9156.0,
       "close": 9197.3,
       "volume": 104107.708,
-      "mayer_multiple": 0.9789261655721904,
+      "mayer_multiple": 0.9812500662153658,
       "daily_return": -0.006145337723426403,
       "daily_volatility": 0.012673284550900754,
-      "volatility_32bar": 0.014467498819915185
+      "volatility_32bar": 0.014467498819915178
     },
     {
       "date": "2020-07-16",
@@ -705,10 +679,10 @@
       "low": 9044.02,
       "close": 9132.0,
       "volume": 148089.45,
-      "mayer_multiple": 0.9725683862903678,
+      "mayer_multiple": 0.9748530525624818,
       "daily_return": -0.007099909756123957,
       "daily_volatility": 0.019599211563731882,
-      "volatility_32bar": 0.014330928436682698
+      "volatility_32bar": 0.014330928436682691
     },
     {
       "date": "2020-07-17",
@@ -718,10 +692,10 @@
       "low": 9087.0,
       "close": 9151.69,
       "volume": 80940.584,
-      "mayer_multiple": 0.9751910549924779,
+      "mayer_multiple": 0.977455552201583,
       "daily_return": 0.0021561541830925623,
       "daily_volatility": 0.010926943548131547,
-      "volatility_32bar": 0.014240606942646656
+      "volatility_32bar": 0.014240606942646648
     },
     {
       "date": "2020-07-18",
@@ -731,10 +705,10 @@
       "low": 9121.98,
       "close": 9171.8,
       "volume": 63233.596,
-      "mayer_multiple": 0.9777956722820544,
+      "mayer_multiple": 0.9800379738384791,
       "daily_return": 0.0021974083475291284,
       "daily_volatility": 0.00959680760592255,
-      "volatility_32bar": 0.014112128876614217
+      "volatility_32bar": 0.01411212887661421
     },
     {
       "date": "2020-07-19",
@@ -744,10 +718,10 @@
       "low": 9108.0,
       "close": 9210.51,
       "volume": 75554.579,
-      "mayer_multiple": 0.9822848963837032,
+      "mayer_multiple": 0.9845057692864445,
       "daily_return": 0.00422054558538143,
       "daily_volatility": 0.014286939594007297,
-      "volatility_32bar": 0.014107901946227469
+      "volatility_32bar": 0.01410790194622746
     },
     {
       "date": "2020-07-20",
@@ -757,10 +731,10 @@
       "low": 9131.01,
       "close": 9161.13,
       "volume": 72429.691,
-      "mayer_multiple": 0.9774678766425515,
+      "mayer_multiple": 0.9796515242943793,
       "daily_return": -0.005361266639958173,
       "daily_volatility": 0.009823024015596307,
-      "volatility_32bar": 0.014070764245930935
+      "volatility_32bar": 0.014070764245930926
     },
     {
       "date": "2020-07-21",
@@ -770,10 +744,10 @@
       "low": 9152.62,
       "close": 9388.01,
       "volume": 179211.347,
-      "mayer_multiple": 1.0016424569021378,
+      "mayer_multiple": 1.0038329228313698,
       "daily_return": 0.02476550381885212,
       "daily_volatility": 0.030568778686856913,
-      "volatility_32bar": 0.014678212233057661
+      "volatility_32bar": 0.014678212233057654
     },
     {
       "date": "2020-07-22",
@@ -783,10 +757,10 @@
       "low": 9272.0,
       "close": 9518.25,
       "volume": 126598.902,
-      "mayer_multiple": 1.0152348923327836,
+      "mayer_multiple": 1.0173977500430336,
       "daily_return": 0.013873014621841984,
       "daily_volatility": 0.028471620308355,
-      "volatility_32bar": 0.014845259185820745
+      "volatility_32bar": 0.014845259185820737
     },
     {
       "date": "2020-07-23",
@@ -796,10 +770,10 @@
       "low": 9439.86,
       "close": 9604.41,
       "volume": 166990.147,
-      "mayer_multiple": 1.023952998481854,
+      "mayer_multiple": 1.0260720058534663,
       "daily_return": 0.009052084154125062,
       "daily_volatility": 0.02482817788911543,
-      "volatility_32bar": 0.014858141787035557
+      "volatility_32bar": 0.014858141787035548
     },
     {
       "date": "2020-07-24",
@@ -809,10 +783,10 @@
       "low": 9470.0,
       "close": 9539.7,
       "volume": 133975.068,
-      "mayer_multiple": 1.016732983560346,
+      "mayer_multiple": 1.0187834556834052,
       "daily_return": -0.006737529947180465,
       "daily_volatility": 0.01886851787792069,
-      "volatility_32bar": 0.01293462299938447
+      "volatility_32bar": 0.01293462299938446
     },
     {
       "date": "2020-07-25",
@@ -822,10 +796,10 @@
       "low": 9526.31,
       "close": 9701.49,
       "volume": 133377.589,
-      "mayer_multiple": 1.0333380741451346,
+      "mayer_multiple": 1.0353572031792202,
       "daily_return": 0.01695965281927103,
       "daily_volatility": 0.021521436397914224,
-      "volatility_32bar": 0.01324126516823225
+      "volatility_32bar": 0.013241265168232241
     },
     {
       "date": "2020-07-26",
@@ -835,10 +809,10 @@
       "low": 9655.2,
       "close": 9939.69,
       "volume": 261998.786,
-      "mayer_multiple": 1.0576007784050734,
+      "mayer_multiple": 1.0595856672888444,
       "daily_return": 0.024552929498458553,
       "daily_volatility": 0.06487123843902569,
-      "volatility_32bar": 0.012336190145272579
+      "volatility_32bar": 0.012336190145272569
     },
     {
       "date": "2020-07-27",
@@ -848,10 +822,10 @@
       "low": 9928.61,
       "close": 11047.58,
       "volume": 744752.4,
-      "mayer_multiple": 1.17187447921952,
+      "mayer_multiple": 1.1738958783703046,
       "daily_return": 0.11146122263370373,
       "daily_volatility": 0.14115217993442902,
-      "volatility_32bar": 0.022589179236812428
+      "volatility_32bar": 0.02258917923681242
     },
     {
       "date": "2020-07-28",
@@ -861,10 +835,10 @@
       "low": 10580.0,
       "close": 10919.94,
       "volume": 499486.679,
-      "mayer_multiple": 1.1551814914891076,
+      "mayer_multiple": 1.1570204282244076,
       "daily_return": -0.01155366152587256,
       "daily_volatility": 0.063187160369013,
-      "volatility_32bar": 0.022637938593761585
+      "volatility_32bar": 0.022637938593761578
     },
     {
       "date": "2020-07-29",
@@ -874,10 +848,10 @@
       "low": 10844.34,
       "close": 11113.03,
       "volume": 356188.761,
-      "mayer_multiple": 1.1721190945453734,
+      "mayer_multiple": 1.173824344268547,
       "daily_return": 0.017682331587902445,
       "daily_volatility": 0.04683331188703703,
-      "volatility_32bar": 0.022364621704126005
+      "volatility_32bar": 0.022364621704126
     },
     {
       "date": "2020-07-30",
@@ -887,10 +861,10 @@
       "low": 10826.55,
       "close": 11111.96,
       "volume": 230327.988,
-      "mayer_multiple": 1.168655970331681,
+      "mayer_multiple": 1.170206529224547,
       "daily_return": -9.628337186184943e-05,
       "daily_volatility": 0.03320476315609498,
-      "volatility_32bar": 0.02237789879243471
+      "volatility_32bar": 0.0223778987924347
     },
     {
       "date": "2020-07-31",
@@ -900,10 +874,10 @@
       "low": 10971.78,
       "close": 11343.68,
       "volume": 307399.73099999997,
-      "mayer_multiple": 1.1892629343365637,
+      "mayer_multiple": 1.190681673172557,
       "daily_return": 0.02085320681499936,
       "daily_volatility": 0.04219442015289566,
-      "volatility_32bar": 0.022516505274550427
+      "volatility_32bar": 0.02251650527455042
     },
     {
       "date": "2020-08-01",
@@ -913,10 +887,10 @@
       "low": 11201.0,
       "close": 11811.42,
       "volume": 386322.642,
-      "mayer_multiple": 1.2335591930768626,
+      "mayer_multiple": 1.2348428887054523,
       "daily_return": 0.041233532680752694,
       "daily_volatility": 0.058117482910606914,
-      "volatility_32bar": 0.023174319342924868
+      "volatility_32bar": 0.02317431934292486
     },
     {
       "date": "2020-08-02",
@@ -926,10 +900,10 @@
       "low": 10490.0,
       "close": 11079.72,
       "volume": 492803.35099999997,
-      "mayer_multiple": 1.154262926851112,
+      "mayer_multiple": 1.1553471026445208,
       "daily_return": -0.06194852100763504,
       "daily_volatility": 0.15020686443339723,
-      "volatility_32bar": 0.026192635362905798
+      "volatility_32bar": 0.026192635362905795
     },
     {
       "date": "2020-08-03",
@@ -939,10 +913,10 @@
       "low": 10923.0,
       "close": 11227.07,
       "volume": 238654.59100000001,
-      "mayer_multiple": 1.1665220228509467,
+      "mayer_multiple": 1.1674975344841383,
       "daily_return": 0.013299072539739276,
       "daily_volatility": 0.049879443167273385,
-      "volatility_32bar": 0.025923072930751575
+      "volatility_32bar": 0.025923072930751568
     },
     {
       "date": "2020-08-04",
@@ -952,10 +926,10 @@
       "low": 11025.0,
       "close": 11200.05,
       "volume": 200044.934,
-      "mayer_multiple": 1.1607909064556587,
+      "mayer_multiple": 1.1616510761473697,
       "daily_return": -0.002406683132820997,
       "daily_volatility": 0.03592662532756543,
-      "volatility_32bar": 0.025912206391309194
+      "volatility_32bar": 0.025912206391309187
     },
     {
       "date": "2020-08-05",
@@ -965,10 +939,10 @@
       "low": 11103.0,
       "close": 11752.5,
       "volume": 263510.011,
-      "mayer_multiple": 1.2140368209237582,
+      "mayer_multiple": 1.214794365819392,
       "daily_return": 0.049325672653247166,
       "daily_volatility": 0.05918400340353112,
-      "volatility_32bar": 0.026940003837713822
+      "volatility_32bar": 0.02694000383771382
     },
     {
       "date": "2020-08-06",
@@ -978,10 +952,10 @@
       "low": 11571.78,
       "close": 11770.56,
       "volume": 236459.595,
-      "mayer_multiple": 1.211996856356459,
+      "mayer_multiple": 1.212619172739063,
       "daily_return": 0.0015366943203574124,
       "daily_volatility": 0.029245847266400223,
-      "volatility_32bar": 0.026827013364235812
+      "volatility_32bar": 0.026827013364235805
     },
     {
       "date": "2020-08-07",
@@ -991,10 +965,10 @@
       "low": 11318.93,
       "close": 11596.06,
       "volume": 273935.127,
-      "mayer_multiple": 1.1906315468859026,
+      "mayer_multiple": 1.191129161057747,
       "daily_return": -0.014825123018785802,
       "daily_volatility": 0.051833984991453974,
-      "volatility_32bar": 0.026852007619826104
+      "volatility_32bar": 0.0268520076198261
     },
     {
       "date": "2020-08-08",
@@ -1004,10 +978,10 @@
       "low": 11513.69,
       "close": 11765.72,
       "volume": 154707.303,
-      "mayer_multiple": 1.204419862945901,
+      "mayer_multiple": 1.2048060728701255,
       "daily_return": 0.014630831506563524,
       "daily_volatility": 0.025949113186443287,
-      "volatility_32bar": 0.026728942248783208
+      "volatility_32bar": 0.026728942248783204
     },
     {
       "date": "2020-08-09",
@@ -1017,10 +991,10 @@
       "low": 11526.9,
       "close": 11685.99,
       "volume": 125463.463,
-      "mayer_multiple": 1.192913595442349,
+      "mayer_multiple": 1.1931912865585457,
       "daily_return": -0.006776465868642112,
       "daily_volatility": 0.024311162340546276,
-      "volatility_32bar": 0.02676706241918029
+      "volatility_32bar": 0.026767062419180282
     },
     {
       "date": "2020-08-10",
@@ -1030,10 +1004,10 @@
       "low": 11384.9,
       "close": 11896.89,
       "volume": 290418.014,
-      "mayer_multiple": 1.2107854528778843,
+      "mayer_multiple": 1.2109566633259659,
       "daily_return": 0.018047251452380175,
       "daily_volatility": 0.060108145910401825,
-      "volatility_32bar": 0.02634107224583214
+      "volatility_32bar": 0.026341072245832133
     },
     {
       "date": "2020-08-11",
@@ -1043,10 +1017,10 @@
       "low": 11127.0,
       "close": 11392.64,
       "volume": 336861.638,
-      "mayer_multiple": 1.1569039573623239,
+      "mayer_multiple": 1.156991791860884,
       "daily_return": -0.04238502667503863,
       "daily_volatility": 0.07171296556373238,
-      "volatility_32bar": 0.027777592783467475
+      "volatility_32bar": 0.027777592783467468
     },
     {
       "date": "2020-08-12",
@@ -1056,10 +1030,10 @@
       "low": 11140.0,
       "close": 11568.36,
       "volume": 213799.491,
-      "mayer_multiple": 1.1719426294659716,
+      "mayer_multiple": 1.171951299659607,
       "daily_return": 0.01542399303409936,
       "daily_volatility": 0.04235691143774917,
-      "volatility_32bar": 0.02772104355968854
+      "volatility_32bar": 0.027721043559688532
     },
     {
       "date": "2020-08-13",
@@ -1069,10 +1043,10 @@
       "low": 11272.0,
       "close": 11790.0,
       "volume": 248214.725,
-      "mayer_multiple": 1.191266633507201,
+      "mayer_multiple": 1.1911886057887267,
       "daily_return": 0.019159154798087163,
       "daily_volatility": 0.04461407972858355,
-      "volatility_32bar": 0.027795793574047694
+      "volatility_32bar": 0.02779579357404769
     },
     {
       "date": "2020-08-14",
@@ -1082,10 +1056,10 @@
       "low": 11644.6,
       "close": 11767.89,
       "volume": 159019.959,
-      "mayer_multiple": 1.1860432845879678,
+      "mayer_multiple": 1.1858851779297872,
       "daily_return": -0.0018753180661578162,
       "daily_volatility": 0.01901955235815424,
-      "volatility_32bar": 0.027734620105417614
+      "volatility_32bar": 0.027734620105417607
     },
     {
       "date": "2020-08-15",
@@ -1095,10 +1069,10 @@
       "low": 11682.0,
       "close": 11859.04,
       "volume": 222262.987,
-      "mayer_multiple": 1.19216750690354,
+      "mayer_multiple": 1.191928603124493,
       "daily_return": 0.00774565363884272,
       "daily_volatility": 0.026273627544894013,
-      "volatility_32bar": 0.027709730197704736
+      "volatility_32bar": 0.02770973019770473
     },
     {
       "date": "2020-08-16",
@@ -1108,10 +1082,10 @@
       "low": 11688.0,
       "close": 11921.23,
       "volume": 165733.721,
-      "mayer_multiple": 1.1953391142204062,
+      "mayer_multiple": 1.1950214847772775,
       "daily_return": 0.005244100702923582,
       "daily_volatility": 0.021558178141013972,
-      "volatility_32bar": 0.02759667624126441
+      "volatility_32bar": 0.0275966762412644
     },
     {
       "date": "2020-08-17",
@@ -1121,10 +1095,10 @@
       "low": 11780.0,
       "close": 12298.06,
       "volume": 331435.112,
-      "mayer_multiple": 1.2294492390502993,
+      "mayer_multiple": 1.2290314514421279,
       "daily_return": 0.03160999326411784,
       "daily_volatility": 0.05849865751183521,
-      "volatility_32bar": 0.02773393685272512
+      "volatility_32bar": 0.027733936852725113
     },
     {
       "date": "2020-08-18",
@@ -1134,10 +1108,10 @@
       "low": 11810.0,
       "close": 11960.79,
       "volume": 291349.888,
-      "mayer_multiple": 1.1927767748511642,
+      "mayer_multiple": 1.1923011859501016,
       "daily_return": -0.027424650717267518,
       "daily_volatility": 0.04957866495440518,
-      "volatility_32bar": 0.028454290934687845
+      "volatility_32bar": 0.028454290934687838
     },
     {
       "date": "2020-08-19",
@@ -1147,10 +1121,10 @@
       "low": 11574.78,
       "close": 11763.87,
       "volume": 313267.066,
-      "mayer_multiple": 1.1706056712411577,
+      "mayer_multiple": 1.1700811327547813,
       "daily_return": -0.01646379545163823,
       "daily_volatility": 0.03929574196246631,
-      "volatility_32bar": 0.028773001703224922
+      "volatility_32bar": 0.028773001703224915
     },
     {
       "date": "2020-08-20",
@@ -1160,10 +1134,10 @@
       "low": 11676.03,
       "close": 11857.92,
       "volume": 130981.044,
-      "mayer_multiple": 1.1773486369822972,
+      "mayer_multiple": 1.1767628919744069,
       "daily_return": 0.007994818031821005,
       "daily_volatility": 0.01787581633203794,
-      "volatility_32bar": 0.028764127709422785
+      "volatility_32bar": 0.028764127709422778
     },
     {
       "date": "2020-08-21",
@@ -1173,10 +1147,10 @@
       "low": 11491.0,
       "close": 11538.53,
       "volume": 195106.536,
-      "mayer_multiple": 1.14360594209845,
+      "mayer_multiple": 1.1429944526874545,
       "daily_return": -0.026934740662780565,
       "daily_volatility": 0.03394539859063505,
-      "volatility_32bar": 0.029324508402314847
+      "volatility_32bar": 0.029324508402314844
     },
     {
       "date": "2020-08-22",
@@ -1186,10 +1160,10 @@
       "low": 11385.06,
       "close": 11670.47,
       "volume": 126696.73,
-      "mayer_multiple": 1.1545033626933736,
+      "mayer_multiple": 1.1538411597224036,
       "daily_return": 0.011434732153922544,
       "daily_volatility": 0.02605036472395717,
-      "volatility_32bar": 0.029172800586323343
+      "volatility_32bar": 0.02917280058632334
     },
     {
       "date": "2020-08-23",
@@ -1199,10 +1173,10 @@
       "low": 11522.15,
       "close": 11654.0,
       "volume": 95608.033,
-      "mayer_multiple": 1.1507797271596787,
+      "mayer_multiple": 1.1500779601478615,
       "daily_return": -0.0014112542168395192,
       "daily_volatility": 0.017320233396258825,
-      "volatility_32bar": 0.029185415904751568
+      "volatility_32bar": 0.02918541590475156
     },
     {
       "date": "2020-08-24",
@@ -1212,10 +1186,10 @@
       "low": 11595.0,
       "close": 11753.3,
       "volume": 108781.125,
-      "mayer_multiple": 1.1583966665538838,
+      "mayer_multiple": 1.1576475061928768,
       "daily_return": 0.008520679594988811,
       "daily_volatility": 0.020161146231271146,
-      "volatility_32bar": 0.029184259716166627
+      "volatility_32bar": 0.029184259716166623
     },
     {
       "date": "2020-08-25",
@@ -1225,10 +1199,10 @@
       "low": 11130.0,
       "close": 11327.17,
       "volume": 267234.771,
-      "mayer_multiple": 1.1148886471143158,
+      "mayer_multiple": 1.114141332730589,
       "daily_return": -0.03625620038627442,
       "daily_volatility": 0.05650131497982285,
-      "volatility_32bar": 0.03004956043973789
+      "volatility_32bar": 0.030049560439737884
     },
     {
       "date": "2020-08-26",
@@ -1238,10 +1212,10 @@
       "low": 11255.95,
       "close": 11466.22,
       "volume": 170305.024,
-      "mayer_multiple": 1.1269093631007145,
+      "mayer_multiple": 1.1261248973001678,
       "daily_return": 0.012275793512412925,
       "daily_volatility": 0.025529773543504275,
-      "volatility_32bar": 0.030006337327679267
+      "volatility_32bar": 0.03000633732767926
     },
     {
       "date": "2020-08-27",
@@ -1251,10 +1225,10 @@
       "low": 11130.82,
       "close": 11335.53,
       "volume": 253778.342,
-      "mayer_multiple": 1.112622869601606,
+      "mayer_multiple": 1.1118248905836448,
       "daily_return": -0.011397827706079111,
       "daily_volatility": 0.04077268552948122,
-      "volatility_32bar": 0.02995154995818023
+      "volatility_32bar": 0.029951549958180224
     },
     {
       "date": "2020-08-28",
@@ -1264,10 +1238,10 @@
       "low": 11283.19,
       "close": 11526.85,
       "volume": 129477.627,
-      "mayer_multiple": 1.1297336485372302,
+      "mayer_multiple": 1.1288956521638307,
       "daily_return": 0.016877905135445737,
       "daily_volatility": 0.022702646429857132,
-      "volatility_32bar": 0.023150448379178547
+      "volatility_32bar": 0.02315044837917854
     },
     {
       "date": "2020-08-29",
@@ -1277,10 +1251,10 @@
       "low": 11419.34,
       "close": 11466.66,
       "volume": 83715.22899999999,
-      "mayer_multiple": 1.1222902913187804,
+      "mayer_multiple": 1.1214334043264955,
       "daily_return": -0.005221721459028328,
       "daily_volatility": 0.014185473363647292,
-      "volatility_32bar": 0.023064090239433743
+      "volatility_32bar": 0.023064090239433736
     },
     {
       "date": "2020-08-30",
@@ -1290,10 +1264,10 @@
       "low": 11457.88,
       "close": 11714.14,
       "volume": 113266.67199999999,
-      "mayer_multiple": 1.144669255677289,
+      "mayer_multiple": 1.1437651984020745,
       "daily_return": 0.02158257068754099,
       "daily_volatility": 0.022728087593284835,
-      "volatility_32bar": 0.0231578346618143
+      "volatility_32bar": 0.023157834661814293
     },
     {
       "date": "2020-08-31",
@@ -1303,10 +1277,10 @@
       "low": 11575.78,
       "close": 11658.11,
       "volume": 127272.378,
-      "mayer_multiple": 1.137473204245663,
+      "mayer_multiple": 1.1365480202985245,
       "daily_return": -0.004783108277688242,
       "daily_volatility": 0.017878541204363184,
-      "volatility_32bar": 0.023184915427037163
+      "volatility_32bar": 0.023184915427037156
     },
     {
       "date": "2020-09-01",
@@ -1316,10 +1290,10 @@
       "low": 11531.34,
       "close": 11930.18,
       "volume": 211680.828,
-      "mayer_multiple": 1.1619695732758384,
+      "mayer_multiple": 1.1609916001739702,
       "daily_return": 0.023337402031718746,
       "daily_volatility": 0.04440251530152936,
-      "volatility_32bar": 0.02325273766395009
+      "volatility_32bar": 0.02325273766395008
     },
     {
       "date": "2020-09-02",
@@ -1329,10 +1303,10 @@
       "low": 11156.0,
       "close": 11396.96,
       "volume": 280411.964,
-      "mayer_multiple": 1.1087374094310292,
+      "mayer_multiple": 1.1077873181697708,
       "daily_return": -0.04469505070334234,
       "daily_volatility": 0.07063287051985793,
-      "volatility_32bar": 0.023509670503536466
+      "volatility_32bar": 0.023509670503536455
     },
     {
       "date": "2020-09-03",
@@ -1342,10 +1316,10 @@
       "low": 9901.16,
       "close": 10141.08,
       "volume": 487812.73699999996,
-      "mayer_multiple": 0.9867004526847376,
+      "mayer_multiple": 0.9858668992081604,
       "daily_return": -0.11019429742668219,
       "daily_volatility": 0.15519451577149576,
-      "volatility_32bar": 0.02841560068328193
+      "volatility_32bar": 0.02841560068328192
     },
     {
       "date": "2020-09-04",
@@ -1355,10 +1329,10 @@
       "low": 9878.65,
       "close": 10448.0,
       "volume": 432563.841,
-      "mayer_multiple": 1.0163876044585802,
+      "mayer_multiple": 1.0155345206480224,
       "daily_return": 0.030265021082567234,
       "daily_volatility": 0.07246554364471677,
-      "volatility_32bar": 0.028857368957789415
+      "volatility_32bar": 0.028857368957789408
     },
     {
       "date": "2020-09-05",
@@ -1368,10 +1342,10 @@
       "low": 9808.58,
       "close": 10168.71,
       "volume": 399307.282,
-      "mayer_multiple": 0.9893280757727122,
+      "mayer_multiple": 0.9885086575702237,
       "daily_return": -0.02673143185298632,
       "daily_volatility": 0.07466925499891343,
-      "volatility_32bar": 0.02918153214572395
+      "volatility_32bar": 0.029181532145723943
     },
     {
       "date": "2020-09-06",
@@ -1381,10 +1355,10 @@
       "low": 10003.0,
       "close": 10258.13,
       "volume": 190207.654,
-      "mayer_multiple": 0.9980479576058271,
+      "mayer_multiple": 0.9972303221788156,
       "daily_return": 0.008793642458089668,
       "daily_volatility": 0.03372641992253943,
-      "volatility_32bar": 0.027745662566268973
+      "volatility_32bar": 0.027745662566268967
     },
     {
       "date": "2020-09-07",
@@ -1394,10 +1368,10 @@
       "low": 9879.68,
       "close": 10378.76,
       "volume": 258476.949,
-      "mayer_multiple": 1.00968466583701,
+      "mayer_multiple": 1.008864044664288,
       "daily_return": 0.011759453233679107,
       "daily_volatility": 0.052113161880609916,
-      "volatility_32bar": 0.027864334127135282
+      "volatility_32bar": 0.027864334127135276
     },
     {
       "date": "2020-09-08",
@@ -1407,10 +1381,10 @@
       "low": 9842.01,
       "close": 10129.02,
       "volume": 317802.322,
-      "mayer_multiple": 0.9855330187742065,
+      "mayer_multiple": 0.9847430123047943,
       "daily_return": -0.024062604781303287,
       "daily_volatility": 0.05941147317312046,
-      "volatility_32bar": 0.028027320861933925
+      "volatility_32bar": 0.028027320861933918
     },
     {
       "date": "2020-09-09",
@@ -1420,10 +1394,10 @@
       "low": 9981.13,
       "close": 10219.29,
       "volume": 151222.689,
-      "mayer_multiple": 0.9943720654041349,
+      "mayer_multiple": 0.9935841029640626,
       "daily_return": 0.008912017154670382,
       "daily_volatility": 0.03570404597579683,
-      "volatility_32bar": 0.027927221092438424
+      "volatility_32bar": 0.027927221092438417
     },
     {
       "date": "2020-09-10",
@@ -1433,10 +1407,10 @@
       "low": 10211.67,
       "close": 10335.91,
       "volume": 187667.873,
-      "mayer_multiple": 1.005663200511856,
+      "mayer_multiple": 1.004873171768231,
       "daily_return": 0.011411751697035566,
       "daily_volatility": 0.026405996182242326,
-      "volatility_32bar": 0.028049511908521278
+      "volatility_32bar": 0.02804951190852127
     },
     {
       "date": "2020-09-11",
@@ -1446,10 +1420,10 @@
       "low": 10200.8,
       "close": 10387.81,
       "volume": 135929.303,
-      "mayer_multiple": 1.0106078531614422,
+      "mayer_multiple": 1.0098197981133883,
       "daily_return": 0.005021328552589965,
       "daily_volatility": 0.018969349651177785,
-      "volatility_32bar": 0.02782866872940189
+      "volatility_32bar": 0.027828668729401883
     },
     {
       "date": "2020-09-12",
@@ -1459,10 +1433,10 @@
       "low": 10271.0,
       "close": 10438.28,
       "volume": 97429.037,
-      "mayer_multiple": 1.0153664675733722,
+      "mayer_multiple": 1.0145796094957271,
       "daily_return": 0.004858579431083365,
       "daily_volatility": 0.019802112991795653,
-      "volatility_32bar": 0.026984307815938465
+      "volatility_32bar": 0.026984307815938455
     },
     {
       "date": "2020-09-13",
@@ -1472,10 +1446,10 @@
       "low": 10209.01,
       "close": 10327.72,
       "volume": 159021.843,
-      "mayer_multiple": 1.0045678022213942,
+      "mayer_multiple": 1.0037960433349788,
       "daily_return": -0.010591783320623827,
       "daily_volatility": 0.03592177169791588,
-      "volatility_32bar": 0.026827991002025146
+      "volatility_32bar": 0.02682799100202514
     },
     {
       "date": "2020-09-14",
@@ -1485,10 +1459,10 @@
       "low": 10241.57,
       "close": 10664.1,
       "volume": 205260.236,
-      "mayer_multiple": 1.0369224208346448,
+      "mayer_multiple": 1.0361267353581614,
       "daily_return": 0.03257059641431037,
       "daily_volatility": 0.04730732082407327,
-      "volatility_32bar": 0.027274487367088283
+      "volatility_32bar": 0.027274487367088276
     },
     {
       "date": "2020-09-15",
@@ -1498,10 +1472,10 @@
       "low": 10592.0,
       "close": 10776.78,
       "volume": 247657.23,
-      "mayer_multiple": 1.0474101661624782,
+      "mayer_multiple": 1.0466055278374673,
       "daily_return": 0.010566292514136322,
       "daily_volatility": 0.030753156323131775,
-      "volatility_32bar": 0.027372609762828435
+      "volatility_32bar": 0.027372609762828428
     },
     {
       "date": "2020-09-16",
@@ -1511,10 +1485,10 @@
       "low": 10661.9,
       "close": 10948.17,
       "volume": 252881.019,
-      "mayer_multiple": 1.063436945078412,
+      "mayer_multiple": 1.0626162977372975,
       "daily_return": 0.01590363726456312,
       "daily_volatility": 0.039018393028241276,
-      "volatility_32bar": 0.02750318201604593
+      "volatility_32bar": 0.027503182016045923
     },
     {
       "date": "2020-09-17",
@@ -1524,10 +1498,10 @@
       "low": 10740.0,
       "close": 10935.33,
       "volume": 186484.361,
-      "mayer_multiple": 1.0615840627518889,
+      "mayer_multiple": 1.0607616607214452,
       "daily_return": -0.0011727987417075036,
       "daily_volatility": 0.027434014337015894,
-      "volatility_32bar": 0.02747227380698561
+      "volatility_32bar": 0.027472273806985602
     },
     {
       "date": "2020-09-18",
@@ -1537,10 +1511,10 @@
       "low": 10810.1,
       "close": 10926.29,
       "volume": 136028.351,
-      "mayer_multiple": 1.0601214175764997,
+      "mayer_multiple": 1.0592973839170836,
       "daily_return": -0.0008266782986886545,
       "daily_volatility": 0.020583381916460173,
-      "volatility_32bar": 0.026792337348596363
+      "volatility_32bar": 0.026792337348596356
     },
     {
       "date": "2020-09-19",
@@ -1550,10 +1524,10 @@
       "low": 10880.0,
       "close": 11073.74,
       "volume": 126239.232,
-      "mayer_multiple": 1.0737077859675144,
+      "mayer_multiple": 1.0728682155935276,
       "daily_return": 0.013494974048830821,
       "daily_volatility": 0.026820207084508035,
-      "volatility_32bar": 0.026586837547793122
+      "volatility_32bar": 0.026586837547793115
     },
     {
       "date": "2020-09-20",
@@ -1563,10 +1537,10 @@
       "low": 10751.0,
       "close": 10914.28,
       "volume": 150450.562,
-      "mayer_multiple": 1.0576965095408533,
+      "mayer_multiple": 1.0568674170273318,
       "daily_return": -0.01439983239628162,
       "daily_volatility": 0.029585094023609402,
-      "volatility_32bar": 0.02655424226625463
+      "volatility_32bar": 0.026554242266254625
     },
     {
       "date": "2020-09-21",
@@ -1576,10 +1550,10 @@
       "low": 10281.0,
       "close": 10414.73,
       "volume": 333047.145,
-      "mayer_multiple": 1.0092024824231696,
+      "mayer_multiple": 1.0084170966564405,
       "daily_return": -0.04577031192162939,
       "daily_volatility": 0.06718273061327568,
-      "volatility_32bar": 0.027552636767116823
+      "volatility_32bar": 0.027552636767116816
     },
     {
       "date": "2020-09-22",
@@ -1589,10 +1563,10 @@
       "low": 10353.1,
       "close": 10523.32,
       "volume": 179900.68600000002,
-      "mayer_multiple": 1.0195486024982534,
+      "mayer_multiple": 1.018759235113984,
       "daily_return": 0.010426578509476592,
       "daily_volatility": 0.020999076337125507,
-      "volatility_32bar": 0.0273320022673526
+      "volatility_32bar": 0.02733200226735259
     },
     {
       "date": "2020-09-23",
@@ -1602,10 +1576,10 @@
       "low": 10132.21,
       "close": 10237.91,
       "volume": 203027.54200000002,
-      "mayer_multiple": 0.9919666399976274,
+      "mayer_multiple": 0.9912066005189304,
       "daily_return": -0.02712166882694811,
       "daily_volatility": 0.039044101774678756,
-      "volatility_32bar": 0.027540890633914166
+      "volatility_32bar": 0.027540890633914156
     },
     {
       "date": "2020-09-24",
@@ -1615,10 +1589,10 @@
       "low": 10191.0,
       "close": 10724.92,
       "volume": 241646.573,
-      "mayer_multiple": 1.038803148232445,
+      "mayer_multiple": 1.038008325421183,
       "daily_return": 0.047569279276727494,
       "daily_volatility": 0.06025872454060267,
-      "volatility_32bar": 0.028950013017626872
+      "volatility_32bar": 0.028950013017626865
     },
     {
       "date": "2020-09-25",
@@ -1628,10 +1602,10 @@
       "low": 10551.56,
       "close": 10683.51,
       "volume": 170930.773,
-      "mayer_multiple": 1.0344846001891759,
+      "mayer_multiple": 1.0336948520155287,
       "daily_return": -0.0038611010618261332,
       "daily_volatility": 0.01897597325223652,
-      "volatility_32bar": 0.028887368943554807
+      "volatility_32bar": 0.0288873689435548
     },
     {
       "date": "2020-09-26",
@@ -1641,10 +1615,10 @@
       "low": 10642.23,
       "close": 10726.5,
       "volume": 109340.491,
-      "mayer_multiple": 1.0383072571354783,
+      "mayer_multiple": 1.0375158235309054,
       "daily_return": 0.004023958418160278,
       "daily_volatility": 0.017300144501934435,
-      "volatility_32bar": 0.028261842299568372
+      "volatility_32bar": 0.028261842299568365
     },
     {
       "date": "2020-09-27",
@@ -1654,10 +1628,10 @@
       "low": 10584.0,
       "close": 10768.0,
       "volume": 123440.716,
-      "mayer_multiple": 1.0419537990052392,
+      "mayer_multiple": 1.0411603256543254,
       "daily_return": 0.003868922761385285,
       "daily_volatility": 0.019455794947994057,
-      "volatility_32bar": 0.028173482283181363
+      "volatility_32bar": 0.028173482283181357
     },
     {
       "date": "2020-09-28",
@@ -1667,10 +1641,10 @@
       "low": 10627.19,
       "close": 10691.45,
       "volume": 187105.377,
-      "mayer_multiple": 1.0342487741001576,
+      "mayer_multiple": 1.0334630250108665,
       "daily_return": -0.007109026745913738,
       "daily_volatility": 0.037114703805377146,
-      "volatility_32bar": 0.028136490939952716
+      "volatility_32bar": 0.02813649093995271
     },
     {
       "date": "2020-09-29",
@@ -1680,10 +1654,10 @@
       "low": 10631.49,
       "close": 10836.98,
       "volume": 146888.319,
-      "mayer_multiple": 1.0479082441330065,
+      "mayer_multiple": 1.047112096917453,
       "daily_return": 0.013611811307165933,
       "daily_volatility": 0.021449702776972987,
-      "volatility_32bar": 0.028075804567945045
+      "volatility_32bar": 0.028075804567945038
     },
     {
       "date": "2020-09-30",
@@ -1693,10 +1667,10 @@
       "low": 10660.05,
       "close": 10773.0,
       "volume": 132834.116,
-      "mayer_multiple": 1.041365415809457,
+      "mayer_multiple": 1.0405751712530795,
       "daily_return": -0.0059038588241373535,
       "daily_volatility": 0.017259816207184676,
-      "volatility_32bar": 0.028078867643822104
+      "volatility_32bar": 0.028078867643822097
     },
     {
       "date": "2020-10-01",
@@ -1706,10 +1680,10 @@
       "low": 10442.0,
       "close": 10612.63,
       "volume": 253619.622,
-      "mayer_multiple": 1.0256476843504951,
+      "mayer_multiple": 1.0248723983700057,
       "daily_return": -0.01488628979857054,
       "daily_volatility": 0.04646727531252851,
-      "volatility_32bar": 0.02785650525954214
+      "volatility_32bar": 0.027856505259542134
     },
     {
       "date": "2020-10-02",
@@ -1719,10 +1693,10 @@
       "low": 10371.03,
       "close": 10565.15,
       "volume": 224747.03699999998,
-      "mayer_multiple": 1.0208856463627083,
+      "mayer_multiple": 1.020117572909833,
       "daily_return": -0.004473914571600068,
       "daily_volatility": 0.027351244421517856,
-      "volatility_32bar": 0.027855827223029882
+      "volatility_32bar": 0.027855827223029875
     },
     {
       "date": "2020-10-03",
@@ -1732,10 +1706,10 @@
       "low": 10491.11,
       "close": 10537.96,
       "volume": 76315.911,
-      "mayer_multiple": 1.0181096285441227,
+      "mayer_multiple": 1.017347563290072,
       "daily_return": -0.0025735555103335583,
       "daily_volatility": 0.009953539394721505,
-      "volatility_32bar": 0.027461909611122978
+      "volatility_32bar": 0.027461909611122968
     },
     {
       "date": "2020-10-04",
@@ -1745,10 +1719,10 @@
       "low": 10514.0,
       "close": 10660.16,
       "volume": 90912.105,
-      "mayer_multiple": 1.0296713314461778,
+      "mayer_multiple": 1.0289030680503648,
       "daily_return": 0.011596172314186193,
       "daily_volatility": 0.01688530003302014,
-      "volatility_32bar": 0.026553273366912707
+      "volatility_32bar": 0.026553273366912697
     },
     {
       "date": "2020-10-05",
@@ -1758,10 +1732,10 @@
       "low": 10608.9,
       "close": 10785.0,
       "volume": 130589.137,
-      "mayer_multiple": 1.041387523433966,
+      "mayer_multiple": 1.0406115177850728,
       "daily_return": 0.011710893645123566,
       "daily_volatility": 0.016977283263792338,
-      "volatility_32bar": 0.018124260803535984
+      "volatility_32bar": 0.01812426080353597
     },
     {
       "date": "2020-10-06",
@@ -1771,10 +1745,10 @@
       "low": 10510.66,
       "close": 10593.65,
       "volume": 184895.25,
-      "mayer_multiple": 1.0227279215375642,
+      "mayer_multiple": 1.0219690986319925,
       "daily_return": -0.017742234585071848,
       "daily_volatility": 0.026557418831092226,
-      "volatility_32bar": 0.01771220152967561
+      "volatility_32bar": 0.0177122015296756
     },
     {
       "date": "2020-10-07",
@@ -1784,10 +1758,10 @@
       "low": 10540.29,
       "close": 10658.75,
       "volume": 106700.522,
-      "mayer_multiple": 1.0287814013440326,
+      "mayer_multiple": 1.0280206255228534,
       "daily_return": 0.006145190751063234,
       "daily_volatility": 0.012638442594112736,
-      "volatility_32bar": 0.01703832417480336
+      "volatility_32bar": 0.017038324174803346
     },
     {
       "date": "2020-10-08",
@@ -1797,10 +1771,10 @@
       "low": 10523.0,
       "close": 10919.45,
       "volume": 207938.861,
-      "mayer_multiple": 1.0535069793640197,
+      "mayer_multiple": 1.052727503792638,
       "daily_return": 0.02445877799929641,
       "daily_volatility": 0.03983717128609957,
-      "volatility_32bar": 0.017457369844567232
+      "volatility_32bar": 0.01745736984456722
     },
     {
       "date": "2020-10-09",
@@ -1810,10 +1784,10 @@
       "low": 10818.44,
       "close": 11050.47,
       "volume": 154336.818,
-      "mayer_multiple": 1.0656096961992827,
+      "mayer_multiple": 1.064819442180698,
       "daily_return": 0.011998772831964821,
       "daily_volatility": 0.02638439812967227,
-      "volatility_32bar": 0.017461554240908728
+      "volatility_32bar": 0.017461554240908714
     },
     {
       "date": "2020-10-10",
@@ -1823,10 +1797,10 @@
       "low": 11050.46,
       "close": 11294.79,
       "volume": 199398.012,
-      "mayer_multiple": 1.0884344899497749,
+      "mayer_multiple": 1.0876227664939948,
       "daily_return": 0.02210946683715731,
       "daily_volatility": 0.039269433074895665,
-      "volatility_32bar": 0.017143652722999156
+      "volatility_32bar": 0.017143652722999142
     },
     {
       "date": "2020-10-11",
@@ -1836,10 +1810,10 @@
       "low": 11273.77,
       "close": 11369.59,
       "volume": 146323.076,
-      "mayer_multiple": 1.094855341761173,
+      "mayer_multiple": 1.0940336461835751,
       "daily_return": 0.006622522419628796,
       "daily_volatility": 0.015564325538563758,
-      "volatility_32bar": 0.017125923524148857
+      "volatility_32bar": 0.017125923524148844
     },
     {
       "date": "2020-10-12",
@@ -1849,10 +1823,10 @@
       "low": 11157.0,
       "close": 11530.36,
       "volume": 254217.203,
-      "mayer_multiple": 1.1094234705093657,
+      "mayer_multiple": 1.108584014964674,
       "daily_return": 0.014140351586996669,
       "daily_volatility": 0.04986834756243517,
-      "volatility_32bar": 0.01717190643963817
+      "volatility_32bar": 0.017171906439638156
     },
     {
       "date": "2020-10-13",
@@ -1862,10 +1836,10 @@
       "low": 11308.0,
       "close": 11419.36,
       "volume": 199115.115,
-      "mayer_multiple": 1.0979402492171333,
+      "mayer_multiple": 1.0971042772677144,
       "daily_return": -0.00962675926857448,
       "daily_volatility": 0.022242927799806644,
-      "volatility_32bar": 0.017321722000874836
+      "volatility_32bar": 0.017321722000874822
     },
     {
       "date": "2020-10-14",
@@ -1875,10 +1849,10 @@
       "low": 11280.5,
       "close": 11417.13,
       "volume": 192936.97,
-      "mayer_multiple": 1.096937611765559,
+      "mayer_multiple": 1.0960974879289027,
       "daily_return": -0.00019528239761257282,
       "daily_volatility": 0.023604881436928547,
-      "volatility_32bar": 0.017328125183003234
+      "volatility_32bar": 0.01732812518300322
     },
     {
       "date": "2020-10-15",
@@ -1888,10 +1862,10 @@
       "low": 11250.0,
       "close": 11502.0,
       "volume": 215260.399,
-      "mayer_multiple": 1.1042447122900674,
+      "mayer_multiple": 1.1033933746641533,
       "daily_return": 0.007433566929692548,
       "daily_volatility": 0.0347313510693792,
-      "volatility_32bar": 0.01717086076792706
+      "volatility_32bar": 0.017170860767927044
     },
     {
       "date": "2020-10-16",
@@ -1901,10 +1875,10 @@
       "low": 11175.0,
       "close": 11318.92,
       "volume": 212339.085,
-      "mayer_multiple": 1.0859861609485693,
+      "mayer_multiple": 1.0851455647671884,
       "daily_return": -0.01591723178577642,
       "daily_volatility": 0.0321514773494291,
-      "volatility_32bar": 0.01667246269815516
+      "volatility_32bar": 0.016672462698155147
     },
     {
       "date": "2020-10-17",
@@ -1914,10 +1888,10 @@
       "low": 11250.0,
       "close": 11356.25,
       "volume": 95892.966,
-      "mayer_multiple": 1.0888661274002522,
+      "mayer_multiple": 1.0880197672214906,
       "daily_return": 0.00329801783209005,
       "daily_volatility": 0.015329884424876183,
-      "volatility_32bar": 0.01660362415403523
+      "volatility_32bar": 0.016603624154035216
     },
     {
       "date": "2020-10-18",
@@ -1927,10 +1901,10 @@
       "low": 11342.54,
       "close": 11501.1,
       "volume": 92472.19099999999,
-      "mayer_multiple": 1.1019459270320957,
+      "mayer_multiple": 1.101084530437219,
       "daily_return": 0.012755090809025926,
       "daily_volatility": 0.01629322412638786,
-      "volatility_32bar": 0.016528773490033143
+      "volatility_32bar": 0.01652877349003313
     },
     {
       "date": "2020-10-19",
@@ -1940,10 +1914,10 @@
       "low": 11404.01,
       "close": 11745.0,
       "volume": 230161.64800000002,
-      "mayer_multiple": 1.124315286155449,
+      "mayer_multiple": 1.123429153163893,
       "daily_return": 0.021206667188355954,
       "daily_volatility": 0.036269902085994024,
-      "volatility_32bar": 0.016863439448728902
+      "volatility_32bar": 0.01686343944872889
     },
     {
       "date": "2020-10-20",
@@ -1953,10 +1927,10 @@
       "low": 11673.0,
       "close": 11900.03,
       "volume": 312811.802,
-      "mayer_multiple": 1.1380406183573706,
+      "mayer_multiple": 1.1371350492512358,
       "daily_return": 0.013199659429544486,
       "daily_volatility": 0.03132597144713086,
-      "volatility_32bar": 0.016956504888445884
+      "volatility_32bar": 0.016956504888445873
     },
     {
       "date": "2020-10-21",
@@ -1966,10 +1940,10 @@
       "low": 11876.0,
       "close": 12796.07,
       "volume": 591963.069,
-      "mayer_multiple": 1.221820381338125,
+      "mayer_multiple": 1.220829513686178,
       "daily_return": 0.0752972891664978,
       "daily_volatility": 0.10659522806611718,
-      "volatility_32bar": 0.02108091624597707
+      "volatility_32bar": 0.02108091624597706
     },
     {
       "date": "2020-10-22",
@@ -1979,10 +1953,10 @@
       "low": 12675.5,
       "close": 12968.87,
       "volume": 343851.66599999997,
-      "mayer_multiple": 1.2362739887479919,
+      "mayer_multiple": 1.235251375072545,
       "daily_return": 0.01350414619488638,
       "daily_volatility": 0.03953852571581028,
-      "volatility_32bar": 0.02084671450740211
+      "volatility_32bar": 0.0208467145074021
     },
     {
       "date": "2020-10-23",
@@ -1992,10 +1966,10 @@
       "low": 12725.04,
       "close": 12925.82,
       "volume": 237042.52599999998,
-      "mayer_multiple": 1.2302004282470114,
+      "mayer_multiple": 1.2291641032651395,
       "daily_return": -0.003319487357032691,
       "daily_volatility": 0.024598826225338054,
-      "volatility_32bar": 0.018782878420048874
+      "volatility_32bar": 0.018782878420048863
     },
     {
       "date": "2020-10-24",
@@ -2005,10 +1979,10 @@
       "low": 12871.07,
       "close": 13110.88,
       "volume": 176146.631,
-      "mayer_multiple": 1.2456989174712343,
+      "mayer_multiple": 1.2446293150033472,
       "daily_return": 0.014317080076931221,
       "daily_volatility": 0.023379056173193597,
-      "volatility_32bar": 0.018817578414277503
+      "volatility_32bar": 0.018817578414277492
     },
     {
       "date": "2020-10-25",
@@ -2018,10 +1992,10 @@
       "low": 12715.0,
       "close": 13023.81,
       "volume": 206012.652,
-      "mayer_multiple": 1.2354307709792398,
+      "mayer_multiple": 1.23435156098715,
       "daily_return": -0.006641049265953103,
       "daily_volatility": 0.050215720284617175,
-      "volatility_32bar": 0.017973232224613504
+      "volatility_32bar": 0.01797323222461349
     },
     {
       "date": "2020-10-26",
@@ -2031,10 +2005,10 @@
       "low": 12729.0,
       "close": 13047.24,
       "volume": 316503.296,
-      "mayer_multiple": 1.2356691315313175,
+      "mayer_multiple": 1.2345717277696475,
       "daily_return": 0.0017990127312974558,
       "daily_volatility": 0.03916537137356253,
-      "volatility_32bar": 0.016505307562409553
+      "volatility_32bar": 0.01650530756240954
     },
     {
       "date": "2020-10-27",
@@ -2044,10 +2018,10 @@
       "low": 13041.3,
       "close": 13629.38,
       "volume": 411509.506,
-      "mayer_multiple": 1.288287710372476,
+      "mayer_multiple": 1.2871194826233117,
       "daily_return": 0.044617865540911295,
       "daily_volatility": 0.05477358471185048,
-      "volatility_32bar": 0.0176877890852364
+      "volatility_32bar": 0.017687789085236386
     },
     {
       "date": "2020-10-28",
@@ -2057,10 +2031,10 @@
       "low": 12876.0,
       "close": 13256.17,
       "volume": 476993.789,
-      "mayer_multiple": 1.250900897854626,
+      "mayer_multiple": 1.2497477127346461,
       "daily_return": -0.027382756955928955,
       "daily_volatility": 0.07445589487763057,
-      "volatility_32bar": 0.018711342605216744
+      "volatility_32bar": 0.018711342605216733
     },
     {
       "date": "2020-10-29",
@@ -2070,10 +2044,10 @@
       "low": 12965.0,
       "close": 13446.65,
       "volume": 355352.336,
-      "mayer_multiple": 1.266619907633078,
+      "mayer_multiple": 1.265431956851577,
       "daily_return": 0.01436915790910942,
       "daily_volatility": 0.049991633603908736,
-      "volatility_32bar": 0.018748920405376093
+      "volatility_32bar": 0.018748920405376082
     },
     {
       "date": "2020-10-30",
@@ -2083,10 +2057,10 @@
       "low": 13100.0,
       "close": 13549.12,
       "volume": 349890.573,
-      "mayer_multiple": 1.2739566479704458,
+      "mayer_multiple": 1.2727411660484076,
       "daily_return": 0.007620485399709276,
       "daily_volatility": 0.04174809876951415,
-      "volatility_32bar": 0.018573482312889952
+      "volatility_32bar": 0.018573482312889942
     },
     {
       "date": "2020-10-31",
@@ -2096,10 +2070,10 @@
       "low": 13403.36,
       "close": 13783.73,
       "volume": 357853.23,
-      "mayer_multiple": 1.2935132470351514,
+      "mayer_multiple": 1.292256616828949,
       "daily_return": 0.017315515694008132,
       "daily_volatility": 0.05344271833531268,
-      "volatility_32bar": 0.0186220704234065
+      "volatility_32bar": 0.018622070423406488
     },
     {
       "date": "2020-11-01",
@@ -2109,10 +2083,10 @@
       "low": 13605.9,
       "close": 13752.86,
       "volume": 198395.231,
-      "mayer_multiple": 1.2881853398792262,
+      "mayer_multiple": 1.2869125866277586,
       "daily_return": -0.002239596974113578,
       "daily_volatility": 0.02076804388323598,
-      "volatility_32bar": 0.018549103276215968
+      "volatility_32bar": 0.018549103276215957
     },
     {
       "date": "2020-11-02",
@@ -2122,10 +2096,10 @@
       "low": 13195.0,
       "close": 13540.54,
       "volume": 327991.768,
-      "mayer_multiple": 1.2661064478153992,
+      "mayer_multiple": 1.2648372805106076,
       "daily_return": -0.01543824339082922,
       "daily_volatility": 0.046434632592200896,
-      "volatility_32bar": 0.01857046191078538
+      "volatility_32bar": 0.01857046191078537
     },
     {
       "date": "2020-11-03",
@@ -2135,10 +2109,10 @@
       "low": 13276.33,
       "close": 14016.55,
       "volume": 348730.51,
-      "mayer_multiple": 1.3080112858636816,
+      "mayer_multiple": 1.3066775156691524,
       "daily_return": 0.03515443254109507,
       "daily_volatility": 0.05662377689231659,
-      "volatility_32bar": 0.019025657929720892
+      "volatility_32bar": 0.019025657929720878
     },
     {
       "date": "2020-11-04",
@@ -2148,10 +2122,10 @@
       "low": 13512.0,
       "close": 14134.31,
       "volume": 451433.42000000004,
-      "mayer_multiple": 1.3163259608532831,
+      "mayer_multiple": 1.3149606943852392,
       "daily_return": 0.008401496801994757,
       "daily_volatility": 0.05433586782800151,
-      "volatility_32bar": 0.018911615695455603
+      "volatility_32bar": 0.01891161569545559
     },
     {
       "date": "2020-11-05",
@@ -2161,10 +2135,10 @@
       "low": 14088.01,
       "close": 15598.75,
       "volume": 717489.697,
-      "mayer_multiple": 1.4485585387796054,
+      "mayer_multiple": 1.447017056641343,
       "daily_return": 0.10360887797140439,
       "daily_volatility": 0.108277265806555,
-      "volatility_32bar": 0.025032491138541182
+      "volatility_32bar": 0.025032491138541172
     },
     {
       "date": "2020-11-06",
@@ -2174,10 +2148,10 @@
       "low": 15177.0,
       "close": 15590.96,
       "volume": 559380.06,
-      "mayer_multiple": 1.4437686500999978,
+      "mayer_multiple": 1.4421947777926696,
       "daily_return": -0.0004993989903037122,
       "daily_volatility": 0.05177359187631812,
-      "volatility_32bar": 0.02513094516625421
+      "volatility_32bar": 0.025130945166254203
     },
     {
       "date": "2020-11-07",
@@ -2187,10 +2161,10 @@
       "low": 14350.0,
       "close": 14824.34,
       "volume": 457582.681,
-      "mayer_multiple": 1.369586445470225,
+      "mayer_multiple": 1.368066114560959,
       "daily_return": -0.04917080154140596,
       "daily_volatility": 0.0960582393550067,
-      "volatility_32bar": 0.026826603204894058
+      "volatility_32bar": 0.02682660320489405
     },
     {
       "date": "2020-11-08",
@@ -2200,10 +2174,10 @@
       "low": 14710.0,
       "close": 15473.2,
       "volume": 290616.393,
-      "mayer_multiple": 1.4257294041084143,
+      "mayer_multiple": 1.4241132620942167,
       "daily_return": 0.043769908137563096,
       "daily_volatility": 0.06255978078225577,
-      "volatility_32bar": 0.027410411526974054
+      "volatility_32bar": 0.027410411526974043
     },
     {
       "date": "2020-11-09",
@@ -2213,10 +2187,10 @@
       "low": 14822.0,
       "close": 15328.72,
       "volume": 474181.983,
-      "mayer_multiple": 1.4088301733437099,
+      "mayer_multiple": 1.4072025663624452,
       "daily_return": -0.009337435048987985,
       "daily_volatility": 0.06830315903741474,
-      "volatility_32bar": 0.027563776165217706
+      "volatility_32bar": 0.0275637761652177
     },
     {
       "date": "2020-11-10",
@@ -2226,10 +2200,10 @@
       "low": 15071.0,
       "close": 15294.68,
       "volume": 244073.495,
-      "mayer_multiple": 1.4022115706792277,
+      "mayer_multiple": 1.4005625061135603,
       "daily_return": -0.0022206681314551613,
       "daily_volatility": 0.026360146142318772,
-      "volatility_32bar": 0.027658933747172917
+      "volatility_32bar": 0.027658933747172907
     },
     {
       "date": "2020-11-11",
@@ -2239,10 +2213,10 @@
       "low": 15274.89,
       "close": 15690.24,
       "volume": 330772.852,
-      "mayer_multiple": 1.4346406824101035,
+      "mayer_multiple": 1.4329212318259579,
       "daily_return": 0.025862587514089874,
       "daily_volatility": 0.04621407958068204,
-      "volatility_32bar": 0.0277154753159849
+      "volatility_32bar": 0.027715475315984894
     },
     {
       "date": "2020-11-12",
@@ -2252,10 +2226,10 @@
       "low": 15437.7,
       "close": 16289.02,
       "volume": 471759.126,
-      "mayer_multiple": 1.4849857983422168,
+      "mayer_multiple": 1.4831683857894709,
       "daily_return": 0.03816257750040797,
       "daily_volatility": 0.05570009736620123,
-      "volatility_32bar": 0.028111046622235923
+      "volatility_32bar": 0.028111046622235916
     },
     {
       "date": "2020-11-13",
@@ -2265,10 +2239,10 @@
       "low": 15955.6,
       "close": 16320.54,
       "volume": 306656.359,
-      "mayer_multiple": 1.4834994402892396,
+      "mayer_multiple": 1.4816473024873025,
       "daily_return": 0.0019350458161386808,
       "daily_volatility": 0.03213067704867616,
-      "volatility_32bar": 0.028157875538232246
+      "volatility_32bar": 0.02815787553823224
     },
     {
       "date": "2020-11-14",
@@ -2278,10 +2252,10 @@
       "low": 15700.0,
       "close": 16064.51,
       "volume": 266206.937,
-      "mayer_multiple": 1.4562137974684348,
+      "mayer_multiple": 1.4543633022745668,
       "daily_return": -0.015687593670307476,
       "daily_volatility": 0.03901893054939116,
-      "volatility_32bar": 0.02831793747428387
+      "volatility_32bar": 0.028317937474283864
     },
     {
       "date": "2020-11-15",
@@ -2291,10 +2265,10 @@
       "low": 15768.0,
       "close": 15952.27,
       "volume": 210318.453,
-      "mayer_multiple": 1.4422104150767487,
+      "mayer_multiple": 1.4403476650368077,
       "daily_return": -0.00698682997489497,
       "daily_volatility": 0.024650410255092195,
-      "volatility_32bar": 0.028427126185401424
+      "volatility_32bar": 0.028427126185401417
     },
     {
       "date": "2020-11-16",
@@ -2304,10 +2278,10 @@
       "low": 15862.0,
       "close": 16707.07,
       "volume": 342459.32899999997,
-      "mayer_multiple": 1.505901809870084,
+      "mayer_multiple": 1.5039200753093958,
       "daily_return": 0.047316149989938605,
       "daily_volatility": 0.061051997747061576,
-      "volatility_32bar": 0.029113835022909717
+      "volatility_32bar": 0.02911383502290971
     },
     {
       "date": "2020-11-17",
@@ -2317,10 +2291,10 @@
       "low": 16550.0,
       "close": 17670.01,
       "volume": 524094.697,
-      "mayer_multiple": 1.587163415899212,
+      "mayer_multiple": 1.5850288901220253,
       "daily_return": 0.057636677167211214,
       "daily_volatility": 0.0758403645498785,
-      "volatility_32bar": 0.029705055589203628
+      "volatility_32bar": 0.02970505558920362
     },
     {
       "date": "2020-11-18",
@@ -2330,10 +2304,10 @@
       "low": 17215.03,
       "close": 17788.32,
       "volume": 732937.0970000001,
-      "mayer_multiple": 1.5922241324451238,
+      "mayer_multiple": 1.59003739512096,
       "daily_return": 0.006695525356239296,
       "daily_volatility": 0.07336105939178074,
-      "volatility_32bar": 0.029671078263431946
+      "volatility_32bar": 0.029671078263431936
     },
     {
       "date": "2020-11-19",
@@ -2343,10 +2317,10 @@
       "low": 17347.27,
       "close": 17811.68,
       "volume": 406500.977,
-      "mayer_multiple": 1.588825175297946,
+      "mayer_multiple": 1.5865991966865447,
       "daily_return": 0.0013132212597930515,
       "daily_volatility": 0.04787476532252991,
-      "volatility_32bar": 0.029759372000842624
+      "volatility_32bar": 0.029759372000842617
     },
     {
       "date": "2020-11-20",
@@ -2356,10 +2330,10 @@
       "low": 17748.92,
       "close": 18664.31,
       "volume": 407926.802,
-      "mayer_multiple": 1.6585068442051905,
+      "mayer_multiple": 1.6561315856828753,
       "daily_return": 0.0478691510289877,
       "daily_volatility": 0.058008037800486606,
-      "volatility_32bar": 0.030312186909235792
+      "volatility_32bar": 0.030312186909235785
     },
     {
       "date": "2020-11-21",
@@ -2369,10 +2343,10 @@
       "low": 18302.08,
       "close": 18721.99,
       "volume": 342412.49,
-      "mayer_multiple": 1.6573113274932303,
+      "mayer_multiple": 1.6548875050084495,
       "daily_return": 0.0030903901617578278,
       "daily_volatility": 0.03653030473790437,
-      "volatility_32bar": 0.030382176890040108
+      "volatility_32bar": 0.0303821768900401
     },
     {
       "date": "2020-11-22",
@@ -2382,10 +2356,10 @@
       "low": 17645.98,
       "close": 18435.2,
       "volume": 373779.417,
-      "mayer_multiple": 1.6260523857652533,
+      "mayer_multiple": 1.62362906292569,
       "daily_return": -0.015318350239477807,
       "daily_volatility": 0.06151384308279815,
-      "volatility_32bar": 0.028784114557442984
+      "volatility_32bar": 0.028784114557442977
     },
     {
       "date": "2020-11-23",
@@ -2395,10 +2369,10 @@
       "low": 18013.97,
       "close": 18382.07,
       "volume": 364221.378,
-      "mayer_multiple": 1.6156620468830318,
+      "mayer_multiple": 1.6132112983835947,
       "daily_return": -0.002881986634264977,
       "daily_volatility": 0.043448860764864906,
-      "volatility_32bar": 0.028896178213742636
+      "volatility_32bar": 0.02889617821374263
     },
     {
       "date": "2020-11-24",
@@ -2408,10 +2382,10 @@
       "low": 18000.0,
       "close": 19179.64,
       "volume": 477968.289,
-      "mayer_multiple": 1.6792571003559975,
+      "mayer_multiple": 1.6766603376317304,
       "daily_return": 0.04338847583541994,
       "daily_volatility": 0.07507961567578954,
-      "volatility_32bar": 0.029294408438314743
+      "volatility_32bar": 0.029294408438314736
     },
     {
       "date": "2020-11-25",
@@ -2421,10 +2395,10 @@
       "low": 18509.12,
       "close": 18741.67,
       "volume": 426276.99,
-      "mayer_multiple": 1.6350239030337816,
+      "mayer_multiple": 1.6324524386891117,
       "daily_return": -0.02283515227605948,
       "daily_volatility": 0.05576183979335885,
-      "volatility_32bar": 0.029941386611541786
+      "volatility_32bar": 0.02994138661154178
     },
     {
       "date": "2020-11-26",
@@ -2434,10 +2408,10 @@
       "low": 16181.0,
       "close": 17155.34,
       "volume": 850692.856,
-      "mayer_multiple": 1.49249152992746,
+      "mayer_multiple": 1.4901174069122693,
       "daily_return": -0.08464187022821335,
       "daily_volatility": 0.16086478029581452,
-      "volatility_32bar": 0.03420406484549904
+      "volatility_32bar": 0.03420406484549903
     },
     {
       "date": "2020-11-27",
@@ -2447,10 +2421,10 @@
       "low": 16444.83,
       "close": 17144.1,
       "volume": 398072.933,
-      "mayer_multiple": 1.4874519818343663,
+      "mayer_multiple": 1.4850601763659752,
       "daily_return": -0.0006551895794546514,
       "daily_volatility": 0.05950560251048456,
-      "volatility_32bar": 0.034223381750941584
+      "volatility_32bar": 0.03422338175094158
     },
     {
       "date": "2020-11-28",
@@ -2460,10 +2434,10 @@
       "low": 16865.78,
       "close": 17717.74,
       "volume": 268833.749,
-      "mayer_multiple": 1.532672895943465,
+      "mayer_multiple": 1.5301788487263086,
       "daily_return": 0.033459907490040575,
       "daily_volatility": 0.05724319241618858,
-      "volatility_32bar": 0.03391570849442351
+      "volatility_32bar": 0.033915708494423505
     },
     {
       "date": "2020-11-29",
@@ -2473,10 +2447,10 @@
       "low": 17523.0,
       "close": 18181.09,
       "volume": 256024.006,
-      "mayer_multiple": 1.5678210411119353,
+      "mayer_multiple": 1.5652374244235547,
       "daily_return": 0.026151755246436537,
       "daily_volatility": 0.04510180632734341,
-      "volatility_32bar": 0.033406068488009394
+      "volatility_32bar": 0.03340606848800939
     },
     {
       "date": "2020-11-30",
@@ -2486,7 +2460,7 @@
       "low": 18178.82,
       "close": 19720.0,
       "volume": 500482.574,
-      "mayer_multiple": 1.6940419885691549,
+      "mayer_multiple": 1.6912051933169658,
       "daily_return": 0.08464343996977086,
       "daily_volatility": 0.08951217038539555,
       "volatility_32bar": 0.03581302257574885
@@ -2499,10 +2473,10 @@
       "low": 18050.0,
       "close": 18772.7,
       "volume": 553885.333,
-      "mayer_multiple": 1.6073125384942468,
+      "mayer_multiple": 1.6045861907414274,
       "daily_return": -0.048037525354969524,
       "daily_volatility": 0.10153041384563755,
-      "volatility_32bar": 0.03733529243266911
+      "volatility_32bar": 0.0373352924326691
     },
     {
       "date": "2020-12-02",
@@ -2512,10 +2486,10 @@
       "low": 18329.58,
       "close": 19207.01,
       "volume": 335717.482,
-      "mayer_multiple": 1.638788852562132,
+      "mayer_multiple": 1.6359718925539761,
       "daily_return": 0.023135190995434707,
       "daily_volatility": 0.053908442802914056,
-      "volatility_32bar": 0.03738009161682572
+      "volatility_32bar": 0.03738009161682571
     },
     {
       "date": "2020-12-03",
@@ -2525,7 +2499,7 @@
       "low": 18865.0,
       "close": 19434.3,
       "volume": 245020.576,
-      "mayer_multiple": 1.6523348172706687,
+      "mayer_multiple": 1.6494568142939499,
       "daily_return": 0.011833700300046823,
       "daily_volatility": 0.039877947752170136,
       "volatility_32bar": 0.03730310537521416
@@ -2538,10 +2512,10 @@
       "low": 18570.0,
       "close": 18664.2,
       "volume": 276271.939,
-      "mayer_multiple": 1.5818952598773597,
+      "mayer_multiple": 1.5791100581506388,
       "daily_return": -0.039625816211543485,
       "daily_volatility": 0.05181899036658415,
-      "volatility_32bar": 0.03807935278028819
+      "volatility_32bar": 0.038079352780288185
     },
     {
       "date": "2020-12-05",
@@ -2551,10 +2525,10 @@
       "low": 18510.0,
       "close": 19147.62,
       "volume": 165912.647,
-      "mayer_multiple": 1.6175087951346305,
+      "mayer_multiple": 1.6146282804605259,
       "daily_return": 0.025900922621917788,
       "daily_volatility": 0.03621651150377954,
-      "volatility_32bar": 0.037928127152459884
+      "volatility_32bar": 0.03792812715245988
     },
     {
       "date": "2020-12-06",
@@ -2564,10 +2538,10 @@
       "low": 18855.35,
       "close": 19375.02,
       "volume": 176004.606,
-      "mayer_multiple": 1.6312231742994894,
+      "mayer_multiple": 1.6282850596101035,
       "daily_return": 0.011876149620684062,
       "daily_volatility": 0.030645129656640353,
-      "volatility_32bar": 0.037926912979361134
+      "volatility_32bar": 0.03792691297936113
     },
     {
       "date": "2020-12-07",
@@ -2577,10 +2551,10 @@
       "low": 18908.66,
       "close": 19172.88,
       "volume": 169402.37099999998,
-      "mayer_multiple": 1.6090032343514118,
+      "mayer_multiple": 1.6060748450094953,
       "daily_return": -0.010433021488493899,
       "daily_volatility": 0.028044821643905385,
-      "volatility_32bar": 0.034195971938759305
+      "volatility_32bar": 0.0341959719387593
     },
     {
       "date": "2020-12-08",
@@ -2590,10 +2564,10 @@
       "low": 18133.33,
       "close": 18319.32,
       "volume": 280714.132,
-      "mayer_multiple": 1.5330585982918674,
+      "mayer_multiple": 1.530245588235372,
       "daily_return": -0.044519133275752076,
       "daily_volatility": 0.06474312365306131,
-      "volatility_32bar": 0.03533844929719861
+      "volatility_32bar": 0.0353384492971986
     },
     {
       "date": "2020-12-09",
@@ -2603,7 +2577,7 @@
       "low": 17650.0,
       "close": 18537.98,
       "volume": 353123.689,
-      "mayer_multiple": 1.5469150335716897,
+      "mayer_multiple": 1.5440531252833822,
       "daily_return": 0.011936032560160514,
       "daily_volatility": 0.05338769380482667,
       "volatility_32bar": 0.03394660337678364
@@ -2616,10 +2590,10 @@
       "low": 17916.0,
       "close": 18253.51,
       "volume": 233960.241,
-      "mayer_multiple": 1.5190594205979326,
+      "mayer_multiple": 1.5162284353331292,
       "daily_return": -0.015345253366332301,
       "daily_volatility": 0.0347330458635079,
-      "volatility_32bar": 0.03353329710757254
+      "volatility_32bar": 0.03353329710757253
     },
     {
       "date": "2020-12-11",
@@ -2629,10 +2603,10 @@
       "low": 17555.0,
       "close": 18031.47,
       "volume": 317866.07,
-      "mayer_multiple": 1.4967192156769924,
+      "mayer_multiple": 1.4939115175030182,
       "daily_return": -0.012164235809989266,
       "daily_volatility": 0.040786469433717755,
-      "volatility_32bar": 0.03357659506941407
+      "volatility_32bar": 0.033576595069414066
     },
     {
       "date": "2020-12-12",
@@ -2642,10 +2616,10 @@
       "low": 18012.21,
       "close": 18800.0,
       "volume": 196962.282,
-      "mayer_multiple": 1.556039066139207,
+      "mayer_multiple": 1.5530974500591677,
       "daily_return": 0.04262159435697699,
       "daily_volatility": 0.049882446808510686,
-      "volatility_32bar": 0.03414965612800383
+      "volatility_32bar": 0.03414965612800382
     },
     {
       "date": "2020-12-13",
@@ -2655,7 +2629,7 @@
       "low": 18705.46,
       "close": 19175.07,
       "volume": 239760.089,
-      "mayer_multiple": 1.5823432475759867,
+      "mayer_multiple": 1.5793276334812703,
       "daily_return": 0.0199505319148936,
       "daily_volatility": 0.03788982256648872,
       "volatility_32bar": 0.0340632784864968
@@ -2668,10 +2642,10 @@
       "low": 19004.72,
       "close": 19270.7,
       "volume": 181555.823,
-      "mayer_multiple": 1.585484423157057,
+      "mayer_multiple": 1.582438861024484,
       "daily_return": 0.00498720474032166,
       "daily_volatility": 0.018194979943644878,
-      "volatility_32bar": 0.03359670398528603
+      "volatility_32bar": 0.033596703985286025
     },
     {
       "date": "2020-12-15",
@@ -2681,10 +2655,10 @@
       "low": 19039.64,
       "close": 19424.91,
       "volume": 248744.054,
-      "mayer_multiple": 1.5933583038162733,
+      "mayer_multiple": 1.5902735739340588,
       "daily_return": 0.008002304015941153,
       "daily_volatility": 0.028744534723713036,
-      "volatility_32bar": 0.03359129902640211
+      "volatility_32bar": 0.0335912990264021
     },
     {
       "date": "2020-12-16",
@@ -2694,10 +2668,10 @@
       "low": 19274.55,
       "close": 21346.8,
       "volume": 459302.012,
-      "mayer_multiple": 1.744421050421882,
+      "mayer_multiple": 1.7410072569106816,
       "daily_return": 0.09893945454573538,
       "daily_volatility": 0.10893670245657433,
-      "volatility_32bar": 0.03702193256905098
+      "volatility_32bar": 0.03702193256905097
     },
     {
       "date": "2020-12-17",
@@ -2707,10 +2681,10 @@
       "low": 21231.5,
       "close": 22816.99,
       "volume": 823435.821,
-      "mayer_multiple": 1.8565368022659083,
+      "mayer_multiple": 1.8528570433779077,
       "daily_return": 0.06887168100136809,
       "daily_volatility": 0.11642815288081385,
-      "volatility_32bar": 0.038290681837503
+      "volatility_32bar": 0.03829068183750299
     },
     {
       "date": "2020-12-18",
@@ -2720,10 +2694,10 @@
       "low": 22363.94,
       "close": 23124.35,
       "volume": 305997.222,
-      "mayer_multiple": 1.8717286928719397,
+      "mayer_multiple": 1.869569331179897,
       "daily_return": 0.013470663746620204,
       "daily_volatility": 0.041776741832743464,
-      "volatility_32bar": 0.03776365824171499
+      "volatility_32bar": 0.03776365824171498
     },
     {
       "date": "2020-12-19",
@@ -2746,10 +2720,10 @@
       "low": 23076.25,
       "close": 23472.96,
       "volume": 322289.774,
-      "mayer_multiple": 1.8785505966273017,
+      "mayer_multiple": 1.8785505966273013,
       "daily_return": -0.015696549040393748,
       "daily_volatility": 0.05537222403991657,
-      "volatility_32bar": 0.03728366093640769
+      "volatility_32bar": 0.037283660936407684
     },
     {
       "date": "2020-12-21",
@@ -2759,7 +2733,7 @@
       "low": 21920.0,
       "close": 22730.1,
       "volume": 476456.589,
-      "mayer_multiple": 1.8097272163113394,
+      "mayer_multiple": 1.8097272163113396,
       "daily_return": -0.03164747863073092,
       "daily_volatility": 0.09788782275484931,
       "volatility_32bar": 0.03794211010800807
@@ -2775,7 +2749,7 @@
       "mayer_multiple": 1.886388684570274,
       "daily_return": 0.048257156809693,
       "daily_volatility": 0.061400957485607706,
-      "volatility_32bar": 0.0379547933129857
+      "volatility_32bar": 0.037954793312985693
     },
     {
       "date": "2020-12-23",
@@ -2801,7 +2775,7 @@
       "mayer_multiple": 1.8590120666849734,
       "daily_return": 0.021480514685473517,
       "daily_volatility": 0.0471748427800134,
-      "volatility_32bar": 0.038231428849975456
+      "volatility_32bar": 0.03823142884997545
     },
     {
       "date": "2020-12-25",
@@ -2814,7 +2788,7 @@
       "mayer_multiple": 1.9254722641170539,
       "daily_return": 0.04181411306358229,
       "daily_volatility": 0.055707238172260386,
-      "volatility_32bar": 0.038599098792552196
+      "volatility_32bar": 0.03859909879255219
     },
     {
       "date": "2020-12-26",
@@ -2827,7 +2801,7 @@
       "mayer_multiple": 2.0506102820953984,
       "daily_return": 0.07193004448038831,
       "daily_volatility": 0.09124355922158761,
-      "volatility_32bar": 0.03967390137024262
+      "volatility_32bar": 0.03967390137024261
     },
     {
       "date": "2020-12-27",
@@ -2840,7 +2814,7 @@
       "mayer_multiple": 2.0220500091956644,
       "daily_return": -0.007664993136249354,
       "daily_volatility": 0.09921218415518498,
-      "volatility_32bar": 0.03935680328676886
+      "volatility_32bar": 0.039356803286768854
     },
     {
       "date": "2020-12-28",
@@ -2853,7 +2827,7 @@
       "mayer_multiple": 2.069139969768557,
       "daily_return": 0.030298445504462146,
       "daily_volatility": 0.0524568437193988,
-      "volatility_32bar": 0.03548005775569798
+      "volatility_32bar": 0.03548005775569797
     },
     {
       "date": "2020-12-29",
@@ -2866,7 +2840,7 @@
       "mayer_multiple": 2.0778240428799184,
       "daily_return": 0.011075296668297652,
       "daily_volatility": 0.05578693879427785,
-      "volatility_32bar": 0.035376759224203365
+      "volatility_32bar": 0.03537675922420336
     },
     {
       "date": "2020-12-30",
@@ -2879,7 +2853,7 @@
       "mayer_multiple": 2.1758420941611627,
       "daily_return": 0.0548906809990064,
       "daily_volatility": 0.057519651821237736,
-      "volatility_32bar": 0.03591155792537855
+      "volatility_32bar": 0.03591155792537854
     },
     {
       "date": "2020-12-31",
@@ -2892,7 +2866,7 @@
       "mayer_multiple": 2.163238963119981,
       "daily_return": 0.0015459928550152213,
       "daily_volatility": 0.05280177177973785,
-      "volatility_32bar": 0.03595035959813877
+      "volatility_32bar": 0.03595035959813876
     },
     {
       "date": "2021-01-01",
@@ -2905,7 +2879,7 @@
       "mayer_multiple": 2.175852852421325,
       "daily_return": 0.013314598669230904,
       "daily_volatility": 0.03550923129573556,
-      "volatility_32bar": 0.03372264654820534
+      "volatility_32bar": 0.03372264654820533
     },
     {
       "date": "2021-01-02",
@@ -2928,10 +2902,10 @@
       "low": 32000.02,
       "close": 33054.53,
       "volume": 487486.989,
-      "mayer_multiple": 2.4101978272641746,
+      "mayer_multiple": 2.410197827264174,
       "daily_return": 0.026541067971929122,
       "daily_volatility": 0.08568356591365842,
-      "volatility_32bar": 0.03499619452574581
+      "volatility_32bar": 0.0349961945257458
     },
     {
       "date": "2021-01-04",
@@ -2941,10 +2915,10 @@
       "low": 27800.0,
       "close": 32031.07,
       "volume": 506128.023,
-      "mayer_multiple": 2.3164433217056413,
+      "mayer_multiple": 2.3164433217056417,
       "daily_return": -0.030962775752672922,
       "daily_volatility": 0.18274631475002234,
-      "volatility_32bar": 0.03599842319321304
+      "volatility_32bar": 0.03599842319321303
     },
     {
       "date": "2021-01-05",
@@ -2954,10 +2928,10 @@
       "low": 29900.0,
       "close": 33999.52,
       "volume": 433720.833,
-      "mayer_multiple": 2.437039477482471,
+      "mayer_multiple": 2.4370394774824713,
       "daily_return": 0.06145439412420495,
       "daily_volatility": 0.13529602770862648,
-      "volatility_32bar": 0.03537589415513542
+      "volatility_32bar": 0.035375894155135416
     },
     {
       "date": "2021-01-06",
@@ -2970,7 +2944,7 @@
       "mayer_multiple": 2.6137393477386732,
       "daily_return": 0.08306470208991201,
       "daily_volatility": 0.09996420781410231,
-      "volatility_32bar": 0.037056052205135366
+      "volatility_32bar": 0.03705605220513536
     },
     {
       "date": "2021-01-07",
@@ -2993,7 +2967,7 @@
       "low": 36539.77,
       "close": 40637.23,
       "volume": 518080.826,
-      "mayer_multiple": 2.823150632306924,
+      "mayer_multiple": 2.8231506323069246,
       "daily_return": 0.02881876263958616,
       "daily_volatility": 0.13745375853619957,
       "volatility_32bar": 0.03759283341271654
@@ -3006,10 +2980,10 @@
       "low": 38733.28,
       "close": 40136.04,
       "volume": 260882.805,
-      "mayer_multiple": 2.7590965471923696,
+      "mayer_multiple": 2.759096547192369,
       "daily_return": -0.012333271731365558,
       "daily_volatility": 0.06992717766874855,
-      "volatility_32bar": 0.03613675159142571
+      "volatility_32bar": 0.0361367515914257
     },
     {
       "date": "2021-01-10",
@@ -3022,7 +2996,7 @@
       "mayer_multiple": 2.6016318345994227,
       "daily_return": -0.04769703239283207,
       "daily_volatility": 0.16074964803997321,
-      "volatility_32bar": 0.038260536449352046
+      "volatility_32bar": 0.03826053644935204
     },
     {
       "date": "2021-01-11",
@@ -3035,7 +3009,7 @@
       "mayer_multiple": 2.3888753420445146,
       "daily_return": -0.07360248780338485,
       "daily_volatility": 0.2223813179110303,
-      "volatility_32bar": 0.041332173915540255
+      "volatility_32bar": 0.04133217391554025
     },
     {
       "date": "2021-01-12",
@@ -3048,7 +3022,7 @@
       "mayer_multiple": 2.2785542373353596,
       "daily_return": -0.03817053890510902,
       "daily_volatility": 0.12019414567973016,
-      "volatility_32bar": 0.04223700907605684
+      "volatility_32bar": 0.04223700907605683
     },
     {
       "date": "2021-01-13",
@@ -3061,7 +3035,7 @@
       "mayer_multiple": 2.4800593553620636,
       "daily_return": 0.09878086378971651,
       "daily_volatility": 0.14590710527518322,
-      "volatility_32bar": 0.0442212183049697
+      "volatility_32bar": 0.044221218304969695
     },
     {
       "date": "2021-01-14",
@@ -3074,7 +3048,7 @@
       "mayer_multiple": 2.569935151139952,
       "daily_return": 0.04655772803931035,
       "daily_volatility": 0.08745583557671703,
-      "volatility_32bar": 0.044411379658237445
+      "volatility_32bar": 0.04441137965823744
     },
     {
       "date": "2021-01-15",
@@ -3084,7 +3058,7 @@
       "low": 34478.0,
       "close": 36755.24,
       "volume": 437610.113,
-      "mayer_multiple": 2.3902962708171662,
+      "mayer_multiple": 2.3902962708171667,
       "daily_return": -0.061487907942408326,
       "daily_volatility": 0.14452361078311557,
       "volatility_32bar": 0.046724787764811954
@@ -3123,7 +3097,7 @@
       "low": 34808.47,
       "close": 36686.86,
       "volume": 253386.703,
-      "mayer_multiple": 2.324532557098153,
+      "mayer_multiple": 2.3245325570981525,
       "daily_return": 0.022777637920224247,
       "daily_volatility": 0.0746716944431876,
       "volatility_32bar": 0.044307628416829066
@@ -3227,7 +3201,7 @@
       "low": 30810.0,
       "close": 32474.14,
       "volume": 346861.707,
-      "mayer_multiple": 1.9404834586075805,
+      "mayer_multiple": 1.9404834586075803,
       "daily_return": 0.0068351890388942405,
       "daily_volatility": 0.06589858884638669,
       "volatility_32bar": 0.051011865247008646
@@ -3279,7 +3253,7 @@
       "low": 32849.06,
       "close": 34289.85,
       "volume": 267861.872,
-      "mayer_multiple": 1.9922489498684353,
+      "mayer_multiple": 1.9922489498684348,
       "daily_return": 0.0005982021835839735,
       "daily_volatility": 0.06240388919753221,
       "volatility_32bar": 0.05376782765326159
@@ -3383,7 +3357,7 @@
       "low": 37403.27,
       "close": 38849.25,
       "volume": 296721.925,
-      "mayer_multiple": 2.1219460493295017,
+      "mayer_multiple": 2.1219460493295013,
       "daily_return": -0.010198590862466217,
       "daily_volatility": 0.06060863465832689,
       "volatility_32bar": 0.0500710286098157
@@ -3409,7 +3383,7 @@
       "low": 45057.65,
       "close": 46492.54,
       "volume": 381477.426,
-      "mayer_multiple": 2.4892523873324675,
+      "mayer_multiple": 2.489252387332468,
       "daily_return": 0.0008873805954277003,
       "daily_volatility": 0.06901558830728541,
       "volatility_32bar": 0.05904701677488308
@@ -3422,7 +3396,7 @@
       "low": 43770.0,
       "close": 44850.0,
       "volume": 334979.017,
-      "mayer_multiple": 2.378925028384593,
+      "mayer_multiple": 2.3789250283845935,
       "daily_return": -0.03532910871292472,
       "daily_volatility": 0.08260869565217391,
       "volatility_32bar": 0.05940351344376414
@@ -3435,7 +3409,7 @@
       "low": 44038.97,
       "close": 48060.21,
       "volume": 330540.045,
-      "mayer_multiple": 2.523686136260891,
+      "mayer_multiple": 2.5236861362608907,
       "daily_return": 0.07157658862876248,
       "daily_volatility": 0.09927193410099537,
       "volatility_32bar": 0.059709291536116905
@@ -3500,7 +3474,7 @@
       "low": 47101.02,
       "close": 49197.94,
       "volume": 343592.011,
-      "mayer_multiple": 2.463831529526975,
+      "mayer_multiple": 2.4638315295269746,
       "daily_return": 0.02535056161135163,
       "daily_volatility": 0.0783044981151651,
       "volatility_32bar": 0.05375411838109446
@@ -3578,7 +3552,7 @@
       "low": 47751.42,
       "close": 54121.1,
       "volume": 480660.18700000003,
-      "mayer_multiple": 2.545608252050771,
+      "mayer_multiple": 2.5456082520507706,
       "daily_return": -0.058557670781247295,
       "daily_volatility": 0.18182280108866974,
       "volatility_32bar": 0.05043934289944392
@@ -3643,7 +3617,7 @@
       "low": 44926.77,
       "close": 46102.63,
       "volume": 256027.074,
-      "mayer_multiple": 2.0804833803635647,
+      "mayer_multiple": 2.080483380363565,
       "daily_return": -0.0045451473480631055,
       "daily_volatility": 0.07698649729961189,
       "volatility_32bar": 0.0544614100993519
@@ -3682,7 +3656,7 @@
       "low": 47058.06,
       "close": 48450.57,
       "volume": 273100.435,
-      "mayer_multiple": 2.134388402780001,
+      "mayer_multiple": 2.1343884027800013,
       "daily_return": -0.023030204042127078,
       "daily_volatility": 0.06529768380433913,
       "volatility_32bar": 0.05330547661988644
@@ -3695,7 +3669,7 @@
       "low": 48110.66,
       "close": 50373.75,
       "volume": 350311.234,
-      "mayer_multiple": 2.200442780261238,
+      "mayer_multiple": 2.200442780261239,
       "daily_return": 0.03969365066293329,
       "daily_volatility": 0.09073872800813913,
       "volatility_32bar": 0.05347247180063953
@@ -3747,7 +3721,7 @@
       "low": 48908.21,
       "close": 50995.27,
       "volume": 248398.116,
-      "mayer_multiple": 2.1573308820397012,
+      "mayer_multiple": 2.157330882039701,
       "daily_return": 0.0426729990731618,
       "daily_volatility": 0.05043193221645853,
       "volatility_32bar": 0.05261874743767634
@@ -3786,7 +3760,7 @@
       "low": 53061.0,
       "close": 55947.98,
       "volume": 401159.493,
-      "mayer_multiple": 2.304351596434891,
+      "mayer_multiple": 2.3043515964348904,
       "daily_return": 0.018758952018818054,
       "daily_volatility": 0.07935800363123026,
       "volatility_32bar": 0.05259789957144263
@@ -3799,7 +3773,7 @@
       "low": 54356.44,
       "close": 57844.52,
       "volume": 364681.318,
-      "mayer_multiple": 2.3600158757416874,
+      "mayer_multiple": 2.360015875741687,
       "daily_return": 0.03389827479026031,
       "daily_volatility": 0.06788127898718838,
       "volatility_32bar": 0.052563826002114046
@@ -3981,7 +3955,7 @@
       "low": 50452.08,
       "close": 51325.21,
       "volume": 416848.091,
-      "mayer_multiple": 1.853522810993416,
+      "mayer_multiple": 1.8535228109934154,
       "daily_return": -0.01885492187765836,
       "daily_volatility": 0.054614876393101856,
       "volatility_32bar": 0.040675977877518844
@@ -4046,7 +4020,7 @@
       "low": 57110.0,
       "close": 58794.16,
       "volume": 232824.065,
-      "mayer_multiple": 2.0379930663986108,
+      "mayer_multiple": 2.0379930663986103,
       "daily_return": 0.019357934894701057,
       "daily_volatility": 0.04167080539971997,
       "volatility_32bar": 0.03625938846580884
@@ -4137,7 +4111,7 @@
       "low": 57500.0,
       "close": 58059.99,
       "volume": 165562.029,
-      "mayer_multiple": 1.9023281768304452,
+      "mayer_multiple": 1.9023281768304448,
       "daily_return": -0.01997522424020637,
       "daily_volatility": 0.036620399004546854,
       "volatility_32bar": 0.031321206329313504
@@ -4176,7 +4150,7 @@
       "low": 57700.0,
       "close": 58176.03,
       "volume": 141690.144,
-      "mayer_multiple": 1.8634182876447807,
+      "mayer_multiple": 1.8634182876447805,
       "daily_return": 0.0009251188787220421,
       "daily_volatility": 0.021486512572274182,
       "volatility_32bar": 0.03167386024999076
@@ -4241,7 +4215,7 @@
       "low": 61404.0,
       "close": 63019.1,
       "volume": 323454.88,
-      "mayer_multiple": 1.9397599647888213,
+      "mayer_multiple": 1.9397599647888215,
       "daily_return": -0.009907507826822815,
       "daily_volatility": 0.05684165594240477,
       "volatility_32bar": 0.02993012865134082
@@ -4332,7 +4306,7 @@
       "low": 53610.0,
       "close": 53800.0,
       "volume": 252601.972,
-      "mayer_multiple": 1.5755028471012984,
+      "mayer_multiple": 1.575502847101298,
       "daily_return": -0.0462778600318805,
       "daily_volatility": 0.058490334572490685,
       "volatility_32bar": 0.030476449603691756
@@ -4475,7 +4449,7 @@
       "low": 56100.0,
       "close": 56630.33,
       "volume": 203712.515,
-      "mayer_multiple": 1.5516386590374076,
+      "mayer_multiple": 1.5516386590374072,
       "daily_return": -0.02085211477766391,
       "daily_volatility": 0.03284406077096851,
       "volatility_32bar": 0.03420850592540911
@@ -4488,7 +4462,7 @@
       "low": 56500.65,
       "close": 57214.83,
       "volume": 271733.972,
-      "mayer_multiple": 1.5578972511879852,
+      "mayer_multiple": 1.557897251187985,
       "daily_return": 0.010321324279763067,
       "daily_volatility": 0.04467268363814058,
       "volatility_32bar": 0.034261337921749374
@@ -4592,7 +4566,7 @@
       "low": 54541.33,
       "close": 56710.43,
       "volume": 267226.104,
-      "mayer_multiple": 1.47243060571362,
+      "mayer_multiple": 1.4724306057136205,
       "daily_return": 0.01504859434465966,
       "daily_volatility": 0.0417441729854632,
       "volatility_32bar": 0.03845275448020308
@@ -4618,7 +4592,7 @@
       "low": 45596.32,
       "close": 49707.9,
       "volume": 652476.689,
-      "mayer_multiple": 1.27847283268314,
+      "mayer_multiple": 1.2784728326831398,
       "daily_return": 0.0022610803826779158,
       "daily_volatility": 0.11591075060503461,
       "volatility_32bar": 0.043820875404713806
@@ -4696,7 +4670,7 @@
       "low": 28688.0,
       "close": 36689.14,
       "volume": 1373851.849,
-      "mayer_multiple": 0.9216456480562982,
+      "mayer_multiple": 0.9216456480562981,
       "daily_return": -0.14442687966404966,
       "daily_volatility": 0.40687598564588867,
       "volatility_32bar": 0.0498208664819423
@@ -4722,7 +4696,7 @@
       "low": 33400.0,
       "close": 37211.02,
       "volume": 930671.747,
-      "mayer_multiple": 0.9288733053687808,
+      "mayer_multiple": 0.928873305368781,
       "daily_return": -0.08121618852206047,
       "daily_volatility": 0.23838153321247305,
       "volatility_32bar": 0.05444253090538669
@@ -4735,7 +4709,7 @@
       "low": 35201.11,
       "close": 37432.58,
       "volume": 588166.784,
-      "mayer_multiple": 0.9316810330438299,
+      "mayer_multiple": 0.9316810330438301,
       "daily_return": 0.005954150141544323,
       "daily_volatility": 0.09751478524857211,
       "volatility_32bar": 0.05434577786816183
@@ -4813,7 +4787,7 @@
       "low": 34689.57,
       "close": 35670.99,
       "volume": 832363.425,
-      "mayer_multiple": 0.8732484629399193,
+      "mayer_multiple": 0.8732484629399194,
       "daily_return": -0.074139222547705,
       "daily_volatility": 0.11770853570366281,
       "volatility_32bar": 0.057579840333887605
@@ -4839,7 +4813,7 @@
       "low": 33356.0,
       "close": 35651.81,
       "volume": 511834.746,
-      "mayer_multiple": 0.8686028094253899,
+      "mayer_multiple": 0.86860280942539,
       "daily_return": 0.03004367856872503,
       "daily_volatility": 0.08821431506563061,
       "volatility_32bar": 0.05786520142654135
@@ -4904,7 +4878,7 @@
       "low": 35552.51,
       "close": 36828.03,
       "volume": 700625.866,
-      "mayer_multiple": 0.8857948342018512,
+      "mayer_multiple": 0.8857948342018513,
       "daily_return": -0.06164408342973049,
       "daily_volatility": 0.10168450498166741,
       "volatility_32bar": 0.058222237139245514
@@ -4930,7 +4904,7 @@
       "low": 35201.86,
       "close": 35801.71,
       "volume": 443601.064,
-      "mayer_multiple": 0.8574137982522686,
+      "mayer_multiple": 0.8574137982522687,
       "daily_return": 0.008538078381638448,
       "daily_volatility": 0.036850195144310226,
       "volatility_32bar": 0.05528535780451109
@@ -4943,7 +4917,7 @@
       "low": 33200.0,
       "close": 33550.96,
       "volume": 636735.873,
-      "mayer_multiple": 0.8019991461881715,
+      "mayer_multiple": 0.8019991461881716,
       "daily_return": -0.06286710886156,
       "daily_volatility": 0.10789557139348621,
       "volatility_32bar": 0.05595478453901946
@@ -5047,7 +5021,7 @@
       "low": 39500.0,
       "close": 40132.86,
       "volume": 632066.994,
-      "mayer_multiple": 0.9420559178673101,
+      "mayer_multiple": 0.9420559178673104,
       "daily_return": -0.008798417351830401,
       "daily_volatility": 0.04766667513852738,
       "volatility_32bar": 0.06009507325971002
@@ -5190,7 +5164,7 @@
       "low": 30120.0,
       "close": 32255.56,
       "volume": 1091384.749,
-      "mayer_multiple": 0.7421838428400039,
+      "mayer_multiple": 0.7421838428400042,
       "daily_return": 0.021778018105002905,
       "daily_volatility": 0.08062237952154606,
       "volatility_32bar": 0.04974669828375097
@@ -5359,7 +5333,7 @@
       "low": 32250.0,
       "close": 33805.01,
       "volume": 485662.879,
-      "mayer_multiple": 0.7623254348842068,
+      "mayer_multiple": 0.7623254348842069,
       "daily_return": 0.029007939841787733,
       "daily_volatility": 0.05472561611429785,
       "volatility_32bar": 0.04770444342294359
@@ -5411,7 +5385,7 @@
       "low": 32186.99,
       "close": 32709.09,
       "volume": 466567.713,
-      "mayer_multiple": 0.7344648819493086,
+      "mayer_multiple": 0.7344648819493088,
       "daily_return": -0.010939536818958873,
       "daily_volatility": 0.03512815550661906,
       "volatility_32bar": 0.043105245965620105
@@ -5658,7 +5632,7 @@
       "low": 39350.4,
       "close": 39846.78,
       "volume": 487529.044,
-      "mayer_multiple": 0.8907666530359413,
+      "mayer_multiple": 0.8907666530359415,
       "daily_return": -0.03863457223984401,
       "daily_volatility": 0.08192832645448395,
       "volatility_32bar": 0.031789989861512734
@@ -5671,7 +5645,7 @@
       "low": 38658.0,
       "close": 39147.48,
       "volume": 451872.128,
-      "mayer_multiple": 0.8751354923811222,
+      "mayer_multiple": 0.8751354923811221,
       "daily_return": -0.017549724218619334,
       "daily_volatility": 0.04577561569735778,
       "volatility_32bar": 0.03084715758582713
@@ -5866,7 +5840,7 @@
       "low": 44412.01,
       "close": 44704.84,
       "volume": 474316.4,
-      "mayer_multiple": 0.9821811068405151,
+      "mayer_multiple": 0.982181106840515,
       "daily_return": -0.02659460617603504,
       "daily_volatility": 0.062230174629861065,
       "volatility_32bar": 0.034236811542869436
@@ -6061,7 +6035,7 @@
       "low": 46550.99,
       "close": 48842.94,
       "volume": 350108.374,
-      "mayer_multiple": 1.059839869831376,
+      "mayer_multiple": 1.0598398698313762,
       "daily_return": 0.03589837778407445,
       "daily_volatility": 0.05343249198348836,
       "volatility_32bar": 0.032422133936501174
@@ -6126,7 +6100,7 @@
       "low": 51040.0,
       "close": 52683.97,
       "volume": 297734.284,
-      "mayer_multiple": 1.1426776621612464,
+      "mayer_multiple": 1.1426776621612467,
       "daily_return": 0.01707350080319192,
       "daily_volatility": 0.0339761790920464,
       "volatility_32bar": 0.03039487464890534
@@ -6321,7 +6295,7 @@
       "low": 39503.58,
       "close": 40726.1,
       "volume": 683242.002,
-      "mayer_multiple": 0.889343000236098,
+      "mayer_multiple": 0.8893430002360981,
       "daily_return": -0.05346692511144269,
       "daily_volatility": 0.1013114440125619,
       "volatility_32bar": 0.03504919441311218
@@ -6334,7 +6308,7 @@
       "low": 40551.49,
       "close": 43520.0,
       "volume": 400849.752,
-      "mayer_multiple": 0.9509133232957351,
+      "mayer_multiple": 0.9509133232957352,
       "daily_return": 0.06860219859009331,
       "daily_volatility": 0.07900942095588247,
       "volatility_32bar": 0.037318424266620145
@@ -6412,7 +6386,7 @@
       "low": 40854.0,
       "close": 41006.32,
       "volume": 359745.538,
-      "mayer_multiple": 0.903179469331029,
+      "mayer_multiple": 0.9031794693310289,
       "daily_return": -0.02650281831478485,
       "daily_volatility": 0.04621238872446979,
       "volatility_32bar": 0.036276338959344616
@@ -6477,7 +6451,7 @@
       "low": 47071.26,
       "close": 48187.3,
       "volume": 212410.375,
-      "mayer_multiple": 1.0687144373745432,
+      "mayer_multiple": 1.0687144373745434,
       "daily_return": 0.011772620390155808,
       "daily_volatility": 0.046337105419892805,
       "volatility_32bar": 0.04087642572693532
@@ -6711,7 +6685,7 @@
       "low": 62000.0,
       "close": 62260.33,
       "volume": 478610.458,
-      "mayer_multiple": 1.3774803260551216,
+      "mayer_multiple": 1.3774803260551218,
       "daily_return": -0.057578956482357224,
       "daily_volatility": 0.07629256060801476,
       "volatility_32bar": 0.0414128837421508
@@ -7049,7 +7023,7 @@
       "low": 58397.14,
       "close": 60106.03,
       "volume": 475025.706,
-      "mayer_multiple": 1.3084204637341652,
+      "mayer_multiple": 1.3084204637341654,
       "daily_return": -0.05574563553961398,
       "daily_volatility": 0.08748922529070706,
       "volatility_32bar": 0.028574320420579325
@@ -7309,7 +7283,7 @@
       "low": 47000.0,
       "close": 50424.72,
       "volume": 357711.029,
-      "mayer_multiple": 1.0871938784484858,
+      "mayer_multiple": 1.087193878448486,
       "daily_return": 0.021227058971253543,
       "daily_volatility": 0.07710503895708296,
       "volatility_32bar": 0.03494585702450294
@@ -7647,7 +7621,7 @@
       "low": 46210.55,
       "close": 47704.35,
       "volume": 179433.584,
-      "mayer_multiple": 0.9966636123906206,
+      "mayer_multiple": 0.9966636123906205,
       "daily_return": 0.03232572814525514,
       "daily_volatility": 0.036332535712151906,
       "volatility_32bar": 0.032253596897935256
@@ -7686,7 +7660,7 @@
       "low": 45445.57,
       "close": 45833.42,
       "volume": 292149.75,
-      "mayer_multiple": 0.9548479235650001,
+      "mayer_multiple": 0.9548479235650003,
       "daily_return": -0.013185042956512127,
       "daily_volatility": 0.04535533241900781,
       "volatility_32bar": 0.031243774253436284
@@ -7790,7 +7764,7 @@
       "low": 42415.0,
       "close": 43880.72,
       "volume": 281339.294,
-      "mayer_multiple": 0.9072977707107398,
+      "mayer_multiple": 0.9072977707107397,
       "daily_return": 0.027635157098200747,
       "daily_volatility": 0.042957362595691224,
       "volatility_32bar": 0.0272157411626088
@@ -7816,7 +7790,7 @@
       "low": 41666.0,
       "close": 43042.4,
       "volume": 272517.077,
-      "mayer_multiple": 0.8884577668707412,
+      "mayer_multiple": 0.8884577668707413,
       "daily_return": 0.011945177447294286,
       "daily_volatility": 0.04144750292734606,
       "volatility_32bar": 0.025150254632048
@@ -7959,7 +7933,7 @@
       "low": 35693.0,
       "close": 36934.26,
       "volume": 409535.517,
-      "mayer_multiple": 0.7578607215713826,
+      "mayer_multiple": 0.7578607215713825,
       "daily_return": 0.007802542600190865,
       "daily_volatility": 0.05057716060914714,
       "volatility_32bar": 0.028048645736153576
@@ -8011,7 +7985,7 @@
       "low": 37252.0,
       "close": 38150.01,
       "volume": 238657.764,
-      "mayer_multiple": 0.781505372721534,
+      "mayer_multiple": 0.7815053727215338,
       "daily_return": 0.012038345499454817,
       "daily_volatility": 0.03929068432747468,
       "volatility_32bar": 0.0268952475421818
@@ -8102,7 +8076,7 @@
       "low": 40920.0,
       "close": 41374.69,
       "volume": 242184.07,
-      "mayer_multiple": 0.8430573321883817,
+      "mayer_multiple": 0.8430573321883821,
       "daily_return": -0.004219253910950571,
       "daily_volatility": 0.02421770410847791,
       "volatility_32bar": 0.03410709419707933
@@ -8258,7 +8232,7 @@
       "low": 40020.1,
       "close": 40491.7,
       "volume": 433958.984,
-      "mayer_multiple": 0.8193673041705981,
+      "mayer_multiple": 0.8193673041705979,
       "daily_return": -0.07681135959982399,
       "daily_volatility": 0.101993741927358,
       "volatility_32bar": 0.03638899025201629
@@ -8661,7 +8635,7 @@
       "low": 40900.0,
       "close": 41261.0,
       "volume": 235774.129,
-      "mayer_multiple": 0.8513010067313718,
+      "mayer_multiple": 0.8513010067313717,
       "daily_return": -0.021977709406895696,
       "daily_volatility": 0.03318630183466234,
       "volatility_32bar": 0.04388641968976362
@@ -8726,7 +8700,7 @@
       "low": 43575.1,
       "close": 44290.6,
       "volume": 348620.122,
-      "mayer_multiple": 0.9175266053086398,
+      "mayer_multiple": 0.9175266053086397,
       "daily_return": 0.007213451768569135,
       "daily_volatility": 0.035377709942967614,
       "volatility_32bar": 0.04078042781579824
@@ -8921,7 +8895,7 @@
       "low": 42100.3,
       "close": 42727.7,
       "volume": 119722.654,
-      "mayer_multiple": 0.8860213154838682,
+      "mayer_multiple": 0.8860213154838681,
       "daily_return": 0.011804628077254575,
       "daily_volatility": 0.016298560418650996,
       "volatility_32bar": 0.029473705079403525
@@ -8934,7 +8908,7 @@
       "low": 41838.0,
       "close": 42140.4,
       "volume": 181904.47,
-      "mayer_multiple": 0.8739678039684187,
+      "mayer_multiple": 0.8739678039684183,
       "daily_return": -0.013745181697119135,
       "daily_volatility": 0.037052329830756264,
       "volatility_32bar": 0.02587496399211075
@@ -9077,7 +9051,7 @@
       "low": 39630.0,
       "close": 40449.8,
       "volume": 393149.956,
-      "mayer_multiple": 0.8424528814008017,
+      "mayer_multiple": 0.8424528814008015,
       "daily_return": -0.021242411264115746,
       "daily_volatility": 0.08247259566178324,
       "volatility_32bar": 0.024158268121911144
@@ -9311,7 +9285,7 @@
       "low": 30003.6,
       "close": 30056.6,
       "volume": 1078779.712,
-      "mayer_multiple": 0.6505138425975246,
+      "mayer_multiple": 0.6505138425975244,
       "daily_return": -0.11681358721203572,
       "daily_volatility": 0.14105720540580122,
       "volatility_32bar": 0.034301502228062455
@@ -9675,7 +9649,7 @@
       "low": 29876.2,
       "close": 31361.2,
       "volume": 436522.874,
-      "mayer_multiple": 0.7527038299330004,
+      "mayer_multiple": 0.7527038299330006,
       "daily_return": 0.04852239559476956,
       "daily_volatility": 0.060705585245462525,
       "volatility_32bar": 0.039572170586787546
@@ -9688,7 +9662,7 @@
       "low": 29190.0,
       "close": 31118.1,
       "volume": 691714.985,
-      "mayer_multiple": 0.7492926102608236,
+      "mayer_multiple": 0.7492926102608235,
       "daily_return": -0.007751616647322268,
       "daily_volatility": 0.07741475218602678,
       "volatility_32bar": 0.039531135809379
@@ -9896,7 +9870,7 @@
       "low": 19874.0,
       "close": 21096.6,
       "volume": 698753.04,
-      "mayer_multiple": 0.5419533915510599,
+      "mayer_multiple": 0.54195339155106,
       "daily_return": 0.056023306336159706,
       "daily_volatility": 0.06522378013518766,
       "volatility_32bar": 0.046944146188447305
@@ -10078,7 +10052,7 @@
       "low": 20244.9,
       "close": 21613.4,
       "volume": 699841.616,
-      "mayer_multiple": 0.584630308996786,
+      "mayer_multiple": 0.5846303089967859,
       "daily_return": 0.051537162901805544,
       "daily_volatility": 0.07333876206427486,
       "volatility_32bar": 0.04512167429687998
@@ -10091,7 +10065,7 @@
       "low": 21175.2,
       "close": 21587.9,
       "volume": 848144.495,
-      "mayer_multiple": 0.5859463239141646,
+      "mayer_multiple": 0.5859463239141647,
       "daily_return": -0.001179823627934562,
       "daily_volatility": 0.06506885801768586,
       "volatility_32bar": 0.043953744327929846
@@ -10143,7 +10117,7 @@
       "low": 19228.3,
       "close": 19322.9,
       "volume": 640560.723,
-      "mayer_multiple": 0.5329574072525849,
+      "mayer_multiple": 0.532957407252585,
       "daily_return": -0.031642302661581634,
       "daily_volatility": 0.04246774552474018,
       "volatility_32bar": 0.044356076756298234
@@ -10299,7 +10273,7 @@
       "low": 22256.4,
       "close": 22570.6,
       "volume": 462958.953,
-      "mayer_multiple": 0.6499968664475451,
+      "mayer_multiple": 0.649996866447545,
       "daily_return": 0.005810999901961544,
       "daily_volatility": 0.03290120776585463,
       "volatility_32bar": 0.02864606179606934
@@ -10325,7 +10299,7 @@
       "low": 20689.6,
       "close": 21241.0,
       "volume": 552498.903,
-      "mayer_multiple": 0.6154367142009701,
+      "mayer_multiple": 0.61543671420097,
       "daily_return": -0.0027699530516431814,
       "daily_volatility": 0.0303563862341699,
       "volatility_32bar": 0.02895133496761156
@@ -10338,7 +10312,7 @@
       "low": 21031.0,
       "close": 22941.1,
       "volume": 753370.303,
-      "mayer_multiple": 0.6665055528246956,
+      "mayer_multiple": 0.6665055528246957,
       "daily_return": 0.08003860458547152,
       "daily_volatility": 0.0901874801121132,
       "volatility_32bar": 0.03205684105175154
@@ -10429,7 +10403,7 @@
       "low": 22665.3,
       "close": 22801.5,
       "volume": 569261.768,
-      "mayer_multiple": 0.6757327679742515,
+      "mayer_multiple": 0.6757327679742516,
       "daily_return": -0.007556006285065031,
       "daily_volatility": 0.04318575532311474,
       "volatility_32bar": 0.031440941150093694
@@ -10481,7 +10455,7 @@
       "low": 22830.9,
       "close": 23167.8,
       "volume": 271512.06200000003,
-      "mayer_multiple": 0.6945346931055816,
+      "mayer_multiple": 0.6945346931055814,
       "daily_return": 0.009784991696922374,
       "daily_volatility": 0.024564265920803813,
       "volatility_32bar": 0.03103105331848239
@@ -10494,7 +10468,7 @@
       "low": 23153.1,
       "close": 23804.4,
       "volume": 565084.219,
-      "mayer_multiple": 0.7154266969620918,
+      "mayer_multiple": 0.7154266969620919,
       "daily_return": 0.02747779245331894,
       "daily_volatility": 0.04578565307254127,
       "volatility_32bar": 0.030154605301880546
@@ -10676,7 +10650,7 @@
       "low": 20858.6,
       "close": 21387.0,
       "volume": 588764.597,
-      "mayer_multiple": 0.6623634043299288,
+      "mayer_multiple": 0.6623634043299287,
       "daily_return": -0.0055148426456363975,
       "daily_volatility": 0.032328049749848105,
       "volatility_32bar": 0.02961241536910238
@@ -10715,7 +10689,7 @@
       "low": 21295.3,
       "close": 21548.3,
       "volume": 415757.992,
-      "mayer_multiple": 0.6737086320172595,
+      "mayer_multiple": 0.6737086320172596,
       "daily_return": 0.009056469475389628,
       "daily_volatility": 0.023927641623701274,
       "volatility_32bar": 0.02946587829885439
@@ -10832,7 +10806,7 @@
       "low": 19628.7,
       "close": 19820.7,
       "volume": 285240.989,
-      "mayer_multiple": 0.6406813712825269,
+      "mayer_multiple": 0.6406813712825267,
       "daily_return": -0.006032796750413683,
       "daily_volatility": 0.021255556060078565,
       "volatility_32bar": 0.026435781691599866
@@ -10871,7 +10845,7 @@
       "low": 18600.0,
       "close": 18781.5,
       "volume": 945489.142,
-      "mayer_multiple": 0.6136119527681334,
+      "mayer_multiple": 0.6136119527681335,
       "daily_return": -0.0507154446067456,
       "daily_volatility": 0.0838431435188883,
       "volatility_32bar": 0.027014554546617713
@@ -10884,7 +10858,7 @@
       "low": 18500.0,
       "close": 19287.0,
       "volume": 595636.693,
-      "mayer_multiple": 0.6322719614561609,
+      "mayer_multiple": 0.632271961456161,
       "daily_return": 0.026914783164283973,
       "daily_volatility": 0.04951521750401825,
       "volatility_32bar": 0.027570387634295392
@@ -11014,7 +10988,7 @@
       "low": 19739.4,
       "close": 20102.0,
       "volume": 334678.558,
-      "mayer_multiple": 0.6797310372387244,
+      "mayer_multiple": 0.6797310372387243,
       "daily_return": 0.015637236326891513,
       "daily_volatility": 0.022047557456969312,
       "volatility_32bar": 0.037064467682340965
@@ -11040,7 +11014,7 @@
       "low": 18215.0,
       "close": 19528.6,
       "volume": 993776.352,
-      "mayer_multiple": 0.6656769650548907,
+      "mayer_multiple": 0.6656769650548908,
       "daily_return": 0.006395423741915485,
       "daily_volatility": 0.07534078223733393,
       "volatility_32bar": 0.03737594099351075
@@ -11066,7 +11040,7 @@
       "low": 18084.3,
       "close": 18447.5,
       "volume": 1168068.979,
-      "mayer_multiple": 0.6332707746369965,
+      "mayer_multiple": 0.6332707746369964,
       "daily_return": -0.022224224563783923,
       "daily_volatility": 0.11219948502507111,
       "volatility_32bar": 0.0335546678842743
@@ -11092,7 +11066,7 @@
       "low": 18518.5,
       "close": 19280.7,
       "volume": 838493.746,
-      "mayer_multiple": 0.6661829299206011,
+      "mayer_multiple": 0.6661829299206012,
       "daily_return": -0.005765115379657071,
       "daily_volatility": 0.050490905413185204,
       "volatility_32bar": 0.03470632651044476
@@ -11144,7 +11118,7 @@
       "low": 18801.5,
       "close": 19070.1,
       "volume": 1300566.158,
-      "mayer_multiple": 0.6684649342380475,
+      "mayer_multiple": 0.6684649342380474,
       "daily_return": -0.007608124352763035,
       "daily_volatility": 0.08251136596032534,
       "volatility_32bar": 0.03341854258195878
@@ -11209,7 +11183,7 @@
       "low": 18896.0,
       "close": 19049.4,
       "volume": 414970.451,
-      "mayer_multiple": 0.6796284637793713,
+      "mayer_multiple": 0.6796284637793714,
       "daily_return": -0.013188976377952688,
       "daily_volatility": 0.02588008021250013,
       "volatility_32bar": 0.03244516436330745
@@ -11248,7 +11222,7 @@
       "low": 19707.0,
       "close": 20150.0,
       "volume": 719577.149,
-      "mayer_multiple": 0.7272930973857368,
+      "mayer_multiple": 0.7272930973857369,
       "daily_return": -0.009000147543402393,
       "daily_volatility": 0.03221339950372201,
       "volatility_32bar": 0.03347030301173092
@@ -11261,7 +11235,7 @@
       "low": 19843.3,
       "close": 19954.0,
       "volume": 782034.669,
-      "mayer_multiple": 0.7229988080338885,
+      "mayer_multiple": 0.7229988080338886,
       "daily_return": -0.009727047146401935,
       "daily_volatility": 0.03009922822491742,
       "volatility_32bar": 0.03349284510428642
@@ -11404,7 +11378,7 @@
       "low": 19148.0,
       "close": 19540.6,
       "volume": 502319.759,
-      "mayer_multiple": 0.745969407489425,
+      "mayer_multiple": 0.7459694074894249,
       "daily_return": 0.014995922480378399,
       "daily_volatility": 0.026508909654770072,
       "volatility_32bar": 0.01872332375165355
@@ -11417,7 +11391,7 @@
       "low": 19081.0,
       "close": 19320.9,
       "volume": 634343.154,
-      "mayer_multiple": 0.7413954503732063,
+      "mayer_multiple": 0.7413954503732064,
       "daily_return": -0.01124325762770828,
       "daily_volatility": 0.03236909253709721,
       "volatility_32bar": 0.018797603202242913
@@ -11469,7 +11443,7 @@
       "low": 19103.5,
       "close": 19195.1,
       "volume": 174055.04200000002,
-      "mayer_multiple": 0.7521165927850002,
+      "mayer_multiple": 0.752116592785,
       "daily_return": 0.0023079855254843906,
       "daily_volatility": 0.00763215612317727,
       "volatility_32bar": 0.016619027819420148
@@ -11599,7 +11573,7 @@
       "low": 20320.0,
       "close": 20472.1,
       "volume": 314676.187,
-      "mayer_multiple": 0.8368917513074172,
+      "mayer_multiple": 0.8368917513074173,
       "daily_return": -0.0004833512352310221,
       "daily_volatility": 0.01792683701232409,
       "volatility_32bar": 0.01614736908926907
@@ -11703,7 +11677,7 @@
       "low": 15462.6,
       "close": 15905.0,
       "volume": 2065606.412,
-      "mayer_multiple": 0.6728056889792525,
+      "mayer_multiple": 0.6728056889792524,
       "daily_return": -0.14184741556059133,
       "daily_volatility": 0.19568060358377876,
       "volatility_32bar": 0.03418377841093768
@@ -11768,7 +11742,7 @@
       "low": 15805.5,
       "close": 16605.2,
       "volume": 934392.4839999999,
-      "mayer_multiple": 0.7195465399089808,
+      "mayer_multiple": 0.7195465399089809,
       "daily_return": 0.017400681322451872,
       "daily_volatility": 0.08325705200780478,
       "volatility_32bar": 0.039893190364789326
@@ -11807,7 +11781,7 @@
       "low": 16403.3,
       "close": 16682.1,
       "volume": 408989.285,
-      "mayer_multiple": 0.7331089429306541,
+      "mayer_multiple": 0.7331089429306543,
       "daily_return": 0.0018918237180642894,
       "daily_volatility": 0.02028521589008587,
       "volatility_32bar": 0.04002422244365826
@@ -11859,7 +11833,7 @@
       "low": 15443.2,
       "close": 15773.0,
       "volume": 790219.365,
-      "mayer_multiple": 0.7066713213575403,
+      "mayer_multiple": 0.7066713213575401,
       "daily_return": -0.030701916104371785,
       "daily_volatility": 0.05459329233500276,
       "volatility_32bar": 0.040301794554100566
@@ -11885,7 +11859,7 @@
       "low": 16155.5,
       "close": 16595.8,
       "volume": 546714.91,
-      "mayer_multiple": 0.7500279749886428,
+      "mayer_multiple": 0.7500279749886426,
       "daily_return": 0.02313108023131072,
       "daily_volatility": 0.033014377131563494,
       "volatility_32bar": 0.040944950360528504
@@ -12145,7 +12119,7 @@
       "low": 17076.0,
       "close": 17777.1,
       "volume": 596851.291,
-      "mayer_multiple": 0.8535646060914169,
+      "mayer_multiple": 0.853564606091417,
       "daily_return": 0.033552325581395204,
       "daily_volatility": 0.057602196083725694,
       "volatility_32bar": 0.017304617005209504
@@ -12197,7 +12171,7 @@
       "low": 16571.8,
       "close": 16768.0,
       "volume": 248465.27300000002,
-      "mayer_multiple": 0.8155779275273797,
+      "mayer_multiple": 0.8155779275273795,
       "daily_return": 0.008656107699063442,
       "daily_volatility": 0.013012881679389356,
       "volatility_32bar": 0.01810008898488266
@@ -12223,7 +12197,7 @@
       "low": 16210.0,
       "close": 16429.2,
       "volume": 344728.552,
-      "mayer_multiple": 0.8043954936676722,
+      "mayer_multiple": 0.8043954936676719,
       "daily_return": -0.01799728636067488,
       "daily_volatility": 0.03649599493584584,
       "volatility_32bar": 0.018207059648429332
@@ -12236,7 +12210,7 @@
       "low": 16390.3,
       "close": 16887.2,
       "volume": 476171.098,
-      "mayer_multiple": 0.8294178915358505,
+      "mayer_multiple": 0.8294178915358508,
       "daily_return": 0.027877194263871585,
       "daily_volatility": 0.039041404140413995,
       "volatility_32bar": 0.01885672526446528
@@ -12275,7 +12249,7 @@
       "low": 16690.0,
       "close": 16776.4,
       "volume": 264553.42,
-      "mayer_multiple": 0.8322963158247106,
+      "mayer_multiple": 0.8322963158247109,
       "daily_return": -0.0023252356456839873,
       "daily_volatility": 0.016094036861305165,
       "volatility_32bar": 0.01740544893474
@@ -12418,7 +12392,7 @@
       "low": 16600.3,
       "close": 16667.2,
       "volume": 203070.205,
-      "mayer_multiple": 0.8479016618841032,
+      "mayer_multiple": 0.8479016618841033,
       "daily_return": 7.20028801153294e-05,
       "daily_volatility": 0.010421666506671829,
       "volatility_32bar": 0.014090156371960203
@@ -12509,7 +12483,7 @@
       "low": 17140.4,
       "close": 17428.8,
       "volume": 297320.371,
-      "mayer_multiple": 0.892056222144356,
+      "mayer_multiple": 0.8920562221443559,
       "daily_return": 0.01509053740018751,
       "daily_volatility": 0.019794822362985406,
       "volatility_32bar": 0.013308337309386072
@@ -12587,7 +12561,7 @@
       "low": 20606.6,
       "close": 21188.3,
       "volume": 666148.201,
-      "mayer_multiple": 1.0855370654195635,
+      "mayer_multiple": 1.0855370654195633,
       "daily_return": 0.014634122982181363,
       "daily_volatility": 0.042070387902757723,
       "volatility_32bar": 0.019499021416700863
@@ -12613,7 +12587,7 @@
       "low": 20386.0,
       "close": 20680.0,
       "volume": 813785.517,
-      "mayer_multiple": 1.0586010684141158,
+      "mayer_multiple": 1.058601068414116,
       "daily_return": -0.02133841909241918,
       "daily_volatility": 0.06218568665377176,
       "volatility_32bar": 0.018263652777660646
@@ -12665,7 +12639,7 @@
       "low": 22287.0,
       "close": 22704.6,
       "volume": 482529.811,
-      "mayer_multiple": 1.1595804946391248,
+      "mayer_multiple": 1.1595804946391246,
       "daily_return": -0.00339304447829214,
       "daily_volatility": 0.03493565180624194,
       "volatility_32bar": 0.02102269851529481
@@ -12678,7 +12652,7 @@
       "low": 22500.0,
       "close": 22913.1,
       "volume": 525802.84,
-      "mayer_multiple": 1.1698408453103475,
+      "mayer_multiple": 1.1698408453103477,
       "daily_return": 0.009183161121534944,
       "daily_volatility": 0.030249071491853942,
       "volatility_32bar": 0.020948135766175893
@@ -12704,7 +12678,7 @@
       "low": 22310.5,
       "close": 23060.6,
       "volume": 692786.607,
-      "mayer_multiple": 1.1766145923659495,
+      "mayer_multiple": 1.1766145923659497,
       "daily_return": 0.0191449304825122,
       "daily_volatility": 0.0662125009756902,
       "volatility_32bar": 0.021236396241553455
@@ -12977,7 +12951,7 @@
       "low": 22038.5,
       "close": 24332.6,
       "volume": 824676.471,
-      "mayer_multiple": 1.2353317491164617,
+      "mayer_multiple": 1.2353317491164615,
       "daily_return": 0.09668550618819682,
       "daily_volatility": 0.0978728126053114,
       "volatility_32bar": 0.027105429059985545
@@ -13055,7 +13029,7 @@
       "low": 24150.0,
       "close": 24443.4,
       "volume": 729290.575,
-      "mayer_multiple": 1.238419080025678,
+      "mayer_multiple": 1.2384190800256782,
       "daily_return": -0.016358214721186037,
       "daily_volatility": 0.04899482068779296,
       "volatility_32bar": 0.025928361442854733
@@ -13107,7 +13081,7 @@
       "low": 22700.0,
       "close": 23146.2,
       "volume": 310795.648,
-      "mayer_multiple": 1.1722910294453148,
+      "mayer_multiple": 1.1722910294453146,
       "daily_return": -0.0012685755708589097,
       "daily_volatility": 0.022055456187192714,
       "volatility_32bar": 0.026603246149464587
@@ -13185,7 +13159,7 @@
       "low": 21883.2,
       "close": 22342.8,
       "volume": 608518.137,
-      "mayer_multiple": 1.1331733835207738,
+      "mayer_multiple": 1.133173383520774,
       "daily_return": -0.04750374087163367,
       "daily_volatility": 0.07095350627495207,
       "volatility_32bar": 0.0268566499684591
@@ -13211,7 +13185,7 @@
       "low": 22174.9,
       "close": 22419.4,
       "volume": 282261.745,
-      "mayer_multiple": 1.1377568629711792,
+      "mayer_multiple": 1.137756862971179,
       "daily_return": 0.0037473640852985213,
       "daily_volatility": 0.021191468103517422,
       "volatility_32bar": 0.026316847533163396
@@ -13263,7 +13237,7 @@
       "low": 20003.5,
       "close": 20348.3,
       "volume": 951903.36,
-      "mayer_multiple": 1.0326551571567293,
+      "mayer_multiple": 1.0326551571567295,
       "daily_return": -0.06209150326797397,
       "daily_volatility": 0.08941778920106348,
       "volatility_32bar": 0.028448513013103225
@@ -13302,7 +13276,7 @@
       "low": 20262.2,
       "close": 21986.2,
       "volume": 881522.402,
-      "mayer_multiple": 1.1162545203682865,
+      "mayer_multiple": 1.1162545203682863,
       "daily_return": 0.07526177050270699,
       "daily_volatility": 0.08740937497157304,
       "volatility_32bar": 0.03142046962436803
@@ -13328,7 +13302,7 @@
       "low": 23951.0,
       "close": 24682.5,
       "volume": 1572562.635,
-      "mayer_multiple": 1.2509167434515593,
+      "mayer_multiple": 1.2509167434515591,
       "daily_return": 0.023342109081863294,
       "daily_volatility": 0.10286235186873297,
       "volatility_32bar": 0.03456419729348429
@@ -13419,7 +13393,7 @@
       "low": 27288.0,
       "close": 28091.1,
       "volume": 685487.714,
-      "mayer_multiple": 1.406710396837795,
+      "mayer_multiple": 1.4067103968377945,
       "daily_return": 0.013969051512231045,
       "daily_volatility": 0.04172139930440603,
       "volatility_32bar": 0.034291342510427786
@@ -13445,7 +13419,7 @@
       "low": 27101.0,
       "close": 28284.1,
       "volume": 808174.047,
-      "mayer_multiple": 1.4108276197610539,
+      "mayer_multiple": 1.410827619761054,
       "daily_return": 0.03856604660385243,
       "daily_volatility": 0.05925590702903752,
       "volatility_32bar": 0.03517981155810388
@@ -13718,7 +13692,7 @@
       "low": 29836.7,
       "close": 30362.7,
       "volume": 436182.494,
-      "mayer_multiple": 1.4501506331809093,
+      "mayer_multiple": 1.450150633180909,
       "daily_return": 0.01632468619246863,
       "daily_volatility": 0.026749926719297056,
       "volatility_32bar": 0.030040939455307888
@@ -13809,7 +13783,7 @@
       "low": 27983.0,
       "close": 28229.9,
       "volume": 639179.286,
-      "mayer_multiple": 1.3252499839683152,
+      "mayer_multiple": 1.3252499839683147,
       "daily_return": -0.019628339543880657,
       "daily_volatility": 0.03878866025030198,
       "volatility_32bar": 0.02190462174450768
@@ -13822,7 +13796,7 @@
       "low": 27100.0,
       "close": 27252.5,
       "volume": 687832.833,
-      "mayer_multiple": 1.2770787018582277,
+      "mayer_multiple": 1.2770787018582272,
       "daily_return": -0.03462286440972162,
       "daily_volatility": 0.04656086597559862,
       "volatility_32bar": 0.022693028680525786
@@ -13835,7 +13809,7 @@
       "low": 27126.0,
       "close": 27807.2,
       "volume": 345549.021,
-      "mayer_multiple": 1.3007944790613335,
+      "mayer_multiple": 1.3007944790613333,
       "daily_return": 0.020354095954499662,
       "daily_volatility": 0.027402974769124542,
       "volatility_32bar": 0.0228447888806459
@@ -13848,7 +13822,7 @@
       "low": 27279.7,
       "close": 27576.0,
       "volume": 332082.355,
-      "mayer_multiple": 1.2877424741069832,
+      "mayer_multiple": 1.2877424741069827,
       "daily_return": -0.008314393394516562,
       "daily_volatility": 0.01913257905425002,
       "volatility_32bar": 0.022238153610908657
@@ -13861,7 +13835,7 @@
       "low": 26919.3,
       "close": 27497.5,
       "volume": 581268.268,
-      "mayer_multiple": 1.2818189797965565,
+      "mayer_multiple": 1.2818189797965562,
       "daily_return": -0.002846678270960301,
       "daily_volatility": 0.039301754704973206,
       "volatility_32bar": 0.021172742622507547
@@ -13887,7 +13861,7 @@
       "low": 27200.0,
       "close": 28395.9,
       "volume": 1284924.668,
-      "mayer_multiple": 1.31824318083785,
+      "mayer_multiple": 1.3182431808378503,
       "daily_return": 0.003860471529022469,
       "daily_volatility": 0.10030321278776164,
       "volatility_32bar": 0.02110363179452894
@@ -13900,7 +13874,7 @@
       "low": 28365.3,
       "close": 29459.0,
       "volume": 952584.7390000001,
-      "mayer_multiple": 1.364419975962513,
+      "mayer_multiple": 1.3644199759625133,
       "daily_return": 0.037438503445919924,
       "daily_volatility": 0.052028242642316466,
       "volatility_32bar": 0.021831786814188698
@@ -13913,7 +13887,7 @@
       "low": 28870.0,
       "close": 29300.0,
       "volume": 508350.155,
-      "mayer_multiple": 1.3538652934991662,
+      "mayer_multiple": 1.3538652934991666,
       "daily_return": -0.0053973318849926954,
       "daily_volatility": 0.024610921501706434,
       "volatility_32bar": 0.021110775525526412
@@ -13978,7 +13952,7 @@
       "low": 28080.0,
       "close": 29018.4,
       "volume": 676466.23,
-      "mayer_multiple": 1.326034289518309,
+      "mayer_multiple": 1.3260342895183093,
       "daily_return": 0.012628897457819477,
       "daily_volatility": 0.040608717227690064,
       "volatility_32bar": 0.021426934224051546
@@ -14004,7 +13978,7 @@
       "low": 28618.3,
       "close": 29491.5,
       "volume": 578485.177,
-      "mayer_multiple": 1.3416679018118283,
+      "mayer_multiple": 1.3416679018118285,
       "daily_return": 0.023086796641920593,
       "daily_volatility": 0.03644100842615671,
       "volatility_32bar": 0.021560410482721448
@@ -14017,7 +13991,7 @@
       "low": 28333.0,
       "close": 28837.8,
       "volume": 475628.901,
-      "mayer_multiple": 1.309094979793844,
+      "mayer_multiple": 1.3090949797938438,
       "daily_return": -0.02216570876354207,
       "daily_volatility": 0.05225780052569891,
       "volatility_32bar": 0.021865690621151398
@@ -14043,7 +14017,7 @@
       "low": 27250.0,
       "close": 27659.8,
       "volume": 658188.777,
-      "mayer_multiple": 1.2505309199961632,
+      "mayer_multiple": 1.2505309199961634,
       "daily_return": -0.026728220863213248,
       "daily_volatility": 0.04969667170406144,
       "volatility_32bar": 0.022523030115274456
@@ -14082,7 +14056,7 @@
       "low": 26688.8,
       "close": 26956.4,
       "volume": 538822.363,
-      "mayer_multiple": 1.2120869026794228,
+      "mayer_multiple": 1.212086902679423,
       "daily_return": -0.022713347762563063,
       "daily_volatility": 0.03491564155451027,
       "volatility_32bar": 0.022699811785928524
@@ -14108,7 +14082,7 @@
       "low": 26674.9,
       "close": 26762.7,
       "volume": 242694.929,
-      "mayer_multiple": 1.19955806392484,
+      "mayer_multiple": 1.1995580639248398,
       "daily_return": -0.0008362858454886712,
       "daily_volatility": 0.01407182384438037,
       "volatility_32bar": 0.020666767980648083
@@ -14147,7 +14121,7 @@
       "low": 26832.0,
       "close": 27024.8,
       "volume": 373172.951,
-      "mayer_multiple": 1.2060481183513037,
+      "mayer_multiple": 1.2060481183513039,
       "daily_return": -0.004703066016020663,
       "daily_volatility": 0.0167512803054972,
       "volatility_32bar": 0.020484957806365417
@@ -14199,7 +14173,7 @@
       "low": 26813.5,
       "close": 27089.5,
       "volume": 137515.354,
-      "mayer_multiple": 1.2020160341870498,
+      "mayer_multiple": 1.2020160341870496,
       "daily_return": 0.008165209656830541,
       "daily_volatility": 0.01221506487753563,
       "volatility_32bar": 0.019601238298037144
@@ -14212,7 +14186,7 @@
       "low": 26642.0,
       "close": 26732.8,
       "volume": 238776.425,
-      "mayer_multiple": 1.184456078683776,
+      "mayer_multiple": 1.1844560786837761,
       "daily_return": -0.013167463408331637,
       "daily_volatility": 0.024165070624850373,
       "volatility_32bar": 0.01768274470774335
@@ -14368,7 +14342,7 @@
       "low": 26477.6,
       "close": 27227.8,
       "volume": 391110.093,
-      "mayer_multiple": 1.179698269631015,
+      "mayer_multiple": 1.1796982696310148,
       "daily_return": 0.015761808299105118,
       "daily_volatility": 0.029837151734624225,
       "volatility_32bar": 0.016355290620070698
@@ -14394,7 +14368,7 @@
       "low": 26935.3,
       "close": 27102.4,
       "volume": 218271.544,
-      "mayer_multiple": 1.1690433420239623,
+      "mayer_multiple": 1.1690433420239625,
       "daily_return": 0.0017556893575656485,
       "daily_volatility": 0.019359909085542266,
       "volatility_32bar": 0.01568682033247697
@@ -14407,7 +14381,7 @@
       "low": 25360.1,
       "close": 25714.7,
       "volume": 700502.5480000001,
-      "mayer_multiple": 1.1070292831496018,
+      "mayer_multiple": 1.1070292831496016,
       "daily_return": -0.05120210756242993,
       "daily_volatility": 0.0686338942317041,
       "volatility_32bar": 0.01786311513026603
@@ -14446,7 +14420,7 @@
       "low": 26195.4,
       "close": 26485.9,
       "volume": 333104.839,
-      "mayer_multiple": 1.1328223138866336,
+      "mayer_multiple": 1.1328223138866338,
       "daily_return": 0.006077664961121831,
       "daily_volatility": 0.022827240154195193,
       "volatility_32bar": 0.020746564713169748
@@ -14576,7 +14550,7 @@
       "low": 26230.9,
       "close": 26329.7,
       "volume": 241977.484,
-      "mayer_multiple": 1.1035948954989978,
+      "mayer_multiple": 1.103594895498998,
       "daily_return": -0.006759993813398535,
       "daily_volatility": 0.01817339354417255,
       "volatility_32bar": 0.02173904037178207
@@ -14589,7 +14563,7 @@
       "low": 26241.2,
       "close": 26828.5,
       "volume": 400533.758,
-      "mayer_multiple": 1.1221834334588432,
+      "mayer_multiple": 1.1221834334588434,
       "daily_return": 0.018944385997561763,
       "daily_volatility": 0.03115343757571237,
       "volatility_32bar": 0.0216891838670014
@@ -14641,7 +14615,7 @@
       "low": 29792.0,
       "close": 30673.4,
       "volume": 699073.071,
-      "mayer_multiple": 1.2695183626526663,
+      "mayer_multiple": 1.2695183626526667,
       "daily_return": 0.026724686192468594,
       "daily_volatility": 0.05568342603037159,
       "volatility_32bar": 0.025886296286370503
@@ -14693,7 +14667,7 @@
       "low": 30213.0,
       "close": 30683.2,
       "volume": 406073.348,
-      "mayer_multiple": 1.2559716389592388,
+      "mayer_multiple": 1.255971638959239,
       "daily_return": 0.013982108453045594,
       "daily_volatility": 0.025600328518537833,
       "volatility_32bar": 0.025174221457955018
@@ -14745,7 +14719,7 @@
       "low": 30311.3,
       "close": 30573.6,
       "volume": 135520.24599999998,
-      "mayer_multiple": 1.2382147038279574,
+      "mayer_multiple": 1.2382147038279576,
       "daily_return": 0.0037228908542950023,
       "daily_volatility": 0.011673469921762615,
       "volatility_32bar": 0.02434166700181423
@@ -14784,7 +14758,7 @@
       "low": 30600.0,
       "close": 30756.1,
       "volume": 300832.26,
-      "mayer_multiple": 1.2354145062079618,
+      "mayer_multiple": 1.2354145062079616,
       "daily_return": -0.012613567048701424,
       "daily_volatility": 0.023390481888145815,
       "volatility_32bar": 0.024045099587474944
@@ -14862,7 +14836,7 @@
       "low": 29928.8,
       "close": 30396.9,
       "volume": 429115.537,
-      "mayer_multiple": 1.2014279399652423,
+      "mayer_multiple": 1.2014279399652428,
       "daily_return": 0.00826262612860651,
       "daily_volatility": 0.036556359365593226,
       "volatility_32bar": 0.01934408392371481
@@ -14940,7 +14914,7 @@
       "low": 30050.0,
       "close": 30216.8,
       "volume": 173805.94,
-      "mayer_multiple": 1.1751212540890539,
+      "mayer_multiple": 1.175121254089054,
       "daily_return": -0.001968529944115005,
       "daily_volatility": 0.012959678059887167,
       "volatility_32bar": 0.01985285353550324
@@ -14992,7 +14966,7 @@
       "low": 29468.8,
       "close": 29791.0,
       "volume": 410263.76399999997,
-      "mayer_multiple": 1.1466824345926043,
+      "mayer_multiple": 1.146682434592604,
       "daily_return": -0.003495509357595572,
       "daily_volatility": 0.03192910610587092,
       "volatility_32bar": 0.019402820827947198
@@ -15057,7 +15031,7 @@
       "low": 29033.0,
       "close": 29216.3,
       "volume": 196438.618,
-      "mayer_multiple": 1.1108402941848718,
+      "mayer_multiple": 1.110840294184872,
       "daily_return": 0.0018001769316755567,
       "daily_volatility": 0.011859817978320322,
       "volatility_32bar": 0.01355344017420952
@@ -15070,7 +15044,7 @@
       "low": 29083.0,
       "close": 29336.0,
       "volume": 318527.582,
-      "mayer_multiple": 1.1127683952533918,
+      "mayer_multiple": 1.112768395253392,
       "daily_return": 0.00409702802887435,
       "daily_volatility": 0.020026588491955277,
       "volatility_32bar": 0.013572106177385935
@@ -15148,7 +15122,7 @@
       "low": 28550.0,
       "close": 29701.2,
       "volume": 442328.643,
-      "mayer_multiple": 1.1123552716197223,
+      "mayer_multiple": 1.112355271619722,
       "daily_return": 0.016440343864644325,
       "daily_volatility": 0.03989737788372187,
       "volatility_32bar": 0.013023729189612181
@@ -15174,7 +15148,7 @@
       "low": 28955.4,
       "close": 29180.2,
       "volume": 251967.94199999998,
-      "mayer_multiple": 1.0894758382106615,
+      "mayer_multiple": 1.0894758382106613,
       "daily_return": 0.00034624495630808383,
       "daily_volatility": 0.01660715142459608,
       "volatility_32bar": 0.013328264988742363
@@ -15239,7 +15213,7 @@
       "low": 29132.4,
       "close": 29759.0,
       "volume": 459269.801,
-      "mayer_multiple": 1.1029595240465948,
+      "mayer_multiple": 1.1029595240465953,
       "daily_return": 0.01904960842661807,
       "daily_volatility": 0.03755502537047611,
       "volatility_32bar": 0.012441849929853024
@@ -15252,7 +15226,7 @@
       "low": 29362.0,
       "close": 29572.8,
       "volume": 362009.701,
-      "mayer_multiple": 1.0946807734473727,
+      "mayer_multiple": 1.0946807734473725,
       "daily_return": -0.006256930676434069,
       "daily_volatility": 0.026635962776605553,
       "volatility_32bar": 0.012479951712871546
@@ -15265,7 +15239,7 @@
       "low": 29303.7,
       "close": 29443.7,
       "volume": 234546.038,
-      "mayer_multiple": 1.088544217910406,
+      "mayer_multiple": 1.0885442179104061,
       "daily_return": -0.004365498025212355,
       "daily_volatility": 0.014471686642643368,
       "volatility_32bar": 0.012483063109201699
@@ -15304,7 +15278,7 @@
       "low": 29256.6,
       "close": 29293.3,
       "volume": 84190.505,
-      "mayer_multiple": 1.0790885171558966,
+      "mayer_multiple": 1.079088517155897,
       "daily_return": -0.0043302844595812795,
       "daily_volatility": 0.00704597979742813,
       "volatility_32bar": 0.01225618598156502
@@ -15369,7 +15343,7 @@
       "low": 25600.0,
       "close": 26042.1,
       "volume": 522375.316,
-      "mayer_multiple": 0.955043276217867,
+      "mayer_multiple": 0.9550432762178671,
       "daily_return": -0.021330567424660996,
       "daily_volatility": 0.04677042174018225,
       "volatility_32bar": 0.015607211235815306
@@ -15421,7 +15395,7 @@
       "low": 25280.0,
       "close": 26044.4,
       "volume": 313113.576,
-      "mayer_multiple": 0.953264861876993,
+      "mayer_multiple": 0.9532648618769931,
       "daily_return": -0.002718702374843951,
       "daily_volatility": 0.032567461719217976,
       "volatility_32bar": 0.015588813774951128
@@ -15434,7 +15408,7 @@
       "low": 25800.0,
       "close": 26419.2,
       "volume": 412969.028,
-      "mayer_multiple": 0.9664354345612314,
+      "mayer_multiple": 0.9664354345612313,
       "daily_return": 0.014390809540630656,
       "daily_volatility": 0.03807836724806202,
       "volatility_32bar": 0.015920144007358483
@@ -15460,7 +15434,7 @@
       "low": 25754.4,
       "close": 26051.7,
       "volume": 274830.494,
-      "mayer_multiple": 0.9518552347872675,
+      "mayer_multiple": 0.9518552347872679,
       "daily_return": -0.004314990483324732,
       "daily_volatility": 0.02094297109209758,
       "volatility_32bar": 0.01506769263005616
@@ -15473,7 +15447,7 @@
       "low": 25969.0,
       "close": 26004.3,
       "volume": 63925.862,
-      "mayer_multiple": 0.9496427815491839,
+      "mayer_multiple": 0.9496427815491838,
       "daily_return": -0.0018194589988369536,
       "daily_volatility": 0.006168210642086173,
       "volatility_32bar": 0.015041774082435138
@@ -15486,7 +15460,7 @@
       "low": 25955.6,
       "close": 26087.7,
       "volume": 86505.398,
-      "mayer_multiple": 0.9521439599242348,
+      "mayer_multiple": 0.952143959924235,
       "daily_return": 0.0032071618924562895,
       "daily_volatility": 0.008356428508454175,
       "volatility_32bar": 0.015028490946956009
@@ -15499,7 +15473,7 @@
       "low": 25850.4,
       "close": 26106.5,
       "volume": 219992.051,
-      "mayer_multiple": 0.9520807421652915,
+      "mayer_multiple": 0.9520807421652917,
       "daily_return": 0.0007206461282520671,
       "daily_volatility": 0.015099687817210161,
       "volatility_32bar": 0.015045962497536675
@@ -15525,7 +15499,7 @@
       "low": 26950.0,
       "close": 27290.4,
       "volume": 315313.916,
-      "mayer_multiple": 0.9931701356843764,
+      "mayer_multiple": 0.9931701356843766,
       "daily_return": -0.014790560322886837,
       "daily_volatility": 0.029614809603377038,
       "volatility_32bar": 0.018879888833738503
@@ -15538,7 +15512,7 @@
       "low": 25617.8,
       "close": 25928.0,
       "volume": 502906.277,
-      "mayer_multiple": 0.9428755872607937,
+      "mayer_multiple": 0.9428755872607938,
       "daily_return": -0.049922317005247296,
       "daily_volatility": 0.07931579759333539,
       "volatility_32bar": 0.020634064046659305
@@ -15551,7 +15525,7 @@
       "low": 25312.0,
       "close": 25795.6,
       "volume": 361184.924,
-      "mayer_multiple": 0.9373740756523774,
+      "mayer_multiple": 0.9373740756523772,
       "daily_return": -0.005106448626967075,
       "daily_volatility": 0.03254818651242842,
       "volatility_32bar": 0.020632998604247818
@@ -15590,7 +15564,7 @@
       "low": 25610.0,
       "close": 25814.0,
       "volume": 173147.873,
-      "mayer_multiple": 0.9367516798270286,
+      "mayer_multiple": 0.9367516798270287,
       "daily_return": -0.005704469207036378,
       "daily_volatility": 0.01895483071201671,
       "volatility_32bar": 0.020233926437643414
@@ -15616,7 +15590,7 @@
       "low": 25326.0,
       "close": 25747.4,
       "volume": 251122.66,
-      "mayer_multiple": 0.9339436391707296,
+      "mayer_multiple": 0.9339436391707295,
       "daily_return": -0.0012529238121467001,
       "daily_volatility": 0.028197021835214428,
       "volatility_32bar": 0.020238095141401447
@@ -15668,7 +15642,7 @@
       "low": 25508.7,
       "close": 25828.4,
       "volume": 162972.413,
-      "mayer_multiple": 0.9358411613584314,
+      "mayer_multiple": 0.9358411613584312,
       "daily_return": -0.0024794728995928272,
       "daily_volatility": 0.02046584379984817,
       "volatility_32bar": 0.020247140457027038
@@ -15681,7 +15655,7 @@
       "low": 24888.0,
       "close": 25150.4,
       "volume": 427216.374,
-      "mayer_multiple": 0.9110735369188657,
+      "mayer_multiple": 0.9110735369188658,
       "daily_return": -0.026250174226820078,
       "daily_volatility": 0.040039124626248486,
       "volatility_32bar": 0.02061374584155134
@@ -15720,7 +15694,7 @@
       "low": 26106.6,
       "close": 26510.3,
       "volume": 380666.471,
-      "mayer_multiple": 0.9588286841187305,
+      "mayer_multiple": 0.9588286841187306,
       "daily_return": 0.011461318051575908,
       "daily_volatility": 0.02917356650056776,
       "volatility_32bar": 0.021717817341059237
@@ -15837,7 +15811,7 @@
       "low": 26492.2,
       "close": 26563.1,
       "volume": 57836.484,
-      "mayer_multiple": 0.9546923231370663,
+      "mayer_multiple": 0.9546923231370662,
       "daily_return": -0.00013550798556094534,
       "daily_volatility": 0.004833773166535451,
       "volatility_32bar": 0.01762534300616454
@@ -15876,7 +15850,7 @@
       "low": 26073.8,
       "close": 26208.8,
       "volume": 180491.169,
-      "mayer_multiple": 0.9391658213130312,
+      "mayer_multiple": 0.9391658213130311,
       "daily_return": -0.003107586390521333,
       "daily_volatility": 0.011988339794267602,
       "volatility_32bar": 0.017506400748345453
@@ -15889,7 +15863,7 @@
       "low": 26050.0,
       "close": 26359.6,
       "volume": 353002.83999999997,
-      "mayer_multiple": 0.9435700568532853,
+      "mayer_multiple": 0.9435700568532854,
       "daily_return": 0.0057537926192727795,
       "daily_volatility": 0.030345680511085202,
       "volatility_32bar": 0.017526783071863276
@@ -15902,7 +15876,7 @@
       "low": 26325.2,
       "close": 27011.8,
       "volume": 429587.858,
-      "mayer_multiple": 0.9660473092377277,
+      "mayer_multiple": 0.9660473092377275,
       "daily_return": 0.024742408837767016,
       "daily_volatility": 0.03641001340155044,
       "volatility_32bar": 0.018021324511940464
@@ -15915,7 +15889,7 @@
       "low": 26625.0,
       "close": 26890.9,
       "volume": 277397.643,
-      "mayer_multiple": 0.9612470785760301,
+      "mayer_multiple": 0.96124707857603,
       "daily_return": -0.004475821677933256,
       "daily_volatility": 0.0225540982265376,
       "volatility_32bar": 0.018048753571398745
@@ -15928,7 +15902,7 @@
       "low": 26870.4,
       "close": 26950.9,
       "volume": 92317.154,
-      "mayer_multiple": 0.9630014168868828,
+      "mayer_multiple": 0.9630014168868826,
       "daily_return": 0.0022312380768214624,
       "daily_volatility": 0.007962628335231793,
       "volatility_32bar": 0.014494490390745829
@@ -16409,7 +16383,7 @@
       "low": 34743.2,
       "close": 35057.4,
       "volume": 202227.215,
-      "mayer_multiple": 1.2335924175098802,
+      "mayer_multiple": 1.2335924175098805,
       "daily_return": 0.0009107650140611767,
       "daily_volatility": 0.01587967162425064,
       "volatility_32bar": 0.0221605167749368
@@ -16422,7 +16396,7 @@
       "low": 34520.3,
       "close": 35406.5,
       "volume": 343525.95,
-      "mayer_multiple": 1.2440916932454602,
+      "mayer_multiple": 1.2440916932454604,
       "daily_return": 0.009957954668629032,
       "daily_volatility": 0.039580303051699385,
       "volatility_32bar": 0.022077084781959192
@@ -16487,7 +16461,7 @@
       "low": 36753.6,
       "close": 37085.5,
       "volume": 118890.045,
-      "mayer_multiple": 1.2930101150310236,
+      "mayer_multiple": 1.2930101150310234,
       "daily_return": -0.0020612398115283925,
       "daily_volatility": 0.013611788974127433,
       "volatility_32bar": 0.021504868825815527
@@ -16500,7 +16474,7 @@
       "low": 36350.0,
       "close": 36486.2,
       "volume": 257075.648,
-      "mayer_multiple": 1.2705586455834113,
+      "mayer_multiple": 1.270558645583411,
       "daily_return": -0.016159954699276113,
       "daily_volatility": 0.030554017683398188,
       "volatility_32bar": 0.021849676836348808
@@ -16513,7 +16487,7 @@
       "low": 34446.3,
       "close": 35559.0,
       "volume": 397265.8,
-      "mayer_multiple": 1.2369227869760266,
+      "mayer_multiple": 1.2369227869760262,
       "daily_return": -0.025412347682137293,
       "daily_volatility": 0.06562614246744843,
       "volatility_32bar": 0.02268438289205629
@@ -16526,7 +16500,7 @@
       "low": 35388.0,
       "close": 37885.6,
       "volume": 423818.57,
-      "mayer_multiple": 1.3158688561645957,
+      "mayer_multiple": 1.315868856164596,
       "daily_return": 0.0654292865378665,
       "daily_volatility": 0.06894440103891716,
       "volatility_32bar": 0.02463239867449393
@@ -16539,7 +16513,7 @@
       "low": 35486.1,
       "close": 36176.0,
       "volume": 434444.366,
-      "mayer_multiple": 1.2549744876896909,
+      "mayer_multiple": 1.254974487689691,
       "daily_return": -0.04512532466161279,
       "daily_volatility": 0.0682883679787705,
       "volatility_32bar": 0.026505145400758132
@@ -16578,7 +16552,7 @@
       "low": 36380.0,
       "close": 37375.9,
       "volume": 154713.00699999998,
-      "mayer_multiple": 1.2910353252955902,
+      "mayer_multiple": 1.29103532529559,
       "daily_return": 0.02173265283248904,
       "daily_volatility": 0.03072033048033618,
       "volatility_32bar": 0.025504420849379428
@@ -16591,7 +16565,7 @@
       "low": 36600.0,
       "close": 37462.5,
       "volume": 310504.037,
-      "mayer_multiple": 1.2920993518084658,
+      "mayer_multiple": 1.2920993518084656,
       "daily_return": 0.0023170010621818005,
       "daily_volatility": 0.031623623623623545,
       "volatility_32bar": 0.025515853015093362
@@ -16604,7 +16578,7 @@
       "low": 35720.0,
       "close": 35737.0,
       "volume": 450731.16,
-      "mayer_multiple": 1.2312599102951516,
+      "mayer_multiple": 1.2312599102951511,
       "daily_return": -0.04605939272605941,
       "daily_volatility": 0.05470520748803761,
       "volatility_32bar": 0.02682485083875277
@@ -16643,7 +16617,7 @@
       "low": 37257.3,
       "close": 37706.3,
       "volume": 351031.723,
-      "mayer_multiple": 1.2929842872762871,
+      "mayer_multiple": 1.292984287276287,
       "daily_return": 0.011047264595393846,
       "daily_volatility": 0.030968299727101228,
       "volatility_32bar": 0.021845342907524982
@@ -16721,7 +16695,7 @@
       "low": 37442.9,
       "close": 37716.8,
       "volume": 191188.87099999998,
-      "mayer_multiple": 1.2794787642443137,
+      "mayer_multiple": 1.279478764244314,
       "daily_return": -0.003179419141530304,
       "daily_volatility": 0.01827037288423192,
       "volatility_32bar": 0.021405083792448876
@@ -16734,7 +16708,7 @@
       "low": 37600.0,
       "close": 38660.0,
       "volume": 342361.994,
-      "mayer_multiple": 1.3089203991706129,
+      "mayer_multiple": 1.308920399170613,
       "daily_return": 0.02500742374750775,
       "daily_volatility": 0.0359286083807553,
       "volatility_32bar": 0.021727269539795004
@@ -16786,7 +16760,7 @@
       "low": 41393.5,
       "close": 44081.7,
       "volume": 575038.041,
-      "mayer_multiple": 1.4781237900381983,
+      "mayer_multiple": 1.4781237900381987,
       "daily_return": 0.049736742464833394,
       "daily_volatility": 0.07110887284292572,
       "volatility_32bar": 0.02401134130853414
@@ -16812,7 +16786,7 @@
       "low": 42815.0,
       "close": 43296.0,
       "volume": 346421.958,
-      "mayer_multiple": 1.4437302580616151,
+      "mayer_multiple": 1.4437302580616147,
       "daily_return": -0.010937799830039285,
       "daily_volatility": 0.02891029194382846,
       "volatility_32bar": 0.024305712002403595
@@ -16903,7 +16877,7 @@
       "low": 41140.0,
       "close": 43032.4,
       "volume": 361628.325,
-      "mayer_multiple": 1.408628252311938,
+      "mayer_multiple": 1.4086282523119382,
       "daily_return": 0.003671137026239002,
       "daily_volatility": 0.053682806443516945,
       "volatility_32bar": 0.02698473516821529
@@ -16916,7 +16890,7 @@
       "low": 41668.0,
       "close": 41968.0,
       "volume": 257177.013,
-      "mayer_multiple": 1.37059030254455,
+      "mayer_multiple": 1.3705903025445503,
       "daily_return": -0.024734850949517106,
       "daily_volatility": 0.03407357987037743,
       "volatility_32bar": 0.027235156653381002
@@ -16929,7 +16903,7 @@
       "low": 41638.1,
       "close": 42287.4,
       "volume": 160549.459,
-      "mayer_multiple": 1.3777350549032181,
+      "mayer_multiple": 1.377735054903218,
       "daily_return": 0.007610560426992041,
       "daily_volatility": 0.0264523238600623,
       "volatility_32bar": 0.026692822619093674
@@ -16994,7 +16968,7 @@
       "low": 43317.2,
       "close": 43896.3,
       "volume": 276922.15499999997,
-      "mayer_multiple": 1.4120777015086108,
+      "mayer_multiple": 1.4120777015086106,
       "daily_return": 0.00428745633040406,
       "daily_volatility": 0.02209753441634033,
       "volatility_32bar": 0.02412196033883784
@@ -17020,7 +16994,7 @@
       "low": 43304.2,
       "close": 43725.2,
       "volume": 120792.199,
-      "mayer_multiple": 1.3987470962135102,
+      "mayer_multiple": 1.3987470962135105,
       "daily_return": -0.006227385952471853,
       "daily_volatility": 0.016439032868917763,
       "volatility_32bar": 0.02240452041118839
@@ -17046,7 +17020,7 @@
       "low": 42755.4,
       "close": 43611.9,
       "volume": 184210.274,
-      "mayer_multiple": 1.387619019498491,
+      "mayer_multiple": 1.3876190194984908,
       "daily_return": 0.014032142558197958,
       "daily_volatility": 0.02509865426638139,
       "volatility_32bar": 0.021547496575655536
@@ -17111,7 +17085,7 @@
       "low": 41550.0,
       "close": 42174.2,
       "volume": 183890.67,
-      "mayer_multiple": 1.3244199358516378,
+      "mayer_multiple": 1.324419935851638,
       "daily_return": 0.0018790785625879547,
       "daily_volatility": 0.02619136818244326,
       "volatility_32bar": 0.02263649335532394
@@ -17150,7 +17124,7 @@
       "low": 44200.9,
       "close": 44979.8,
       "volume": 459798.523,
-      "mayer_multiple": 1.4005437266221146,
+      "mayer_multiple": 1.400543726622115,
       "daily_return": 0.016947696370353427,
       "daily_volatility": 0.03888634453688097,
       "volatility_32bar": 0.02354245307077045
@@ -17163,7 +17137,7 @@
       "low": 40333.0,
       "close": 42849.5,
       "volume": 595855.225,
-      "mayer_multiple": 1.3308265879023469,
+      "mayer_multiple": 1.330826587902347,
       "daily_return": -0.047361259943352385,
       "daily_volatility": 0.12250551348323792,
       "volatility_32bar": 0.02506976838344141
@@ -17176,7 +17150,7 @@
       "low": 42625.0,
       "close": 44143.8,
       "volume": 333923.098,
-      "mayer_multiple": 1.3672428693535355,
+      "mayer_multiple": 1.3672428693535352,
       "daily_return": 0.03020572002007027,
       "daily_volatility": 0.05019504437769297,
       "volatility_32bar": 0.025451849555617145
@@ -17189,7 +17163,7 @@
       "low": 42300.0,
       "close": 44145.4,
       "volume": 374967.79099999997,
-      "mayer_multiple": 1.3636355141712635,
+      "mayer_multiple": 1.3636355141712633,
       "daily_return": 3.6245180523586384e-05,
       "daily_volatility": 0.04983531692996326,
       "volatility_32bar": 0.02401748906851131
@@ -17228,7 +17202,7 @@
       "low": 43158.1,
       "close": 46972.7,
       "volume": 495087.983,
-      "mayer_multiple": 1.4405810056434742,
+      "mayer_multiple": 1.4405810056434747,
       "daily_return": 0.06958141398869211,
       "daily_volatility": 0.08843221701115758,
       "volatility_32bar": 0.025325330347737648
@@ -17462,7 +17436,7 @@
       "low": 39813.1,
       "close": 41806.4,
       "volume": 355418.478,
-      "mayer_multiple": 1.241344893433865,
+      "mayer_multiple": 1.2413448934338647,
       "daily_return": 0.04638165057704868,
       "daily_volatility": 0.058034176585403295,
       "volatility_32bar": 0.028207876174011614
@@ -17501,7 +17475,7 @@
       "low": 41768.3,
       "close": 43287.7,
       "volume": 249502.11000000002,
-      "mayer_multiple": 1.2786858534678716,
+      "mayer_multiple": 1.2786858534678713,
       "daily_return": 0.030139548608797417,
       "daily_volatility": 0.03632671636515685,
       "volatility_32bar": 0.027934591561417282
@@ -17540,7 +17514,7 @@
       "low": 41866.8,
       "close": 43072.6,
       "volume": 274321.107,
-      "mayer_multiple": 1.2652745990541445,
+      "mayer_multiple": 1.2652745990541443,
       "daily_return": 0.012032283455316595,
       "daily_volatility": 0.032995454186652236,
       "volatility_32bar": 0.02800648352491082
@@ -17579,7 +17553,7 @@
       "low": 42176.7,
       "close": 42570.3,
       "volume": 127421.548,
-      "mayer_multiple": 1.2434191548407831,
+      "mayer_multiple": 1.2434191548407836,
       "daily_return": -0.009818014346721693,
       "daily_volatility": 0.02197306572892372,
       "volatility_32bar": 0.025414738477134456
@@ -17670,7 +17644,7 @@
       "low": 47539.4,
       "close": 48303.4,
       "volume": 209951.626,
-      "mayer_multiple": 1.3883152950794415,
+      "mayer_multiple": 1.3883152950794413,
       "daily_return": 0.0119582842753172,
       "daily_volatility": 0.021957046501902527,
       "volatility_32bar": 0.02353244019135872
@@ -17683,7 +17657,7 @@
       "low": 47702.0,
       "close": 49943.6,
       "volume": 450895.202,
-      "mayer_multiple": 1.43119279357823,
+      "mayer_multiple": 1.4311927935782303,
       "daily_return": 0.03395620184086412,
       "daily_volatility": 0.05428523374366279,
       "volatility_32bar": 0.02414895540673054
@@ -17865,7 +17839,7 @@
       "low": 50922.5,
       "close": 54511.6,
       "volume": 393466.23099999997,
-      "mayer_multiple": 1.4946395534780925,
+      "mayer_multiple": 1.494639553478092,
       "daily_return": 0.053061051021058514,
       "daily_volatility": 0.07465016620315681,
       "volatility_32bar": 0.018083818207038724
@@ -17904,7 +17878,7 @@
       "low": 60452.0,
       "close": 61203.3,
       "volume": 584713.883,
-      "mayer_multiple": 1.6570729930807668,
+      "mayer_multiple": 1.6570729930807664,
       "daily_return": -0.020557579947477755,
       "daily_volatility": 0.05409512232183563,
       "volatility_32bar": 0.023948493328547264
@@ -17917,7 +17891,7 @@
       "low": 60844.8,
       "close": 62430.6,
       "volume": 299231.827,
-      "mayer_multiple": 1.6827818955702225,
+      "mayer_multiple": 1.6827818955702223,
       "daily_return": 0.020052840288023566,
       "daily_volatility": 0.03770907215371944,
       "volatility_32bar": 0.023774699265844332
@@ -17969,7 +17943,7 @@
       "low": 59112.0,
       "close": 63747.4,
       "volume": 1053025.132,
-      "mayer_multiple": 1.6849603778292517,
+      "mayer_multiple": 1.6849603778292515,
       "daily_return": -0.06660673183359578,
       "daily_volatility": 0.1606026284993584,
       "volatility_32bar": 0.029824584077387917
@@ -17982,7 +17956,7 @@
       "low": 62829.3,
       "close": 66128.1,
       "volume": 534011.813,
-      "mayer_multiple": 1.7386861567775471,
+      "mayer_multiple": 1.7386861567775473,
       "daily_return": 0.03734583684981674,
       "daily_volatility": 0.07410163001810118,
       "volatility_32bar": 0.029961733226520012
@@ -17995,7 +17969,7 @@
       "low": 65609.3,
       "close": 66870.0,
       "volume": 296092.788,
-      "mayer_multiple": 1.7488368025352719,
+      "mayer_multiple": 1.748836802535272,
       "daily_return": 0.011219133772178536,
       "daily_volatility": 0.037266337670106175,
       "volatility_32bar": 0.02966150510288801
@@ -18060,7 +18034,7 @@
       "low": 68600.0,
       "close": 71503.2,
       "volume": 472072.331,
-      "mayer_multiple": 1.8180845960382837,
+      "mayer_multiple": 1.8180845960382834,
       "daily_return": -0.009016850117388175,
       "daily_volatility": 0.0667103010774343,
       "volatility_32bar": 0.02996511346540024
@@ -18086,7 +18060,7 @@
       "low": 68600.0,
       "close": 71455.5,
       "volume": 513901.23699999996,
-      "mayer_multiple": 1.7957560265312649,
+      "mayer_multiple": 1.7957560265312646,
       "daily_return": -0.022865511790350124,
       "daily_volatility": 0.07391173527580094,
       "volatility_32bar": 0.03068037892594139
@@ -18125,7 +18099,7 @@
       "low": 64559.8,
       "close": 68447.9,
       "volume": 314890.309,
-      "mayer_multiple": 1.6941463825498904,
+      "mayer_multiple": 1.6941463825498901,
       "daily_return": 0.047388716316506097,
       "daily_volatility": 0.0644665504712342,
       "volatility_32bar": 0.033622422210059934
@@ -18138,7 +18112,7 @@
       "low": 66601.6,
       "close": 67660.0,
       "volume": 317885.916,
-      "mayer_multiple": 1.6660408548380279,
+      "mayer_multiple": 1.6660408548380277,
       "daily_return": -0.01151094482080528,
       "daily_volatility": 0.036104049660064856,
       "volatility_32bar": 0.03379208923743325
@@ -18177,7 +18151,7 @@
       "low": 64550.1,
       "close": 65539.9,
       "volume": 347218.385,
-      "mayer_multiple": 1.5907691172893894,
+      "mayer_multiple": 1.5907691172893892,
       "daily_return": -0.03442286273284967,
       "daily_volatility": 0.057122455176159805,
       "volatility_32bar": 0.04113442738412413
@@ -18190,7 +18164,7 @@
       "low": 62294.0,
       "close": 63826.0,
       "volume": 401149.333,
-      "mayer_multiple": 1.5420560911366603,
+      "mayer_multiple": 1.54205609113666,
       "daily_return": -0.026150482377910178,
       "daily_volatility": 0.06890452166828556,
       "volatility_32bar": 0.04148661143877243
@@ -18515,7 +18489,7 @@
       "low": 61521.0,
       "close": 63765.0,
       "volume": 405931.439,
-      "mayer_multiple": 1.3678619604292432,
+      "mayer_multiple": 1.3678619604292435,
       "daily_return": 0.00587291596666506,
       "daily_volatility": 0.04446483180428139,
       "volatility_32bar": 0.03709815624262032
@@ -18541,7 +18515,7 @@
       "low": 60763.8,
       "close": 63445.0,
       "volume": 363302.394,
-      "mayer_multiple": 1.3508886183444646,
+      "mayer_multiple": 1.350888618344465,
       "daily_return": 0.035760637993943245,
       "daily_volatility": 0.052584127984868737,
       "volatility_32bar": 0.0357992004930445
@@ -18736,7 +18710,7 @@
       "low": 58781.3,
       "close": 62853.7,
       "volume": 353606.459,
-      "mayer_multiple": 1.2657025601500806,
+      "mayer_multiple": 1.2657025601500809,
       "daily_return": 0.06465469784049582,
       "daily_volatility": 0.07241737558807194,
       "volatility_32bar": 0.02943785740832198
@@ -18983,7 +18957,7 @@
       "low": 68736.8,
       "close": 69219.1,
       "volume": 194160.494,
-      "mayer_multiple": 1.3138487149397893,
+      "mayer_multiple": 1.3138487149397895,
       "daily_return": -0.013534505364207416,
       "daily_volatility": 0.028584595870214884,
       "volatility_32bar": 0.029654359884140523
@@ -19009,7 +18983,7 @@
       "low": 66639.0,
       "close": 68584.1,
       "volume": 186681.082,
-      "mayer_multiple": 1.293631286705454,
+      "mayer_multiple": 1.2936312867054542,
       "daily_return": 0.008591189104689922,
       "daily_volatility": 0.038412693321046715,
       "volatility_32bar": 0.02949537994164726
@@ -19074,7 +19048,7 @@
       "low": 67129.0,
       "close": 67686.7,
       "volume": 158236.599,
-      "mayer_multiple": 1.2575878615841238,
+      "mayer_multiple": 1.257587861584124,
       "daily_return": -0.011013946420613596,
       "daily_volatility": 0.02739090545114476,
       "volatility_32bar": 0.02916983005476762
@@ -19087,7 +19061,7 @@
       "low": 67167.0,
       "close": 68402.5,
       "volume": 194573.899,
-      "mayer_multiple": 1.267200459673134,
+      "mayer_multiple": 1.2672004596731343,
       "daily_return": 0.010575194240523,
       "daily_volatility": 0.03511421366178128,
       "volatility_32bar": 0.029169225341597015
@@ -19230,7 +19204,7 @@
       "low": 69201.2,
       "close": 69558.7,
       "volume": 127381.604,
-      "mayer_multiple": 1.2472669017708302,
+      "mayer_multiple": 1.2472669017708304,
       "daily_return": -0.0015559711829544742,
       "daily_volatility": 0.014685438342004668,
       "volatility_32bar": 0.0239237647760545
@@ -19334,7 +19308,7 @@
       "low": 64009.8,
       "close": 65150.0,
       "volume": 335559.394,
-      "mayer_multiple": 1.1445370788465883,
+      "mayer_multiple": 1.1445370788465885,
       "daily_return": -0.019889547644801442,
       "daily_volatility": 0.039126630851880145,
       "volatility_32bar": 0.019298684474425006
@@ -19438,7 +19412,7 @@
       "low": 60696.0,
       "close": 60860.1,
       "volume": 170601.18,
-      "mayer_multiple": 1.0540124830653195,
+      "mayer_multiple": 1.0540124830653197,
       "daily_return": -0.014854850771636507,
       "daily_volatility": 0.029068305835843165,
       "volatility_32bar": 0.015300684300036687
@@ -19451,7 +19425,7 @@
       "low": 60605.0,
       "close": 61682.0,
       "volume": 160172.482,
-      "mayer_multiple": 1.0665959960215945,
+      "mayer_multiple": 1.0665959960215947,
       "daily_return": 0.013504742844655304,
       "daily_volatility": 0.028771764858467577,
       "volatility_32bar": 0.01553301270058463
@@ -19594,7 +19568,7 @@
       "low": 54243.1,
       "close": 56686.4,
       "volume": 464106.957,
-      "mayer_multiple": 0.9646287449901187,
+      "mayer_multiple": 0.9646287449901189,
       "daily_return": 0.01532305587049465,
       "daily_volatility": 0.06980333907251124,
       "volatility_32bar": 0.020033070687168027
@@ -19711,7 +19685,7 @@
       "low": 63823.0,
       "close": 64055.7,
       "volume": 276656.393,
-      "mayer_multiple": 1.0756268942541019,
+      "mayer_multiple": 1.075626894254102,
       "daily_return": -0.014679280110752257,
       "daily_volatility": 0.035547187838084665,
       "volatility_32bar": 0.02394049675061565
@@ -19789,7 +19763,7 @@
       "low": 65416.5,
       "close": 65916.4,
       "volume": 270430.68,
-      "mayer_multiple": 1.0943234663805286,
+      "mayer_multiple": 1.0943234663805288,
       "daily_return": -0.023449166804939914,
       "daily_volatility": 0.035086867608061165,
       "volatility_32bar": 0.025247732606288435
@@ -19958,7 +19932,7 @@
       "low": 48888.0,
       "close": 54003.1,
       "volume": 1281982.025,
-      "mayer_multiple": 0.8775188830410848,
+      "mayer_multiple": 0.8775188830410849,
       "daily_return": -0.07122599729983059,
       "daily_volatility": 0.17404371230540472,
       "volatility_32bar": 0.027723420041639895
@@ -20010,7 +19984,7 @@
       "low": 59500.0,
       "close": 60808.6,
       "volume": 308674.339,
-      "mayer_multiple": 0.9825909269995775,
+      "mayer_multiple": 0.9825909269995776,
       "daily_return": -0.013804780424198637,
       "daily_volatility": 0.03660666418894696,
       "volatility_32bar": 0.034268728259088034
@@ -20036,7 +20010,7 @@
       "low": 58255.4,
       "close": 58693.1,
       "volume": 202539.076,
-      "mayer_multiple": 0.9453813168661083,
+      "mayer_multiple": 0.9453813168661085,
       "daily_return": -0.036078233007444616,
       "daily_volatility": 0.06379966299275382,
       "volatility_32bar": 0.034687155752442106
@@ -20153,7 +20127,7 @@
       "low": 58501.1,
       "close": 58982.9,
       "volume": 287049.13,
-      "mayer_multiple": 0.9386924850746002,
+      "mayer_multiple": 0.9386924850746003,
       "daily_return": -0.0069968096837461635,
       "daily_volatility": 0.04891078600746999,
       "volatility_32bar": 0.03256239605549332
@@ -20166,7 +20140,7 @@
       "low": 58728.9,
       "close": 61120.0,
       "volume": 270583.679,
-      "mayer_multiple": 0.9713026162906836,
+      "mayer_multiple": 0.9713026162906837,
       "daily_return": 0.036232535192403104,
       "daily_volatility": 0.05014725130890053,
       "volatility_32bar": 0.03324084090594607
@@ -20218,7 +20192,7 @@
       "low": 63731.3,
       "close": 64190.2,
       "volume": 115546.888,
-      "mayer_multiple": 1.0136493083724454,
+      "mayer_multiple": 1.0136493083724456,
       "daily_return": 0.0011494701051990575,
       "daily_volatility": 0.022497203622982926,
       "volatility_32bar": 0.03466166172703921
@@ -20296,7 +20270,7 @@
       "low": 58700.0,
       "close": 58941.9,
       "volume": 68866.674,
-      "mayer_multiple": 0.9256190378340082,
+      "mayer_multiple": 0.9256190378340083,
       "daily_return": -0.0026126847196863423,
       "daily_volatility": 0.01248687266613394,
       "volatility_32bar": 0.035376559748856444
@@ -20556,7 +20530,7 @@
       "low": 62320.0,
       "close": 63175.7,
       "volume": 257172.835,
-      "mayer_multiple": 0.9878958184354079,
+      "mayer_multiple": 0.987895818435408,
       "daily_return": 0.003953794005425282,
       "daily_volatility": 0.028598021074558687,
       "volatility_32bar": 0.025199824076906293
@@ -20582,7 +20556,7 @@
       "low": 62339.0,
       "close": 63558.4,
       "volume": 149129.884,
-      "mayer_multiple": 0.9941131099902014,
+      "mayer_multiple": 0.9941131099902015,
       "daily_return": 0.0037554918936333337,
       "daily_volatility": 0.026133445775853387,
       "volatility_32bar": 0.02440921474924088
@@ -20595,7 +20569,7 @@
       "low": 62534.4,
       "close": 63302.0,
       "volume": 234343.564,
-      "mayer_multiple": 0.9903791228293682,
+      "mayer_multiple": 0.9903791228293685,
       "daily_return": -0.0040340851877957995,
       "daily_volatility": 0.03460238223120915,
       "volatility_32bar": 0.024299622402424524
@@ -20621,7 +20595,7 @@
       "low": 62910.0,
       "close": 63118.4,
       "volume": 184950.772,
-      "mayer_multiple": 0.9882162093391836,
+      "mayer_multiple": 0.9882162093391837,
       "daily_return": -0.01750693848833562,
       "daily_volatility": 0.029943724809247382,
       "volatility_32bar": 0.02223641341621895
@@ -20673,7 +20647,7 @@
       "low": 65400.0,
       "close": 65568.1,
       "volume": 88131.799,
-      "mayer_multiple": 1.028462613943827,
+      "mayer_multiple": 1.0284626139438273,
       "daily_return": -0.003866453163503092,
       "daily_volatility": 0.010055194522946415,
       "volatility_32bar": 0.020221849323293274
@@ -20712,7 +20686,7 @@
       "low": 59934.9,
       "close": 60622.6,
       "volume": 327001.805,
-      "mayer_multiple": 0.9525077339815932,
+      "mayer_multiple": 0.9525077339815933,
       "daily_return": -0.0025371523344435154,
       "daily_volatility": 0.0399207556257897,
       "volatility_32bar": 0.022486691356354376
@@ -20764,7 +20738,7 @@
       "low": 61778.9,
       "close": 62789.3,
       "volume": 96413.453,
-      "mayer_multiple": 0.9879764879114993,
+      "mayer_multiple": 0.9879764879114994,
       "daily_return": 0.012353461855341141,
       "daily_volatility": 0.01883441924022084,
       "volatility_32bar": 0.020850077432201113
@@ -20816,7 +20790,7 @@
       "low": 58900.0,
       "close": 60293.2,
       "volume": 262947.653,
-      "mayer_multiple": 0.9498535752944681,
+      "mayer_multiple": 0.9498535752944682,
       "daily_return": -0.0051677710604821625,
       "daily_volatility": 0.03975572701399163,
       "volatility_32bar": 0.019238799925538314
@@ -20829,7 +20803,7 @@
       "low": 60057.8,
       "close": 62509.0,
       "volume": 263691.142,
-      "mayer_multiple": 0.985336326275282,
+      "mayer_multiple": 0.9853363262752822,
       "daily_return": 0.036750412981895186,
       "daily_volatility": 0.053467500679902046,
       "volatility_32bar": 0.019077153380349175
@@ -20842,7 +20816,7 @@
       "low": 62458.0,
       "close": 63176.0,
       "volume": 102784.406,
-      "mayer_multiple": 0.9963896803452703,
+      "mayer_multiple": 0.9963896803452705,
       "daily_return": 0.010670463453262835,
       "daily_volatility": 0.01590160820564769,
       "volatility_32bar": 0.019079147150022385
@@ -20998,7 +20972,7 @@
       "low": 66482.0,
       "close": 68173.8,
       "volume": 212340.722,
-      "mayer_multiple": 1.0769723941406362,
+      "mayer_multiple": 1.0769723941406364,
       "daily_return": 0.022905688461030804,
       "daily_volatility": 0.03462473853591849,
       "volatility_32bar": 0.019042271530295654
@@ -21102,7 +21076,7 @@
       "low": 68822.5,
       "close": 69495.5,
       "volume": 352591.088,
-      "mayer_multiple": 1.0965627781302918,
+      "mayer_multiple": 1.0965627781302916,
       "daily_return": -0.01175167337628813,
       "daily_volatility": 0.04068608758840501,
       "volatility_32bar": 0.019925830103146417
@@ -21141,7 +21115,7 @@
       "low": 66810.0,
       "close": 67834.3,
       "volume": 244912.166,
-      "mayer_multiple": 1.0688752097572052,
+      "mayer_multiple": 1.0688752097572054,
       "daily_return": -0.013498636611525172,
       "daily_volatility": 0.03958616805952155,
       "volatility_32bar": 0.018745238898946835
@@ -21167,7 +21141,7 @@
       "low": 69272.7,
       "close": 75579.9,
       "volume": 677440.286,
-      "mayer_multiple": 1.1894011844959602,
+      "mayer_multiple": 1.1894011844959604,
       "daily_return": 0.08978401830631921,
       "daily_volatility": 0.09456614787794114,
       "volatility_32bar": 0.02398577449910979
@@ -21297,7 +21271,7 @@
       "low": 90120.0,
       "close": 90643.3,
       "volume": 129023.447,
-      "mayer_multiple": 1.4039094838152624,
+      "mayer_multiple": 1.4039094838152626,
       "daily_return": -0.004735678224225048,
       "daily_volatility": 0.0190835947058415,
       "volatility_32bar": 0.029757210016758785
@@ -21336,7 +21310,7 @@
       "low": 90405.6,
       "close": 92335.9,
       "volume": 303532.031,
-      "mayer_multiple": 1.4199484254723147,
+      "mayer_multiple": 1.4199484254723145,
       "daily_return": 0.02020276795046594,
       "daily_volatility": 0.0387747344207398,
       "volatility_32bar": 0.029890050652714426
@@ -21362,7 +21336,7 @@
       "low": 94008.7,
       "close": 98366.8,
       "volume": 418383.136,
-      "mayer_multiple": 1.505192144593917,
+      "mayer_multiple": 1.5051921445939171,
       "daily_return": 0.04325895129815027,
       "daily_volatility": 0.051758316830475354,
       "volatility_32bar": 0.030426585978300013
@@ -21375,7 +21349,7 @@
       "low": 97199.9,
       "close": 98921.4,
       "volume": 265774.067,
-      "mayer_multiple": 1.5095463223606878,
+      "mayer_multiple": 1.5095463223606875,
       "daily_return": 0.005638081141198015,
       "daily_volatility": 0.024869239618525475,
       "volatility_32bar": 0.029776359735610596
@@ -21414,7 +21388,7 @@
       "low": 92666.0,
       "close": 93064.0,
       "volume": 329375.021,
-      "mayer_multiple": 1.4091685809977954,
+      "mayer_multiple": 1.4091685809977952,
       "daily_return": -0.049983462705338044,
       "daily_volatility": 0.06804994412447347,
       "volatility_32bar": 0.03162607025145906
@@ -21583,7 +21557,7 @@
       "low": 98709.4,
       "close": 101200.0,
       "volume": 109755.67599999999,
-      "mayer_multiple": 1.4858587286337885,
+      "mayer_multiple": 1.485858728633788,
       "daily_return": 0.013021125294296665,
       "daily_volatility": 0.02715909090909091,
       "volatility_32bar": 0.027568587388768263
@@ -21674,7 +21648,7 @@
       "low": 101200.1,
       "close": 104460.4,
       "volume": 157733.916,
-      "mayer_multiple": 1.5091068020236573,
+      "mayer_multiple": 1.509106802023657,
       "daily_return": 0.030374527771475757,
       "daily_volatility": 0.039962512109852154,
       "volatility_32bar": 0.02333077113680942
@@ -21687,7 +21661,7 @@
       "low": 103264.6,
       "close": 106023.2,
       "volume": 274395.756,
-      "mayer_multiple": 1.52753305677636,
+      "mayer_multiple": 1.5275330567763599,
       "daily_return": 0.014960693238777578,
       "daily_volatility": 0.042560496193285946,
       "volatility_32bar": 0.02234692581746751
@@ -21713,7 +21687,7 @@
       "low": 99951.1,
       "close": 100181.1,
       "volume": 328581.935,
-      "mayer_multiple": 1.4360305203735166,
+      "mayer_multiple": 1.4360305203735169,
       "daily_return": -0.05555995497508359,
       "daily_volatility": 0.06521689220821093,
       "volatility_32bar": 0.023822601602783627
@@ -21726,7 +21700,7 @@
       "low": 95681.2,
       "close": 97434.4,
       "volume": 372968.463,
-      "mayer_multiple": 1.3936988176208958,
+      "mayer_multiple": 1.3936988176208955,
       "daily_return": -0.027417347184249485,
       "daily_volatility": 0.07261808970958923,
       "volatility_32bar": 0.02434435756771992
@@ -21856,7 +21830,7 @@
       "low": 92961.8,
       "close": 93700.0,
       "volume": 95047.934,
-      "mayer_multiple": 1.3151603438368116,
+      "mayer_multiple": 1.3151603438368114,
       "daily_return": -0.016366940271323238,
       "daily_volatility": 0.0249541088580576,
       "volatility_32bar": 0.022331566235663423
@@ -21921,7 +21895,7 @@
       "low": 96061.5,
       "close": 98145.7,
       "volume": 125220.674,
-      "mayer_multiple": 1.363792998584442,
+      "mayer_multiple": 1.3637929985844417,
       "daily_return": 0.0121504627839224,
       "daily_volatility": 0.029420545169070066,
       "volatility_32bar": 0.022545789833930855
@@ -21934,7 +21908,7 @@
       "low": 97438.2,
       "close": 98173.2,
       "volume": 71914.63399999999,
-      "mayer_multiple": 1.3610523490641522,
+      "mayer_multiple": 1.3610523490641517,
       "daily_return": 0.00028019566827675035,
       "daily_volatility": 0.013473127085599708,
       "volatility_32bar": 0.022545747289984788
@@ -21973,7 +21947,7 @@
       "low": 96153.0,
       "close": 96920.3,
       "volume": 258711.309,
-      "mayer_multiple": 1.3341081285922913,
+      "mayer_multiple": 1.3341081285922916,
       "daily_return": -0.05147856144622642,
       "daily_volatility": 0.06819108071270936,
       "volatility_32bar": 0.02405501878548225
@@ -22051,7 +22025,7 @@
       "low": 88909.0,
       "close": 94485.3,
       "volume": 361150.49,
-      "mayer_multiple": 1.2834784705812925,
+      "mayer_multiple": 1.2834784705812923,
       "daily_return": -0.00015449751798668476,
       "daily_volatility": 0.07435548175218791,
       "volatility_32bar": 0.022434865175852147
@@ -22103,7 +22077,7 @@
       "low": 99902.0,
       "close": 104042.5,
       "volume": 249449.969,
-      "mayer_multiple": 1.398682980182769,
+      "mayer_multiple": 1.3986829801827694,
       "daily_return": 0.04107671402297841,
       "daily_volatility": 0.05653458923036259,
       "volatility_32bar": 0.024163296169854596
@@ -22207,7 +22181,7 @@
       "low": 104040.6,
       "close": 104702.0,
       "volume": 65630.163,
-      "mayer_multiple": 1.3737077799405206,
+      "mayer_multiple": 1.3737077799405208,
       "daily_return": -0.0010123263373728042,
       "daily_volatility": 0.011786785352715242,
       "volatility_32bar": 0.02215930917990846
@@ -22246,7 +22220,7 @@
       "low": 100235.0,
       "close": 101279.6,
       "volume": 169917.261,
-      "mayer_multiple": 1.3173145876784829,
+      "mayer_multiple": 1.317314587678483,
       "daily_return": -0.007270050469852851,
       "daily_volatility": 0.035169965126244575,
       "volatility_32bar": 0.021305123169610366
@@ -22311,7 +22285,7 @@
       "low": 96029.6,
       "close": 97664.5,
       "volume": 232934.693,
-      "mayer_multiple": 1.254359351320599,
+      "mayer_multiple": 1.2543593513205988,
       "daily_return": -0.02921466031036668,
       "daily_volatility": 0.05525446810253464,
       "volatility_32bar": 0.02256267055780371
@@ -22337,7 +22311,7 @@
       "low": 96100.0,
       "close": 97709.9,
       "volume": 262746.203,
-      "mayer_multiple": 1.2494529641633159,
+      "mayer_multiple": 1.249452964163316,
       "daily_return": -0.035380285249724364,
       "daily_volatility": 0.05761238114049859,
       "volatility_32bar": 0.023840985727874003
@@ -22389,7 +22363,7 @@
       "low": 95600.0,
       "close": 96411.9,
       "volume": 69050.432,
-      "mayer_multiple": 1.2236787490408982,
+      "mayer_multiple": 1.223678749040898,
       "daily_return": -0.00044165902057458073,
       "daily_volatility": 0.012965204502763663,
       "volatility_32bar": 0.02102980953606198
@@ -22545,7 +22519,7 @@
       "low": 96366.0,
       "close": 98252.9,
       "volume": 129180.17199999999,
-      "mayer_multiple": 1.2174595447191319,
+      "mayer_multiple": 1.217459544719132,
       "daily_return": 0.01713182467545904,
       "daily_volatility": 0.02336928477429171,
       "volatility_32bar": 0.017165821136721576
@@ -22558,7 +22532,7 @@
       "low": 94830.4,
       "close": 96127.9,
       "volume": 250618.273,
-      "mayer_multiple": 1.188027914557188,
+      "mayer_multiple": 1.1880279145571877,
       "daily_return": -0.021627860348142347,
       "daily_volatility": 0.04786435571774694,
       "volatility_32bar": 0.017439066438418523
@@ -22636,7 +22610,7 @@
       "low": 82667.0,
       "close": 84668.1,
       "volume": 269408.52999999997,
-      "mayer_multiple": 1.0343432194327145,
+      "mayer_multiple": 1.0343432194327142,
       "daily_return": 0.005457881330269476,
       "daily_volatility": 0.05195581334646696,
       "volatility_32bar": 0.019544910376232072
@@ -22766,7 +22740,7 @@
       "low": 79933.4,
       "close": 80688.8,
       "volume": 221609.348,
-      "mayer_multiple": 0.9691663703612723,
+      "mayer_multiple": 0.9691663703612721,
       "daily_return": -0.06376885920586828,
       "daily_volatility": 0.08101743984295233,
       "volatility_32bar": 0.031177413886712455
@@ -22779,7 +22753,7 @@
       "low": 77410.1,
       "close": 78567.8,
       "volume": 416386.797,
-      "mayer_multiple": 0.9426593375700439,
+      "mayer_multiple": 0.942659337570044,
       "daily_return": -0.02628617602442962,
       "daily_volatility": 0.08427625566707982,
       "volatility_32bar": 0.03137995161054954
@@ -22792,7 +22766,7 @@
       "low": 76560.0,
       "close": 82896.0,
       "volume": 390779.169,
-      "mayer_multiple": 0.9934642597049992,
+      "mayer_multiple": 0.9934642597049993,
       "daily_return": 0.055088725915705794,
       "daily_volatility": 0.08492569002123142,
       "volatility_32bar": 0.033122386513409
@@ -28291,7 +28265,7 @@
       "low": 79137.4,
       "close": 80155.2,
       "volume": 106762.913,
-      "mayer_multiple": 0.9659611237379555,
+      "mayer_multiple": 0.9659611237379553,
       "daily_return": 0.0023233886961764316,
       "daily_volatility": 0.016725053396411036,
       "volatility_32bar": 0.018376816859235923
@@ -28587,13 +28561,39 @@
       "year": 2026,
       "open": 73856.9,
       "high": 74250.0,
-      "low": 73388.0,
-      "close": 73619.9,
-      "volume": 35473.46,
-      "mayer_multiple": 0.9258027331765997,
-      "daily_return": -0.00320755841032927,
-      "daily_volatility": 0.011708790693820557,
-      "volatility_32bar": 0.013301176703664453
+      "low": 73340.7,
+      "close": 73653.2,
+      "volume": 58241.459,
+      "mayer_multiple": 0.9262195560442139,
+      "daily_return": -0.0027566859111145536,
+      "daily_volatility": 0.012345695774250175,
+      "volatility_32bar": 0.013298860011401677
+    },
+    {
+      "date": "2026-06-01",
+      "year": 2026,
+      "open": 73653.2,
+      "high": 74070.5,
+      "low": 70650.9,
+      "close": 71391.5,
+      "volume": 213471.128,
+      "mayer_multiple": 0.8993760050251121,
+      "daily_return": -0.030707423438492754,
+      "daily_volatility": 0.04789925971579258,
+      "volatility_32bar": 0.01419009929145053
+    },
+    {
+      "date": "2026-06-02",
+      "year": 2026,
+      "open": 71391.5,
+      "high": 71397.0,
+      "low": 69277.8,
+      "close": 69390.0,
+      "volume": 103562.466,
+      "mayer_multiple": 0.8755487952213887,
+      "daily_return": -0.028035550450683955,
+      "daily_volatility": 0.030540423692174624,
+      "volatility_32bar": 0.014056341293900328
     }
   ]
 }
