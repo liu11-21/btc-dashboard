@@ -144,7 +144,6 @@ function updateHeader() {
   $("modelLine").textContent = [
     fc.symbol || "BTCUSDT",
     fc.interval || "1h",
-    fc.model_version || "v9.4a",
     horizon + "-bar horizon",
     runtime.samples ? runtime.samples + " samples" : null,
   ].filter(Boolean).join(" · ");
@@ -390,7 +389,7 @@ function renderCharts() {
         name: "抽樣 IQR", line: { color: "rgba(96,165,250,.25)", width: 0 }, fill: "tonexty",
         fillcolor: "rgba(96,165,250,.14)", hoverinfo: "skip" },
       { type: "scatter", mode: "lines+markers", x: pathX, y: path.map(p => Number(p.price)),
-        name: "v9.4A 預測 close", line: { color: fcColor, width: 2.4, dash: "dash" },
+        name: "預測 close", line: { color: fcColor, width: 2.4, dash: "dash" },
         marker: { size: 4, color: fcColor }, hovertemplate: "%{x}<br>預測 close %{y:$,.0f}<extra></extra>" }
     );
   }
